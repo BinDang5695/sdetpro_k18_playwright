@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test";
-import FooterComponent from "../components/globals/FooterComponent";
+import FooterComponent from "../components/globals/footer/FooterComponent";
 
 export default class BasePage {
 
@@ -13,5 +13,5 @@ export default class BasePage {
         return new FooterComponent(this.page.locator(FooterComponent.SELECTOR));
     }
 
-    
+
 }
