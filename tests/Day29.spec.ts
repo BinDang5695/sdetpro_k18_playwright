@@ -1,8 +1,8 @@
 import test from "@playwright/test";
 import { SLUGS } from "../constants/slugs";
-import LoginPageMethod01 from "../models.ts/pages/LoginPageMethod01";
-import LoginPageMethod02 from "../models.ts/pages/LoginPageMethod02";
-import HomePage from "../models.ts/pages/HomePage";
+import LoginPageMethod01 from "../models/pages/LoginPageMethod01";
+import LoginPageMethod02 from "../models/pages/LoginPageMethod02";
+import HomePage from "../models/pages/HomePage";
 
 const LOGIN_CRED = {
     username: "tomsmith",

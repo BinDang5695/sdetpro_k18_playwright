@@ -1,5 +1,5 @@
 import test from "@playwright/test";
-import HomePage from "../models.ts/pages/HomePage";
+import HomePage from "../models/pages/HomePage";
 
 test('POM - Reusing Base Component', async ({page}) => {
 
@@ -24,6 +24,5 @@ test('POM - Reusing Base Component', async ({page}) => {
     const customerServiceClComphrefs = await customerServiceColumnComp.getLinkLists();
     console.log(customerServiceClCompTexts);
     console.log(customerServiceClComphrefs);
-    
 
 });
