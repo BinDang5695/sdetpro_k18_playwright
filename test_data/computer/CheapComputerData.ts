@@ -3,8 +3,8 @@ import { ComputerDataType } from "../ComputerDataType";
 
 export const cheapComputerData: ComputerDataType = {
         computerCompType: COMPUTER_NAMES.cheap,
-        ram: "8 GB",
-        processor: "fasfa",
-        hdd: "faffa",
-        software: "hfdhdf"
+        processor: "Slow",
+        ram: "4 GB",
+        hdd: "400 GB",
+        software: "Office Suite"
 }

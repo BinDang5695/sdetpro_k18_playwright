@@ -9,4 +9,6 @@ export default class ProductEssentialComponent {
     }
 
 
+
+
 }

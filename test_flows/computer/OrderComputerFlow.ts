@@ -11,13 +11,18 @@ export default class OrderComputerFlow {
     }
 
     public async buildComputerSpecAndAddToCart(){
-        const { computerCompType, processor, ram, hdd} = this.computerData;
+        const { computerCompType, processor, ram, hdd, software, os} = this.computerData;
         const computerPage = new ComputerDetailsPage(this.page);
         const computerComp: ComputerEssentialComponent = 
             computerPage.computerComponent(computerCompType);
+        await computerComp.unselectAllOptions();
         await computerComp.selectProcessor(processor);
         await computerComp.selectRAM(ram);
         await computerComp.selectHdd(hdd);
+        await computerComp.selectSoftware(software);
+        if(os){
+            await computerComp.selectOS(os);
+        }
 
     }
 }
