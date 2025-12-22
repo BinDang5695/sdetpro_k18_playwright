@@ -1,9 +1,13 @@
 {
   "name": "sdetpro-k18-playwright",
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:computer": "playwright test tests/computer"
   },
   "dependencies": {
     "@playwright/test": "^1.57.0"
+  },
+  "devDependencies": {
+    "allure-playwright": "^3.4.3"
   }
 }

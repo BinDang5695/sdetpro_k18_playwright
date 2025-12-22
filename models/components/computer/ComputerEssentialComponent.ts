@@ -19,24 +19,26 @@ export default abstract class ComputerEssentialComponent extends ProductEssentia
         }
     }
 
-    public abstract selectProcessor(value: string): Promise<void>;
-    public abstract selectRAM(value: string): Promise<void>;
+    public abstract selectProcessor(value: string): Promise<string | null>;
+    public abstract selectRAM(value: string): Promise<string | null>;
 
-    public async selectHdd(value: string): Promise<void>{
-        await this.selectCompOption(value);
+    public async selectHdd(value: string): Promise<string | null>{
+        return await this.selectCompOption(value);
     }
 
-    public async selectSoftware(value: string): Promise<void>{
-        await this.selectCompOption(value);
+    public async selectSoftware(value: string): Promise<string | null>{
+        return await this.selectCompOption(value);
     }
 
-    public async selectOS(value: string): Promise<void>{
-        await this.selectCompOption(value);
+    public async selectOS(value: string): Promise<string | null>{
+        return await this.selectCompOption(value);
     }
 
     // Support method
-    protected async selectCompOption(value: string):Promise<void>{
+    protected async selectCompOption(value: string):Promise<string | null>{
         const selectorValue = `//label[contains(text(), "${value}")]`;
-        await this.component.locator(selectorValue).first().click();
+        const optionLocator = this.component.locator(selectorValue).first();
+        await optionLocator.click();
+        return optionLocator.textContent();
     }
 }
