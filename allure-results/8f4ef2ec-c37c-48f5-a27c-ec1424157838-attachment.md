@@ -1,0 +1,255 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4] [cursor=pointer]: 
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - searchbox "Search..." [ref=e9]
+            - button "" [ref=e11] [cursor=pointer]:
+              - generic [ref=e12]: 
+          - list [ref=e13]:
+            - listitem "Quick Create" [ref=e14]:
+              - link "+" [ref=e15] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e17]: +
+              - text:             
+        - text: 
+        - list [ref=e18]:
+          - listitem [ref=e19]:
+            - link "Share documents, ideas.." [ref=e20] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e21]
+          - listitem [ref=e23]:
+            - link "Todo items" [ref=e24] [cursor=pointer]:
+              - /url: https://crm.anhtester.com/admin/todo
+              - img [ref=e25]
+          - listitem "Admin Example" [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e29]
+          - listitem [ref=e30]:
+            - link [ref=e31] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e33]
+            - text: 
+          - listitem "Notifications" [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e38]
+            - text:        
+  - text: 
+  - complementary [ref=e40]:
+    - list [ref=e41]:
+      - listitem [ref=e42]:
+        - link "Perfex CRM | Anh Tester Demo" [ref=e44] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/
+          - img "Perfex CRM | Anh Tester Demo" [ref=e45]
+      - listitem [ref=e46]:
+        - link " Dashboard" [ref=e47] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/
+          - generic [ref=e48]: 
+          - text: Dashboard
+      - listitem [ref=e49]:
+        - link " Customers" [ref=e50] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/clients
+          - generic [ref=e51]: 
+          - text: Customers
+      - listitem [ref=e52]:
+        - link " Projects" [ref=e53] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/projects
+          - generic [ref=e54]: 
+          - text: Projects
+      - listitem [ref=e55]:
+        - link " Tasks" [ref=e56] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tasks
+          - generic [ref=e57]: 
+          - text: Tasks
+      - listitem [ref=e58]:
+        - link " Contracts" [ref=e59] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/contracts
+          - generic [ref=e60]: 
+          - text: Contracts
+      - listitem [ref=e61]:
+        - link " Sales " [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e63]: 
+          - text: Sales
+          - generic [ref=e64]: 
+      - listitem [ref=e65]:
+        - link " Subscriptions" [ref=e66] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/subscriptions
+          - generic [ref=e67]: 
+          - text: Subscriptions
+      - listitem [ref=e68]:
+        - link " Expenses" [ref=e69] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/expenses
+          - generic [ref=e70]: 
+          - text: Expenses
+      - listitem [ref=e71]:
+        - link " Support" [ref=e72] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tickets
+          - generic [ref=e73]: 
+          - text: Support
+      - listitem [ref=e74]:
+        - link " Leads" [ref=e75] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/leads
+          - generic [ref=e76]: 
+          - text: Leads
+      - listitem [ref=e77]:
+        - link " Estimate Request" [ref=e78] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/estimate_request
+          - generic [ref=e79]: 
+          - text: Estimate Request
+      - listitem [ref=e80]:
+        - link " Knowledge Base" [ref=e81] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/knowledge_base
+          - generic [ref=e82]: 
+          - text: Knowledge Base
+      - listitem [ref=e83]:
+        - link " Utilities " [ref=e84] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e85]: 
+          - text: Utilities
+          - generic [ref=e86]: 
+      - listitem [ref=e87]:
+        - link " Reports " [ref=e88] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e89]: 
+          - text: Reports
+          - generic [ref=e90]: 
+  - generic [ref=e92]:
+    - generic [ref=e93]:
+      - generic [ref=e94]:
+        - link "+ New Task" [ref=e95] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e96]: +
+          - text: New Task
+        - link "" [ref=e97] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tasks/switch_kanban/
+          - generic [ref=e98]: 
+      - generic [ref=e99]:
+        - button [ref=e102] [cursor=pointer]:
+          - generic [ref=e103]: 
+        - link "Tasks Overview" [ref=e104] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tasks/detailed_overview
+    - generic [ref=e108]:
+      - heading "Tasks Summary" [level=4] [ref=e109]:
+        - img [ref=e110]
+        - generic [ref=e112]: Tasks Summary
+      - generic [ref=e113]:
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e116]: "1"
+            - generic [ref=e117]: Not Started
+          - paragraph [ref=e118]: "Tasks assigned to me: 1"
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - generic [ref=e121]: "1"
+            - generic [ref=e122]: In Progress
+          - paragraph [ref=e123]: "Tasks assigned to me: 0"
+        - generic [ref=e124]:
+          - generic [ref=e125]:
+            - generic [ref=e126]: "0"
+            - generic [ref=e127]: Testing
+          - paragraph [ref=e128]: "Tasks assigned to me: 0"
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - generic [ref=e131]: "0"
+            - generic [ref=e132]: Awaiting Feedback
+          - paragraph [ref=e133]: "Tasks assigned to me: 0"
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]: "0"
+            - generic [ref=e137]: Complete
+          - paragraph [ref=e138]: "Tasks assigned to me: 0"
+      - separator [ref=e139]
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - combobox [ref=e147]:
+              - option "10"
+              - option "25" [selected]
+              - option "50"
+              - option "100"
+              - option "All"
+            - generic [ref=e148]:
+              - button "Export" [ref=e149] [cursor=pointer]
+              - button "Bulk Actions" [ref=e150] [cursor=pointer]
+              - button "" [ref=e151] [cursor=pointer]:
+                - generic [ref=e153]: 
+          - generic [ref=e157]:
+            - generic [ref=e159]: 
+            - searchbox "" [active] [ref=e160]: NashTech
+        - text: x200B x200B
+        - grid [ref=e162]:
+          - rowgroup [ref=e163]:
+            - 'row "- # activate to sort column ascending Name activate to sort column ascending Status activate to sort column ascending Start Date activate to sort column ascending Due Date activate to sort column descending Assigned to activate to sort column ascending Tags activate to sort column ascending Priority activate to sort column ascending" [ref=e164]':
+              - columnheader "-" [ref=e165]:
+                - checkbox [ref=e167]
+              - columnheader "# activate to sort column ascending" [ref=e168] [cursor=pointer]: "#"
+              - columnheader "Name activate to sort column ascending" [ref=e169] [cursor=pointer]: Name
+              - columnheader "Status activate to sort column ascending" [ref=e170] [cursor=pointer]: Status
+              - columnheader "Start Date activate to sort column ascending" [ref=e171] [cursor=pointer]: Start Date
+              - columnheader "Due Date activate to sort column descending" [ref=e172] [cursor=pointer]: Due Date
+              - columnheader "Assigned to activate to sort column ascending" [ref=e173] [cursor=pointer]: Assigned to
+              - columnheader "Tags activate to sort column ascending" [ref=e174] [cursor=pointer]: Tags
+              - columnheader "Priority activate to sort column ascending" [ref=e175] [cursor=pointer]: Priority
+          - rowgroup [ref=e176]:
+            - row "1107 NashTech Start Timer | Edit | Delete Not Started  30-12-2025 Medium " [ref=e177]:
+              - gridcell [ref=e178]:
+                - checkbox [ref=e180]
+              - gridcell "1107" [ref=e181]:
+                - link "1107" [ref=e182] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/tasks/view/1107
+              - gridcell "NashTech Start Timer | Edit | Delete" [ref=e183]:
+                - link "NashTech" [ref=e184] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/tasks/view/1107
+                - generic [ref=e185]:
+                  - link "Start Timer" [ref=e187] [cursor=pointer]:
+                    - /url: "#"
+                  - text: "|"
+                  - link "Edit" [ref=e188] [cursor=pointer]:
+                    - /url: "#"
+                  - text: "|"
+                  - link "Delete" [ref=e189] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/tasks/delete_task/1107
+              - gridcell "Not Started " [ref=e190]:
+                - generic [ref=e191]:
+                  - text: Not Started
+                  - link "" [ref=e193] [cursor=pointer]:
+                    - /url: "#"
+                    - generic "Change Status" [ref=e194]:
+                      - generic [ref=e195]: 
+              - gridcell "30-12-2025" [ref=e196]
+              - gridcell [ref=e197]
+              - gridcell [ref=e198]:
+                - link [ref=e200] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/profile/2
+                  - img [ref=e201]
+              - gridcell [ref=e202]
+              - gridcell "Medium " [ref=e203]:
+                - generic [ref=e204]:
+                  - text: Medium
+                  - link "" [ref=e206] [cursor=pointer]:
+                    - /url: "#"
+                    - generic "Priority" [ref=e207]:
+                      - generic [ref=e208]: 
+        - generic [ref=e209]:
+          - status [ref=e211]: Showing 1 to 1 of 1 entries (filtered from 2 total entries)
+          - list [ref=e214]:
+            - listitem:
+              - link "Previous" [ref=e215]:
+                - /url: "#"
+            - listitem:
+              - link "1" [ref=e216]:
+                - /url: "#"
+            - listitem:
+              - link "Next" [ref=e217]:
+                - /url: "#"
+      - text:  
+  - status [ref=e218]
+```

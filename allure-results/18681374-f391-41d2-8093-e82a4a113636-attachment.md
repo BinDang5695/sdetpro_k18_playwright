@@ -1,0 +1,285 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4] [cursor=pointer]: 
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - searchbox "Search..." [ref=e9]
+            - button "" [ref=e11] [cursor=pointer]:
+              - generic [ref=e12]: 
+          - list [ref=e13]:
+            - listitem "Quick Create" [ref=e14]:
+              - link "+" [ref=e15] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e17]: +
+              - text:             
+        - text: 
+        - list [ref=e18]:
+          - listitem [ref=e19]:
+            - link "Share documents, ideas.." [ref=e20] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e21]
+          - listitem [ref=e23]:
+            - link "Todo items" [ref=e24] [cursor=pointer]:
+              - /url: https://crm.anhtester.com/admin/todo
+              - img [ref=e25]
+          - listitem "Admin Example" [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e29]
+          - listitem [ref=e30]:
+            - link [ref=e31] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e33]
+            - text: 
+          - listitem "Notifications" [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e38]
+            - text:        
+  - text: 
+  - complementary [ref=e40]:
+    - list [ref=e41]:
+      - listitem [ref=e42]:
+        - link "Perfex CRM | Anh Tester Demo" [ref=e44] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/
+          - img "Perfex CRM | Anh Tester Demo" [ref=e45]
+      - listitem [ref=e46]:
+        - link " Dashboard" [ref=e47] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/
+          - generic [ref=e48]: 
+          - text: Dashboard
+      - listitem [ref=e49]:
+        - link " Customers" [ref=e50] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/clients
+          - generic [ref=e51]: 
+          - text: Customers
+      - listitem [ref=e52]:
+        - link " Projects" [ref=e53] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/projects
+          - generic [ref=e54]: 
+          - text: Projects
+      - listitem [ref=e55]:
+        - link " Tasks" [ref=e56] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tasks
+          - generic [ref=e57]: 
+          - text: Tasks
+      - listitem [ref=e58]:
+        - link " Contracts" [ref=e59] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/contracts
+          - generic [ref=e60]: 
+          - text: Contracts
+      - listitem [ref=e61]:
+        - link " Sales " [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e63]: 
+          - text: Sales
+          - generic [ref=e64]: 
+      - listitem [ref=e65]:
+        - link " Subscriptions" [ref=e66] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/subscriptions
+          - generic [ref=e67]: 
+          - text: Subscriptions
+      - listitem [ref=e68]:
+        - link " Expenses" [ref=e69] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/expenses
+          - generic [ref=e70]: 
+          - text: Expenses
+      - listitem [ref=e71]:
+        - link " Support" [ref=e72] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tickets
+          - generic [ref=e73]: 
+          - text: Support
+      - listitem [ref=e74]:
+        - link " Leads" [ref=e75] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/leads
+          - generic [ref=e76]: 
+          - text: Leads
+      - listitem [ref=e77]:
+        - link " Estimate Request" [ref=e78] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/estimate_request
+          - generic [ref=e79]: 
+          - text: Estimate Request
+      - listitem [ref=e80]:
+        - link " Knowledge Base" [ref=e81] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/knowledge_base
+          - generic [ref=e82]: 
+          - text: Knowledge Base
+      - listitem [ref=e83]:
+        - link " Utilities " [ref=e84] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e85]: 
+          - text: Utilities
+          - generic [ref=e86]: 
+      - listitem [ref=e87]:
+        - link " Reports " [ref=e88] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e89]: 
+          - text: Reports
+          - generic [ref=e90]: 
+  - generic [ref=e94]:
+    - heading "Add new project" [level=4] [ref=e95]
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - text:  
+          - tablist [ref=e100]:
+            - tab "Project" [ref=e101]
+            - tab "Project Settings" [ref=e102] [cursor=pointer]
+        - generic [ref=e103]:
+          - tabpanel [ref=e104]:
+            - generic [ref=e105]:
+              - generic [ref=e106]: "* Project Name"
+              - textbox "* Project Name" [ref=e107]: Bin Project
+            - generic [ref=e108]:
+              - generic [ref=e109]: "* Customer"
+              - generic [ref=e110]:
+                - combobox "* Customer" [ref=e111]:
+                  - option [selected]
+                - combobox "Select and begin typing" [expanded] [ref=e112] [cursor=pointer]:
+                  - generic [ref=e115]: Select and begin typing
+                  - listbox [ref=e117]: No results matched "Bin Customer"
+                - generic [ref=e118]:
+                  - combobox "Search" [active] [ref=e120]: Bin Customer
+                  - generic [ref=e121]: Start typing to search
+            - generic [ref=e123]:
+              - checkbox "Calculate progress through tasks " [checked] [ref=e124]
+              - generic [ref=e125] [cursor=pointer]: Calculate progress through tasks 
+            - generic [ref=e126]: Progress 0%
+            - generic [ref=e127]:
+              - generic [ref=e129]:
+                - generic [ref=e130]: "* Billing Type"
+                - generic [ref=e131]:
+                  - combobox "* Billing Type" [ref=e132]:
+                    - option
+                    - option "Fixed Rate"
+                    - option "Project Hours" [selected]
+                    - option "Task Hours"
+                  - combobox "Project Hours" [ref=e133] [cursor=pointer]:
+                    - generic [ref=e136]: Project Hours
+              - generic [ref=e139]:
+                - generic [ref=e140]: Status
+                - generic [ref=e141]:
+                  - combobox "Status" [ref=e142]:
+                    - option "Not Started"
+                    - option "In Progress" [selected]
+                    - option "On Hold"
+                    - option "Cancelled"
+                    - option "Finished"
+                  - combobox "In Progress" [ref=e143] [cursor=pointer]:
+                    - generic [ref=e146]: In Progress
+            - generic [ref=e149]:
+              - generic [ref=e150]: Rate Per Hour
+              - spinbutton [ref=e151]
+            - generic [ref=e152]:
+              - generic [ref=e154]:
+                - generic [ref=e155]: Estimated Hours
+                - spinbutton "Estimated Hours" [ref=e156]
+              - generic [ref=e158]:
+                - generic [ref=e159]: Members
+                - generic [ref=e160]:
+                  - listbox "Members" [ref=e161]:
+                    - option "Project Manager" [ref=e162]
+                    - option "Admin Anh Tester" [ref=e163]
+                    - option "Admin Example" [selected] [ref=e164]
+                  - combobox "Admin Example" [ref=e165] [cursor=pointer]:
+                    - generic [ref=e168]: Admin Example
+            - generic [ref=e170]:
+              - generic [ref=e172]:
+                - generic [ref=e173]: "* Start Date"
+                - generic [ref=e174]:
+                  - textbox "* Start Date" [ref=e175]: 30-12-2025
+                  - generic [ref=e177]: 
+              - generic [ref=e179]:
+                - generic [ref=e180]: Deadline
+                - generic [ref=e181]:
+                  - textbox "Deadline" [ref=e182]
+                  - generic [ref=e184]: 
+            - generic [ref=e185]:
+              - generic [ref=e186]:
+                - generic [ref=e187]: 
+                - text: Tags
+              - list [ref=e188]:
+                - listitem [ref=e189]:
+                  - textbox "Tag" [ref=e190]
+            - paragraph [ref=e191]: Description
+            - application [ref=e193]:
+              - generic [ref=e194]:
+                - generic [ref=e195]:
+                  - menubar [ref=e196]:
+                    - menuitem "File" [ref=e197]:
+                      - generic [ref=e198]: File
+                    - menuitem "Edit" [ref=e199]:
+                      - generic [ref=e200]: Edit
+                    - menuitem "View" [ref=e201]:
+                      - generic [ref=e202]: View
+                    - menuitem "Insert" [ref=e203]:
+                      - generic [ref=e204]: Insert
+                    - menuitem "Format" [ref=e205]:
+                      - generic [ref=e206]: Format
+                    - menuitem "Tools" [ref=e207]:
+                      - generic [ref=e208]: Tools
+                    - menuitem "Table" [ref=e209]:
+                      - generic [ref=e210]: Table
+                  - group [ref=e211]:
+                    - group [ref=e212]:
+                      - toolbar [ref=e213]:
+                        - button "Font System Font" [ref=e214]:
+                          - generic [ref=e215]: System Font
+                          - img [ref=e217]
+                        - button "Font size 12pt" [ref=e219]:
+                          - generic [ref=e220]: 12pt
+                          - img [ref=e222]
+                      - toolbar [ref=e224]:
+                        - button "Text color Black" [ref=e225]:
+                          - img [ref=e227]
+                          - img [ref=e231]
+                        - button "Background color Black" [ref=e233]:
+                          - img [ref=e235]
+                          - img [ref=e239]
+                      - toolbar [ref=e241]:
+                        - button "Bold" [ref=e242]:
+                          - img [ref=e244]
+                        - button "Italic" [ref=e246]:
+                          - img [ref=e248]
+                      - toolbar [ref=e250]:
+                        - button "Align left" [ref=e251]:
+                          - img [ref=e253]
+                        - button "Align center" [ref=e255]:
+                          - img [ref=e257]
+                        - button "Align right" [ref=e259]:
+                          - img [ref=e261]
+                        - button "Justify" [ref=e263]:
+                          - img [ref=e265]
+                      - toolbar [ref=e267]:
+                        - button "Insert/edit image" [ref=e268]:
+                          - img [ref=e270]
+                        - button "Insert/edit link" [ref=e272]:
+                          - img [ref=e274]
+                      - toolbar [ref=e276]:
+                        - button "Bullet list" [ref=e277]:
+                          - img [ref=e279]
+                          - img [ref=e281]
+                        - button "Numbered list" [ref=e283]:
+                          - img [ref=e285]
+                          - img [ref=e287]
+                      - toolbar [ref=e289]:
+                        - button "Restore last draft" [disabled] [ref=e290]:
+                          - img [ref=e292]
+                - iframe [ref=e298]:
+                  - generic "Rich Text Area. Press ALT-0 for help." [active] [ref=f1e1]:
+                    - paragraph [ref=f1e2]
+                - navigation [ref=e301]:
+                  - button "p" [ref=e302]
+            - separator [ref=e303]
+            - generic [ref=e304]:
+              - checkbox "Send project created email" [ref=e305]
+              - generic [ref=e306] [cursor=pointer]: Send project created email
+          - text:      
+      - button "Save" [ref=e308] [cursor=pointer]
+  - status [ref=e309]
+```

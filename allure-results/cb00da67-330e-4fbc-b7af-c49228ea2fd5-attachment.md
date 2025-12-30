@@ -1,0 +1,1489 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4] [cursor=pointer]: 
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - searchbox "Search..." [ref=e9]
+            - button "" [ref=e11] [cursor=pointer]:
+              - generic [ref=e12]: 
+          - list [ref=e13]:
+            - listitem "Quick Create" [ref=e14]:
+              - link "+" [ref=e15] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e17]: +
+              - text:             
+        - text: 
+        - list [ref=e18]:
+          - listitem [ref=e19]:
+            - link "Share documents, ideas.." [ref=e20] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e21]
+          - listitem [ref=e23]:
+            - link "Todo items" [ref=e24] [cursor=pointer]:
+              - /url: https://crm.anhtester.com/admin/todo
+              - img [ref=e25]
+          - listitem "Admin Example" [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e29]
+          - listitem [ref=e30]:
+            - link [ref=e31] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e33]
+            - text: 
+          - listitem "Notifications" [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e38]
+            - text:        
+  - text: 
+  - complementary [ref=e40]:
+    - list [ref=e41]:
+      - listitem [ref=e42]:
+        - link "Perfex CRM | Anh Tester Demo" [ref=e44] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/
+          - img "Perfex CRM | Anh Tester Demo" [ref=e45]
+      - listitem [ref=e46]:
+        - link " Dashboard" [ref=e47] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/
+          - generic [ref=e48]: 
+          - text: Dashboard
+      - listitem [ref=e49]:
+        - link " Customers" [ref=e50] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/clients
+          - generic [ref=e51]: 
+          - text: Customers
+      - listitem [ref=e52]:
+        - link " Projects" [ref=e53] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/projects
+          - generic [ref=e54]: 
+          - text: Projects
+      - listitem [ref=e55]:
+        - link " Tasks" [ref=e56] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tasks
+          - generic [ref=e57]: 
+          - text: Tasks
+      - listitem [ref=e58]:
+        - link " Contracts" [ref=e59] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/contracts
+          - generic [ref=e60]: 
+          - text: Contracts
+      - listitem [ref=e61]:
+        - link " Sales " [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e63]: 
+          - text: Sales
+          - generic [ref=e64]: 
+      - listitem [ref=e65]:
+        - link " Subscriptions" [ref=e66] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/subscriptions
+          - generic [ref=e67]: 
+          - text: Subscriptions
+      - listitem [ref=e68]:
+        - link " Expenses" [ref=e69] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/expenses
+          - generic [ref=e70]: 
+          - text: Expenses
+      - listitem [ref=e71]:
+        - link " Support" [ref=e72] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tickets
+          - generic [ref=e73]: 
+          - text: Support
+      - listitem [ref=e74]:
+        - link " Leads" [ref=e75] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/leads
+          - generic [ref=e76]: 
+          - text: Leads
+      - listitem [ref=e77]:
+        - link " Estimate Request" [ref=e78] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/estimate_request
+          - generic [ref=e79]: 
+          - text: Estimate Request
+      - listitem [ref=e80]:
+        - link " Knowledge Base" [ref=e81] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/knowledge_base
+          - generic [ref=e82]: 
+          - text: Knowledge Base
+      - listitem [ref=e83]:
+        - link " Utilities " [ref=e84] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e85]: 
+          - text: Utilities
+          - generic [ref=e86]: 
+      - listitem [ref=e87]:
+        - link " Reports " [ref=e88] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e89]: 
+          - text: Reports
+          - generic [ref=e90]: 
+  - generic [ref=e97]:
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - text:  
+        - tablist [ref=e105]:
+          - tab "Customer Details" [ref=e106]
+          - tab "Billing & Shipping" [ref=e107] [cursor=pointer]
+      - generic [ref=e108]:
+        - tabpanel [ref=e109]:
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - generic [ref=e113]: "* Company"
+              - textbox "* Company" [ref=e114]: Nashtech Company
+            - generic [ref=e115]:
+              - generic [ref=e116]: VAT Number
+              - textbox "VAT Number" [ref=e117]: "123456789"
+            - generic [ref=e118]:
+              - generic [ref=e119]: Phone
+              - textbox "Phone" [ref=e120]: "0123456789"
+            - generic [ref=e121]:
+              - generic [ref=e122]: Website
+              - textbox "Website" [ref=e123]: https://nashtech.com.vn
+            - generic [ref=e124]:
+              - generic [ref=e125]: Groups
+              - generic [ref=e126]:
+                - generic [ref=e127]:
+                  - listbox "Groups" [ref=e128]:
+                    - option "a" [ref=e129]
+                    - option "A1" [ref=e130]
+                    - option "aaa" [ref=e131]
+                    - option "aaa" [ref=e132]
+                    - option "aaaa" [ref=e133]
+                    - option "aaaa" [ref=e134]
+                    - option "aaaa" [ref=e135]
+                    - option "abb" [ref=e136]
+                    - option "abb" [ref=e137]
+                    - option "abbb" [ref=e138]
+                    - option "abbbb" [ref=e139]
+                    - option "afk" [ref=e140]
+                    - option "afk" [ref=e141]
+                    - option "afk" [ref=e142]
+                    - option "afk" [ref=e143]
+                    - option "afk" [ref=e144]
+                    - option "afk" [ref=e145]
+                    - option "afk" [ref=e146]
+                    - option "afk" [ref=e147]
+                    - option "afk" [ref=e148]
+                    - option "afk" [ref=e149]
+                    - option "afk" [ref=e150]
+                    - option "afk" [ref=e151]
+                    - option "asdasd" [ref=e152]
+                    - option "at" [ref=e153]
+                    - option "cậu ấm" [ref=e154]
+                    - option "công chúa ngủ trên giường" [ref=e155]
+                    - option "ctp group" [ref=e156]
+                    - option "ctp group" [ref=e157]
+                    - option "ctp group" [ref=e158]
+                    - option "ctp group" [ref=e159]
+                    - option "ctp group" [ref=e160]
+                    - option "ctp group" [ref=e161]
+                    - option "ctp group" [ref=e162]
+                    - option "ctp group" [ref=e163]
+                    - option "ctp group" [ref=e164]
+                    - option "ctp group" [ref=e165]
+                    - option "ctp group" [ref=e166]
+                    - option "ctp group" [ref=e167]
+                    - option "customer group A" [ref=e168]
+                    - option "customer group b" [ref=e169]
+                    - option "Gold" [ref=e170]
+                    - option "Group A" [ref=e171]
+                    - option "Group A" [ref=e172]
+                    - option "Group A" [ref=e173]
+                    - option "Group A" [ref=e174]
+                    - option "Group A" [ref=e175]
+                    - option "Group A" [ref=e176]
+                    - option "Group A" [ref=e177]
+                    - option "Group Maison" [ref=e178]
+                    - option "GroupVIP" [ref=e179]
+                    - option "hah1" [ref=e180]
+                    - option "hah1" [ref=e181]
+                    - option "hah1" [ref=e182]
+                    - option "hah1" [ref=e183]
+                    - option "hah1" [ref=e184]
+                    - option "hah1" [ref=e185]
+                    - option "hah1" [ref=e186]
+                    - option "hah2" [ref=e187]
+                    - option "hah2" [ref=e188]
+                    - option "hatran" [ref=e189]
+                    - option "hoàng tử xứ Thủ Đức" [ref=e190]
+                    - option "Huong Auto Test" [ref=e191]
+                    - option "Huong Auto Test" [ref=e192]
+                    - option "Huong Auto Test" [ref=e193]
+                    - option "Huyền huyền" [ref=e194]
+                    - option "Information Technology" [ref=e195]
+                    - option "Information Technology" [ref=e196]
+                    - option "Information Technology" [ref=e197]
+                    - option "Information Technology" [ref=e198]
+                    - option "Information Technology" [ref=e199]
+                    - option "Information Technology" [ref=e200]
+                    - option "Information Technology" [ref=e201]
+                    - option "Information Technology" [ref=e202]
+                    - option "Information Technology" [ref=e203]
+                    - option "Information Technology" [ref=e204]
+                    - option "Information Technology" [ref=e205]
+                    - option "Information Technology" [ref=e206]
+                    - option "Information Technology" [ref=e207]
+                    - option "Information Technology" [ref=e208]
+                    - option "Information Technology" [ref=e209]
+                    - option "Information Technology" [ref=e210]
+                    - option "Information Technology" [ref=e211]
+                    - option "Information Technology" [ref=e212]
+                    - option "Information Technology" [ref=e213]
+                    - option "Information Technology" [ref=e214]
+                    - option "Information Technology" [ref=e215]
+                    - option "Information Technology" [ref=e216]
+                    - option "Information Technology" [ref=e217]
+                    - option "Information Technology" [ref=e218]
+                    - option "Information Technology" [ref=e219]
+                    - option "Information Technology" [ref=e220]
+                    - option "Information Technology" [ref=e221]
+                    - option "Information Technology" [ref=e222]
+                    - option "Information Technology" [ref=e223]
+                    - option "Information Technology" [ref=e224]
+                    - option "Information Technology" [ref=e225]
+                    - option "Information Technology" [ref=e226]
+                    - option "Information Technology" [ref=e227]
+                    - option "Information Technology" [ref=e228]
+                    - option "Information Technology" [ref=e229]
+                    - option "Information Technology" [ref=e230]
+                    - option "Information Technology" [ref=e231]
+                    - option "Information Technology" [ref=e232]
+                    - option "Information Technology" [ref=e233]
+                    - option "Information Technology" [ref=e234]
+                    - option "Information Technology" [ref=e235]
+                    - option "Information Technology" [ref=e236]
+                    - option "Information Technology" [ref=e237]
+                    - option "Information Technology" [ref=e238]
+                    - option "Information Technology" [ref=e239]
+                    - option "Information Technology" [ref=e240]
+                    - option "Information Technology" [ref=e241]
+                    - option "Information Technology" [ref=e242]
+                    - option "Information Technology" [ref=e243]
+                    - option "Information Technology" [ref=e244]
+                    - option "Information Technology" [ref=e245]
+                    - option "Information Technology" [ref=e246]
+                    - option "Information Technology" [ref=e247]
+                    - option "Information Technology" [ref=e248]
+                    - option "java" [ref=e249]
+                    - option "koko" [ref=e250]
+                    - option "Leon Scott Kenedy Group" [ref=e251]
+                    - option "Leon Scott Kenedy Group" [ref=e252]
+                    - option "Leon Scott Kenedy Group" [ref=e253]
+                    - option "minh1" [ref=e254]
+                    - option "minh1" [ref=e255]
+                    - option "My Group Testing" [ref=e256]
+                    - option "NAB" [ref=e257]
+                    - option "NAB" [ref=e258]
+                    - option "NAB" [ref=e259]
+                    - option "NAB" [ref=e260]
+                    - option "NAB" [ref=e261]
+                    - option "NAB" [ref=e262]
+                    - option "NAB" [ref=e263]
+                    - option "NAB" [ref=e264]
+                    - option "NAB" [ref=e265]
+                    - option "NAB" [ref=e266]
+                    - option "NAB" [ref=e267]
+                    - option "NAB" [ref=e268]
+                    - option "NAB" [ref=e269]
+                    - option "NAB" [ref=e270]
+                    - option "NAB" [ref=e271]
+                    - option "NAB" [ref=e272]
+                    - option "NAB" [ref=e273]
+                    - option "NAB" [ref=e274]
+                    - option "NAB" [ref=e275]
+                    - option "NAB" [ref=e276]
+                    - option "NAB" [ref=e277]
+                    - option "NAB" [ref=e278]
+                    - option "NAB" [ref=e279]
+                    - option "NAB" [ref=e280]
+                    - option "NAB" [ref=e281]
+                    - option "NAB" [ref=e282]
+                    - option "NAB" [ref=e283]
+                    - option "NAB" [ref=e284]
+                    - option "NAB" [ref=e285]
+                    - option "NAB" [ref=e286]
+                    - option "NAB" [ref=e287]
+                    - option "NAB" [ref=e288]
+                    - option "NAB" [ref=e289]
+                    - option "NAB" [ref=e290]
+                    - option "NAB" [ref=e291]
+                    - option "NAB123" [ref=e292]
+                    - option "nem" [ref=e293]
+                    - option "NTT test" [ref=e294]
+                    - option "Platinum" [ref=e295]
+                    - option "Platinum" [ref=e296]
+                    - option "Platinum" [ref=e297]
+                    - option "Platinum" [ref=e298]
+                    - option "Platinum" [ref=e299]
+                    - option "Platinum" [ref=e300]
+                    - option "Platinum" [ref=e301]
+                    - option "Platinum" [ref=e302]
+                    - option "Platinum" [ref=e303]
+                    - option "Platinum" [ref=e304]
+                    - option "Platinum" [ref=e305]
+                    - option "Platinum" [ref=e306]
+                    - option "Platinum" [ref=e307]
+                    - option "Platinum" [ref=e308]
+                    - option "Platinum" [ref=e309]
+                    - option "Platinum" [ref=e310]
+                    - option "Platinum" [ref=e311]
+                    - option "Platinum" [ref=e312]
+                    - option "Platinum" [ref=e313]
+                    - option "Platinum" [ref=e314]
+                    - option "Platinum" [ref=e315]
+                    - option "Platinum" [ref=e316]
+                    - option "Platinum" [ref=e317]
+                    - option "s" [ref=e318]
+                    - option "Silver" [ref=e319]
+                    - option "TEAM_TEST" [ref=e320]
+                    - option "TEAM_TEST" [ref=e321]
+                    - option "TEAM_TEST" [ref=e322]
+                    - option "TEAM_TEST" [ref=e323]
+                    - option "TEAM_TEST" [ref=e324]
+                    - option "TEAM_TEST" [ref=e325]
+                    - option "TEAM_TEST" [ref=e326]
+                    - option "TEAM_TEST" [ref=e327]
+                    - option "TEAM_TEST" [ref=e328]
+                    - option "TEAM_TEST" [ref=e329]
+                    - option "TEAM_TEST" [ref=e330]
+                    - option "TEAM_TEST" [ref=e331]
+                    - option "TEAM_TEST" [ref=e332]
+                    - option "TEAM_TEST" [ref=e333]
+                    - option "TEAM_TEST" [ref=e334]
+                    - option "TEAM_TEST" [ref=e335]
+                    - option "TEAM_TEST" [ref=e336]
+                    - option "TEAM_TEST" [ref=e337]
+                    - option "TEAM_TEST" [ref=e338]
+                    - option "TEAM_TEST" [ref=e339]
+                    - option "TEAM_TEST" [ref=e340]
+                    - option "TEAM_TEST" [ref=e341]
+                    - option "TEAM_TEST" [ref=e342]
+                    - option "TEAM_TEST" [ref=e343]
+                    - option "TEAM_TEST" [ref=e344]
+                    - option "TEAM_TEST" [ref=e345]
+                    - option "TEAM_TEST" [ref=e346]
+                    - option "tessss" [ref=e347]
+                    - option "Testing" [ref=e348]
+                    - option "TesutaGroup" [ref=e349]
+                    - option "thu" [ref=e350]
+                    - option "thuthuy" [ref=e351]
+                    - option "thuthuy123" [ref=e352]
+                    - option "thuthuy123" [ref=e353]
+                    - option "thuthuy123" [ref=e354]
+                    - option "thuthuy123" [ref=e355]
+                    - option "thuthuy123" [ref=e356]
+                    - option "thuthuy123" [ref=e357]
+                    - option "thuthuy123" [ref=e358]
+                    - option "thuthuy123" [ref=e359]
+                    - option "thuthuy123" [ref=e360]
+                    - option "thuthuy123" [ref=e361]
+                    - option "thuthuy123" [ref=e362]
+                    - option "thuthuy123" [ref=e363]
+                    - option "thuthuy123" [ref=e364]
+                    - option "thuthuy123" [ref=e365]
+                    - option "thuthuy123" [ref=e366]
+                    - option "thuthuy123" [ref=e367]
+                    - option "thuthuy123" [ref=e368]
+                    - option "thuthuy123" [ref=e369]
+                    - option "thuthuy123" [ref=e370]
+                    - option "thuthuy123" [ref=e371]
+                    - option "thuthuy123" [ref=e372]
+                    - option "thuthuy123" [ref=e373]
+                    - option "thuthuy123" [ref=e374]
+                    - option "tien1706" [ref=e375]
+                    - option "VIP" [ref=e376]
+                    - option "vn" [ref=e377]
+                    - option "vn" [ref=e378]
+                    - option "vn" [ref=e379]
+                    - option "vn" [ref=e380]
+                  - combobox "Nothing selected" [expanded] [ref=e381] [cursor=pointer]:
+                    - generic [ref=e384]: Nothing selected
+                    - listbox [ref=e386]:
+                      - option "a" [ref=e387]:
+                        - text: 
+                        - generic [ref=e388]: a
+                      - option "A1" [ref=e389]:
+                        - text: 
+                        - generic [ref=e390]: A1
+                      - option "aaa" [ref=e391]:
+                        - text: 
+                        - generic [ref=e392]: aaa
+                      - option "aaa" [ref=e393]:
+                        - text: 
+                        - generic [ref=e394]: aaa
+                      - option "aaaa" [ref=e395]:
+                        - text: 
+                        - generic [ref=e396]: aaaa
+                      - option "aaaa" [ref=e397]:
+                        - text: 
+                        - generic [ref=e398]: aaaa
+                      - option "aaaa" [ref=e399]:
+                        - text: 
+                        - generic [ref=e400]: aaaa
+                      - option "abb" [ref=e401]:
+                        - text: 
+                        - generic [ref=e402]: abb
+                      - option "abb" [ref=e403]:
+                        - text: 
+                        - generic [ref=e404]: abb
+                      - option "abbb" [ref=e405]:
+                        - text: 
+                        - generic [ref=e406]: abbb
+                      - option "abbbb" [ref=e407]:
+                        - text: 
+                        - generic [ref=e408]: abbbb
+                      - option "afk" [ref=e409]:
+                        - text: 
+                        - generic [ref=e410]: afk
+                      - option "afk" [ref=e411]:
+                        - text: 
+                        - generic [ref=e412]: afk
+                      - option "afk" [ref=e413]:
+                        - text: 
+                        - generic [ref=e414]: afk
+                      - option "afk" [ref=e415]:
+                        - text: 
+                        - generic [ref=e416]: afk
+                      - option "afk" [ref=e417]:
+                        - text: 
+                        - generic [ref=e418]: afk
+                      - option "afk" [ref=e419]:
+                        - text: 
+                        - generic [ref=e420]: afk
+                      - option "afk" [ref=e421]:
+                        - text: 
+                        - generic [ref=e422]: afk
+                      - option "afk" [ref=e423]:
+                        - text: 
+                        - generic [ref=e424]: afk
+                      - option "afk" [ref=e425]:
+                        - text: 
+                        - generic [ref=e426]: afk
+                      - option "afk" [ref=e427]:
+                        - text: 
+                        - generic [ref=e428]: afk
+                      - option "afk" [ref=e429]:
+                        - text: 
+                        - generic [ref=e430]: afk
+                      - option "afk" [ref=e431]:
+                        - text: 
+                        - generic [ref=e432]: afk
+                      - option "asdasd" [ref=e433]:
+                        - text: 
+                        - generic [ref=e434]: asdasd
+                      - option "at" [ref=e435]:
+                        - text: 
+                        - generic [ref=e436]: at
+                      - option "cậu ấm" [ref=e437]:
+                        - text: 
+                        - generic [ref=e438]: cậu ấm
+                      - option "công chúa ngủ trên giường" [ref=e439]:
+                        - text: 
+                        - generic [ref=e440]: công chúa ngủ trên giường
+                      - option "ctp group" [ref=e441]:
+                        - text: 
+                        - generic [ref=e442]: ctp group
+                      - option "ctp group" [ref=e443]:
+                        - text: 
+                        - generic [ref=e444]: ctp group
+                      - option "ctp group" [ref=e445]:
+                        - text: 
+                        - generic [ref=e446]: ctp group
+                      - option "ctp group" [ref=e447]:
+                        - text: 
+                        - generic [ref=e448]: ctp group
+                      - option "ctp group" [ref=e449]:
+                        - text: 
+                        - generic [ref=e450]: ctp group
+                      - option "ctp group" [ref=e451]:
+                        - text: 
+                        - generic [ref=e452]: ctp group
+                      - option "ctp group" [ref=e453]:
+                        - text: 
+                        - generic [ref=e454]: ctp group
+                      - option "ctp group" [ref=e455]:
+                        - text: 
+                        - generic [ref=e456]: ctp group
+                      - option "ctp group" [ref=e457]:
+                        - text: 
+                        - generic [ref=e458]: ctp group
+                      - option "ctp group" [ref=e459]:
+                        - text: 
+                        - generic [ref=e460]: ctp group
+                      - option "ctp group" [ref=e461]:
+                        - text: 
+                        - generic [ref=e462]: ctp group
+                      - option "ctp group" [ref=e463]:
+                        - text: 
+                        - generic [ref=e464]: ctp group
+                      - option "customer group A" [ref=e465]:
+                        - text: 
+                        - generic [ref=e466]: customer group A
+                      - option "customer group b" [ref=e467]:
+                        - text: 
+                        - generic [ref=e468]: customer group b
+                      - option "Gold" [ref=e469]:
+                        - text: 
+                        - generic [ref=e470]: Gold
+                      - option "Group A" [ref=e471]:
+                        - text: 
+                        - generic [ref=e472]: Group A
+                      - option "Group A" [ref=e473]:
+                        - text: 
+                        - generic [ref=e474]: Group A
+                      - option "Group A" [ref=e475]:
+                        - text: 
+                        - generic [ref=e476]: Group A
+                      - option "Group A" [ref=e477]:
+                        - text: 
+                        - generic [ref=e478]: Group A
+                      - option "Group A" [ref=e479]:
+                        - text: 
+                        - generic [ref=e480]: Group A
+                      - option "Group A" [ref=e481]:
+                        - text: 
+                        - generic [ref=e482]: Group A
+                      - option "Group A" [ref=e483]:
+                        - text: 
+                        - generic [ref=e484]: Group A
+                      - option "Group Maison" [ref=e485]:
+                        - text: 
+                        - generic [ref=e486]: Group Maison
+                      - option "GroupVIP" [ref=e487]:
+                        - text: 
+                        - generic [ref=e488]: GroupVIP
+                      - option "hah1" [ref=e489]:
+                        - text: 
+                        - generic [ref=e490]: hah1
+                      - option "hah1" [ref=e491]:
+                        - text: 
+                        - generic [ref=e492]: hah1
+                      - option "hah1" [ref=e493]:
+                        - text: 
+                        - generic [ref=e494]: hah1
+                      - option "hah1" [ref=e495]:
+                        - text: 
+                        - generic [ref=e496]: hah1
+                      - option "hah1" [ref=e497]:
+                        - text: 
+                        - generic [ref=e498]: hah1
+                      - option "hah1" [ref=e499]:
+                        - text: 
+                        - generic [ref=e500]: hah1
+                      - option "hah1" [ref=e501]:
+                        - text: 
+                        - generic [ref=e502]: hah1
+                      - option "hah2" [ref=e503]:
+                        - text: 
+                        - generic [ref=e504]: hah2
+                      - option "hah2" [ref=e505]:
+                        - text: 
+                        - generic [ref=e506]: hah2
+                      - option "hatran" [ref=e507]:
+                        - text: 
+                        - generic [ref=e508]: hatran
+                      - option "hoàng tử xứ Thủ Đức" [ref=e509]:
+                        - text: 
+                        - generic [ref=e510]: hoàng tử xứ Thủ Đức
+                      - option "Huong Auto Test" [ref=e511]:
+                        - text: 
+                        - generic [ref=e512]: Huong Auto Test
+                      - option "Huong Auto Test" [ref=e513]:
+                        - text: 
+                        - generic [ref=e514]: Huong Auto Test
+                      - option "Huong Auto Test" [ref=e515]:
+                        - text: 
+                        - generic [ref=e516]: Huong Auto Test
+                      - option "Huyền huyền" [ref=e517]:
+                        - text: 
+                        - generic [ref=e518]: Huyền huyền
+                      - option "Information Technology" [ref=e519]:
+                        - text: 
+                        - generic [ref=e520]: Information Technology
+                      - option "Information Technology" [ref=e521]:
+                        - text: 
+                        - generic [ref=e522]: Information Technology
+                      - option "Information Technology" [ref=e523]:
+                        - text: 
+                        - generic [ref=e524]: Information Technology
+                      - option "Information Technology" [ref=e525]:
+                        - text: 
+                        - generic [ref=e526]: Information Technology
+                      - option "Information Technology" [ref=e527]:
+                        - text: 
+                        - generic [ref=e528]: Information Technology
+                      - option "Information Technology" [ref=e529]:
+                        - text: 
+                        - generic [ref=e530]: Information Technology
+                      - option "Information Technology" [ref=e531]:
+                        - text: 
+                        - generic [ref=e532]: Information Technology
+                      - option "Information Technology" [ref=e533]:
+                        - text: 
+                        - generic [ref=e534]: Information Technology
+                      - option "Information Technology" [ref=e535]:
+                        - text: 
+                        - generic [ref=e536]: Information Technology
+                      - option "Information Technology" [ref=e537]:
+                        - text: 
+                        - generic [ref=e538]: Information Technology
+                      - option "Information Technology" [ref=e539]:
+                        - text: 
+                        - generic [ref=e540]: Information Technology
+                      - option "Information Technology" [ref=e541]:
+                        - text: 
+                        - generic [ref=e542]: Information Technology
+                      - option "Information Technology" [ref=e543]:
+                        - text: 
+                        - generic [ref=e544]: Information Technology
+                      - option "Information Technology" [ref=e545]:
+                        - text: 
+                        - generic [ref=e546]: Information Technology
+                      - option "Information Technology" [ref=e547]:
+                        - text: 
+                        - generic [ref=e548]: Information Technology
+                      - option "Information Technology" [ref=e549]:
+                        - text: 
+                        - generic [ref=e550]: Information Technology
+                      - option "Information Technology" [ref=e551]:
+                        - text: 
+                        - generic [ref=e552]: Information Technology
+                      - option "Information Technology" [ref=e553]:
+                        - text: 
+                        - generic [ref=e554]: Information Technology
+                      - option "Information Technology" [ref=e555]:
+                        - text: 
+                        - generic [ref=e556]: Information Technology
+                      - option "Information Technology" [ref=e557]:
+                        - text: 
+                        - generic [ref=e558]: Information Technology
+                      - option "Information Technology" [ref=e559]:
+                        - text: 
+                        - generic [ref=e560]: Information Technology
+                      - option "Information Technology" [ref=e561]:
+                        - text: 
+                        - generic [ref=e562]: Information Technology
+                      - option "Information Technology" [ref=e563]:
+                        - text: 
+                        - generic [ref=e564]: Information Technology
+                      - option "Information Technology" [ref=e565]:
+                        - text: 
+                        - generic [ref=e566]: Information Technology
+                      - option "Information Technology" [ref=e567]:
+                        - text: 
+                        - generic [ref=e568]: Information Technology
+                      - option "Information Technology" [ref=e569]:
+                        - text: 
+                        - generic [ref=e570]: Information Technology
+                      - option "Information Technology" [ref=e571]:
+                        - text: 
+                        - generic [ref=e572]: Information Technology
+                      - option "Information Technology" [ref=e573]:
+                        - text: 
+                        - generic [ref=e574]: Information Technology
+                      - option "Information Technology" [ref=e575]:
+                        - text: 
+                        - generic [ref=e576]: Information Technology
+                      - option "Information Technology" [ref=e577]:
+                        - text: 
+                        - generic [ref=e578]: Information Technology
+                      - option "Information Technology" [ref=e579]:
+                        - text: 
+                        - generic [ref=e580]: Information Technology
+                      - option "Information Technology" [ref=e581]:
+                        - text: 
+                        - generic [ref=e582]: Information Technology
+                      - option "Information Technology" [ref=e583]:
+                        - text: 
+                        - generic [ref=e584]: Information Technology
+                      - option "Information Technology" [ref=e585]:
+                        - text: 
+                        - generic [ref=e586]: Information Technology
+                      - option "Information Technology" [ref=e587]:
+                        - text: 
+                        - generic [ref=e588]: Information Technology
+                      - option "Information Technology" [ref=e589]:
+                        - text: 
+                        - generic [ref=e590]: Information Technology
+                      - option "Information Technology" [ref=e591]:
+                        - text: 
+                        - generic [ref=e592]: Information Technology
+                      - option "Information Technology" [ref=e593]:
+                        - text: 
+                        - generic [ref=e594]: Information Technology
+                      - option "Information Technology" [ref=e595]:
+                        - text: 
+                        - generic [ref=e596]: Information Technology
+                      - option "Information Technology" [ref=e597]:
+                        - text: 
+                        - generic [ref=e598]: Information Technology
+                      - option "Information Technology" [ref=e599]:
+                        - text: 
+                        - generic [ref=e600]: Information Technology
+                      - option "Information Technology" [ref=e601]:
+                        - text: 
+                        - generic [ref=e602]: Information Technology
+                      - option "Information Technology" [ref=e603]:
+                        - text: 
+                        - generic [ref=e604]: Information Technology
+                      - option "Information Technology" [ref=e605]:
+                        - text: 
+                        - generic [ref=e606]: Information Technology
+                      - option "Information Technology" [ref=e607]:
+                        - text: 
+                        - generic [ref=e608]: Information Technology
+                      - option "Information Technology" [ref=e609]:
+                        - text: 
+                        - generic [ref=e610]: Information Technology
+                      - option "Information Technology" [ref=e611]:
+                        - text: 
+                        - generic [ref=e612]: Information Technology
+                      - option "Information Technology" [ref=e613]:
+                        - text: 
+                        - generic [ref=e614]: Information Technology
+                      - option "Information Technology" [ref=e615]:
+                        - text: 
+                        - generic [ref=e616]: Information Technology
+                      - option "Information Technology" [ref=e617]:
+                        - text: 
+                        - generic [ref=e618]: Information Technology
+                      - option "Information Technology" [ref=e619]:
+                        - text: 
+                        - generic [ref=e620]: Information Technology
+                      - option "Information Technology" [ref=e621]:
+                        - text: 
+                        - generic [ref=e622]: Information Technology
+                      - option "Information Technology" [ref=e623]:
+                        - text: 
+                        - generic [ref=e624]: Information Technology
+                      - option "Information Technology" [ref=e625]:
+                        - text: 
+                        - generic [ref=e626]: Information Technology
+                      - option "java" [ref=e627]:
+                        - text: 
+                        - generic [ref=e628]: java
+                      - option "koko" [ref=e629]:
+                        - text: 
+                        - generic [ref=e630]: koko
+                      - option "Leon Scott Kenedy Group" [ref=e631]:
+                        - text: 
+                        - generic [ref=e632]: Leon Scott Kenedy Group
+                      - option "Leon Scott Kenedy Group" [ref=e633]:
+                        - text: 
+                        - generic [ref=e634]: Leon Scott Kenedy Group
+                      - option "Leon Scott Kenedy Group" [ref=e635]:
+                        - text: 
+                        - generic [ref=e636]: Leon Scott Kenedy Group
+                      - option "minh1" [ref=e637]:
+                        - text: 
+                        - generic [ref=e638]: minh1
+                      - option "minh1" [ref=e639]:
+                        - text: 
+                        - generic [ref=e640]: minh1
+                      - option "My Group Testing" [ref=e641]:
+                        - text: 
+                        - generic [ref=e642]: My Group Testing
+                      - option "NAB" [ref=e643]:
+                        - text: 
+                        - generic [ref=e644]: NAB
+                      - option "NAB" [ref=e645]:
+                        - text: 
+                        - generic [ref=e646]: NAB
+                      - option "NAB" [ref=e647]:
+                        - text: 
+                        - generic [ref=e648]: NAB
+                      - option "NAB" [ref=e649]:
+                        - text: 
+                        - generic [ref=e650]: NAB
+                      - option "NAB" [ref=e651]:
+                        - text: 
+                        - generic [ref=e652]: NAB
+                      - option "NAB" [ref=e653]:
+                        - text: 
+                        - generic [ref=e654]: NAB
+                      - option "NAB" [ref=e655]:
+                        - text: 
+                        - generic [ref=e656]: NAB
+                      - option "NAB" [ref=e657]:
+                        - text: 
+                        - generic [ref=e658]: NAB
+                      - option "NAB" [ref=e659]:
+                        - text: 
+                        - generic [ref=e660]: NAB
+                      - option "NAB" [ref=e661]:
+                        - text: 
+                        - generic [ref=e662]: NAB
+                      - option "NAB" [ref=e663]:
+                        - text: 
+                        - generic [ref=e664]: NAB
+                      - option "NAB" [ref=e665]:
+                        - text: 
+                        - generic [ref=e666]: NAB
+                      - option "NAB" [ref=e667]:
+                        - text: 
+                        - generic [ref=e668]: NAB
+                      - option "NAB" [ref=e669]:
+                        - text: 
+                        - generic [ref=e670]: NAB
+                      - option "NAB" [ref=e671]:
+                        - text: 
+                        - generic [ref=e672]: NAB
+                      - option "NAB" [ref=e673]:
+                        - text: 
+                        - generic [ref=e674]: NAB
+                      - option "NAB" [ref=e675]:
+                        - text: 
+                        - generic [ref=e676]: NAB
+                      - option "NAB" [ref=e677]:
+                        - text: 
+                        - generic [ref=e678]: NAB
+                      - option "NAB" [ref=e679]:
+                        - text: 
+                        - generic [ref=e680]: NAB
+                      - option "NAB" [ref=e681]:
+                        - text: 
+                        - generic [ref=e682]: NAB
+                      - option "NAB" [ref=e683]:
+                        - text: 
+                        - generic [ref=e684]: NAB
+                      - option "NAB" [ref=e685]:
+                        - text: 
+                        - generic [ref=e686]: NAB
+                      - option "NAB" [ref=e687]:
+                        - text: 
+                        - generic [ref=e688]: NAB
+                      - option "NAB" [ref=e689]:
+                        - text: 
+                        - generic [ref=e690]: NAB
+                      - option "NAB" [ref=e691]:
+                        - text: 
+                        - generic [ref=e692]: NAB
+                      - option "NAB" [ref=e693]:
+                        - text: 
+                        - generic [ref=e694]: NAB
+                      - option "NAB" [ref=e695]:
+                        - text: 
+                        - generic [ref=e696]: NAB
+                      - option "NAB" [ref=e697]:
+                        - text: 
+                        - generic [ref=e698]: NAB
+                      - option "NAB" [ref=e699]:
+                        - text: 
+                        - generic [ref=e700]: NAB
+                      - option "NAB" [ref=e701]:
+                        - text: 
+                        - generic [ref=e702]: NAB
+                      - option "NAB" [ref=e703]:
+                        - text: 
+                        - generic [ref=e704]: NAB
+                      - option "NAB" [ref=e705]:
+                        - text: 
+                        - generic [ref=e706]: NAB
+                      - option "NAB" [ref=e707]:
+                        - text: 
+                        - generic [ref=e708]: NAB
+                      - option "NAB" [ref=e709]:
+                        - text: 
+                        - generic [ref=e710]: NAB
+                      - option "NAB" [ref=e711]:
+                        - text: 
+                        - generic [ref=e712]: NAB
+                      - option "NAB123" [ref=e713]:
+                        - text: 
+                        - generic [ref=e714]: NAB123
+                      - option "nem" [ref=e715]:
+                        - text: 
+                        - generic [ref=e716]: nem
+                      - option "NTT test" [ref=e717]:
+                        - text: 
+                        - generic [ref=e718]: NTT test
+                      - option "Platinum" [ref=e719]:
+                        - text: 
+                        - generic [ref=e720]: Platinum
+                      - option "Platinum" [ref=e721]:
+                        - text: 
+                        - generic [ref=e722]: Platinum
+                      - option "Platinum" [ref=e723]:
+                        - text: 
+                        - generic [ref=e724]: Platinum
+                      - option "Platinum" [ref=e725]:
+                        - text: 
+                        - generic [ref=e726]: Platinum
+                      - option "Platinum" [ref=e727]:
+                        - text: 
+                        - generic [ref=e728]: Platinum
+                      - option "Platinum" [ref=e729]:
+                        - text: 
+                        - generic [ref=e730]: Platinum
+                      - option "Platinum" [ref=e731]:
+                        - text: 
+                        - generic [ref=e732]: Platinum
+                      - option "Platinum" [ref=e733]:
+                        - text: 
+                        - generic [ref=e734]: Platinum
+                      - option "Platinum" [ref=e735]:
+                        - text: 
+                        - generic [ref=e736]: Platinum
+                      - option "Platinum" [ref=e737]:
+                        - text: 
+                        - generic [ref=e738]: Platinum
+                      - option "Platinum" [ref=e739]:
+                        - text: 
+                        - generic [ref=e740]: Platinum
+                      - option "Platinum" [ref=e741]:
+                        - text: 
+                        - generic [ref=e742]: Platinum
+                      - option "Platinum" [ref=e743]:
+                        - text: 
+                        - generic [ref=e744]: Platinum
+                      - option "Platinum" [ref=e745]:
+                        - text: 
+                        - generic [ref=e746]: Platinum
+                      - option "Platinum" [ref=e747]:
+                        - text: 
+                        - generic [ref=e748]: Platinum
+                      - option "Platinum" [ref=e749]:
+                        - text: 
+                        - generic [ref=e750]: Platinum
+                      - option "Platinum" [ref=e751]:
+                        - text: 
+                        - generic [ref=e752]: Platinum
+                      - option "Platinum" [ref=e753]:
+                        - text: 
+                        - generic [ref=e754]: Platinum
+                      - option "Platinum" [ref=e755]:
+                        - text: 
+                        - generic [ref=e756]: Platinum
+                      - option "Platinum" [ref=e757]:
+                        - text: 
+                        - generic [ref=e758]: Platinum
+                      - option "Platinum" [ref=e759]:
+                        - text: 
+                        - generic [ref=e760]: Platinum
+                      - option "Platinum" [ref=e761]:
+                        - text: 
+                        - generic [ref=e762]: Platinum
+                      - option "Platinum" [ref=e763]:
+                        - text: 
+                        - generic [ref=e764]: Platinum
+                      - option "s" [ref=e765]:
+                        - text: 
+                        - generic [ref=e766]: s
+                      - option "Silver" [ref=e767]:
+                        - text: 
+                        - generic [ref=e768]: Silver
+                      - option "TEAM_TEST" [ref=e769]:
+                        - text: 
+                        - generic [ref=e770]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e771]:
+                        - text: 
+                        - generic [ref=e772]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e773]:
+                        - text: 
+                        - generic [ref=e774]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e775]:
+                        - text: 
+                        - generic [ref=e776]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e777]:
+                        - text: 
+                        - generic [ref=e778]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e779]:
+                        - text: 
+                        - generic [ref=e780]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e781]:
+                        - text: 
+                        - generic [ref=e782]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e783]:
+                        - text: 
+                        - generic [ref=e784]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e785]:
+                        - text: 
+                        - generic [ref=e786]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e787]:
+                        - text: 
+                        - generic [ref=e788]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e789]:
+                        - text: 
+                        - generic [ref=e790]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e791]:
+                        - text: 
+                        - generic [ref=e792]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e793]:
+                        - text: 
+                        - generic [ref=e794]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e795]:
+                        - text: 
+                        - generic [ref=e796]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e797]:
+                        - text: 
+                        - generic [ref=e798]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e799]:
+                        - text: 
+                        - generic [ref=e800]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e801]:
+                        - text: 
+                        - generic [ref=e802]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e803]:
+                        - text: 
+                        - generic [ref=e804]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e805]:
+                        - text: 
+                        - generic [ref=e806]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e807]:
+                        - text: 
+                        - generic [ref=e808]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e809]:
+                        - text: 
+                        - generic [ref=e810]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e811]:
+                        - text: 
+                        - generic [ref=e812]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e813]:
+                        - text: 
+                        - generic [ref=e814]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e815]:
+                        - text: 
+                        - generic [ref=e816]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e817]:
+                        - text: 
+                        - generic [ref=e818]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e819]:
+                        - text: 
+                        - generic [ref=e820]: TEAM_TEST
+                      - option "TEAM_TEST" [ref=e821]:
+                        - text: 
+                        - generic [ref=e822]: TEAM_TEST
+                      - option "tessss" [ref=e823]:
+                        - text: 
+                        - generic [ref=e824]: tessss
+                      - option "Testing" [ref=e825]:
+                        - text: 
+                        - generic [ref=e826]: Testing
+                      - option "TesutaGroup" [ref=e827]:
+                        - text: 
+                        - generic [ref=e828]: TesutaGroup
+                      - option "thu" [ref=e829]:
+                        - text: 
+                        - generic [ref=e830]: thu
+                      - option "thuthuy" [ref=e831]:
+                        - text: 
+                        - generic [ref=e832]: thuthuy
+                      - option "thuthuy123" [ref=e833]:
+                        - text: 
+                        - generic [ref=e834]: thuthuy123
+                      - option "thuthuy123" [ref=e835]:
+                        - text: 
+                        - generic [ref=e836]: thuthuy123
+                      - option "thuthuy123" [ref=e837]:
+                        - text: 
+                        - generic [ref=e838]: thuthuy123
+                      - option "thuthuy123" [ref=e839]:
+                        - text: 
+                        - generic [ref=e840]: thuthuy123
+                      - option "thuthuy123" [ref=e841]:
+                        - text: 
+                        - generic [ref=e842]: thuthuy123
+                      - option "thuthuy123" [ref=e843]:
+                        - text: 
+                        - generic [ref=e844]: thuthuy123
+                      - option "thuthuy123" [ref=e845]:
+                        - text: 
+                        - generic [ref=e846]: thuthuy123
+                      - option "thuthuy123" [ref=e847]:
+                        - text: 
+                        - generic [ref=e848]: thuthuy123
+                      - option "thuthuy123" [ref=e849]:
+                        - text: 
+                        - generic [ref=e850]: thuthuy123
+                      - option "thuthuy123" [ref=e851]:
+                        - text: 
+                        - generic [ref=e852]: thuthuy123
+                      - option "thuthuy123" [ref=e853]:
+                        - text: 
+                        - generic [ref=e854]: thuthuy123
+                      - option "thuthuy123" [ref=e855]:
+                        - text: 
+                        - generic [ref=e856]: thuthuy123
+                      - option "thuthuy123" [ref=e857]:
+                        - text: 
+                        - generic [ref=e858]: thuthuy123
+                      - option "thuthuy123" [ref=e859]:
+                        - text: 
+                        - generic [ref=e860]: thuthuy123
+                      - option "thuthuy123" [ref=e861]:
+                        - text: 
+                        - generic [ref=e862]: thuthuy123
+                      - option "thuthuy123" [ref=e863]:
+                        - text: 
+                        - generic [ref=e864]: thuthuy123
+                      - option "thuthuy123" [ref=e865]:
+                        - text: 
+                        - generic [ref=e866]: thuthuy123
+                      - option "thuthuy123" [ref=e867]:
+                        - text: 
+                        - generic [ref=e868]: thuthuy123
+                      - option "thuthuy123" [ref=e869]:
+                        - text: 
+                        - generic [ref=e870]: thuthuy123
+                      - option "thuthuy123" [ref=e871]:
+                        - text: 
+                        - generic [ref=e872]: thuthuy123
+                      - option "thuthuy123" [ref=e873]:
+                        - text: 
+                        - generic [ref=e874]: thuthuy123
+                      - option "thuthuy123" [ref=e875]:
+                        - text: 
+                        - generic [ref=e876]: thuthuy123
+                      - option "thuthuy123" [ref=e877]:
+                        - text: 
+                        - generic [ref=e878]: thuthuy123
+                      - option "tien1706" [ref=e879]:
+                        - text: 
+                        - generic [ref=e880]: tien1706
+                      - option "VIP" [ref=e881]:
+                        - text: 
+                        - generic [ref=e882]: VIP
+                      - option "vn" [ref=e883]:
+                        - text: 
+                        - generic [ref=e884]: vn
+                      - option "vn" [ref=e885]:
+                        - text: 
+                        - generic [ref=e886]: vn
+                      - option "vn" [ref=e887]:
+                        - text: 
+                        - generic [ref=e888]: vn
+                      - option "vn" [ref=e889]:
+                        - text: 
+                        - generic [ref=e890]: vn
+                  - generic [ref=e891]:
+                    - combobox "Search" [active] [ref=e893]
+                    - generic [ref=e895]:
+                      - button "Select All" [ref=e896] [cursor=pointer]
+                      - button "Deselect All" [ref=e897] [cursor=pointer]
+                - link "+" [ref=e899] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e900]: +
+            - generic [ref=e901]:
+              - generic [ref=e902]:
+                - generic [ref=e903]: 
+                - generic [ref=e904]:
+                  - generic [ref=e905]: Currency
+                  - generic [ref=e906]:
+                    - combobox "Currency" [ref=e907]:
+                      - option [selected]
+                      - option "USD"
+                      - option "EUR"
+                    - combobox "System Default" [ref=e908] [cursor=pointer]:
+                      - generic [ref=e911]: System Default
+              - generic [ref=e914]:
+                - generic [ref=e915]: Default Language
+                - generic [ref=e916]:
+                  - combobox "Default Language" [ref=e917]:
+                    - option "System Default" [selected]
+                    - option "Persian"
+                    - option "English"
+                    - option "Turkish"
+                    - option "German"
+                    - option "Russian"
+                    - option "Ukrainian"
+                    - option "Romanian"
+                    - option "Japanese"
+                    - option "Bulgarian"
+                    - option "Italian"
+                    - option "Portuguese"
+                    - option "Czech"
+                    - option "Dutch"
+                    - option "Swedish"
+                    - option "Catalan"
+                    - option "Slovak"
+                    - option "Vietnamese"
+                    - option "Chinese"
+                    - option "Portuguese_br"
+                    - option "Finnish"
+                    - option "Spanish"
+                    - option "Greek"
+                    - option "Norwegian"
+                    - option "Indonesia"
+                    - option "Polish"
+                    - option "French"
+                  - combobox "System Default" [ref=e918] [cursor=pointer]:
+                    - generic [ref=e921]: System Default
+            - separator [ref=e923]
+            - generic [ref=e924]:
+              - generic [ref=e925]: Address
+              - textbox "Address" [ref=e926]
+            - generic [ref=e927]:
+              - generic [ref=e928]: City
+              - textbox "City" [ref=e929]
+            - generic [ref=e930]:
+              - generic [ref=e931]: State
+              - textbox "State" [ref=e932]
+            - generic [ref=e933]:
+              - generic [ref=e934]: Zip Code
+              - textbox "Zip Code" [ref=e935]
+            - generic [ref=e936]:
+              - generic [ref=e937]: Country
+              - generic [ref=e938]:
+                - combobox "Country" [ref=e939]:
+                  - option [selected]
+                  - option "Afghanistan"
+                  - option "Aland Islands"
+                  - option "Albania"
+                  - option "Algeria"
+                  - option "American Samoa"
+                  - option "Andorra"
+                  - option "Angola"
+                  - option "Anguilla"
+                  - option "Antarctica"
+                  - option "Antigua and Barbuda"
+                  - option "Argentina"
+                  - option "Armenia"
+                  - option "Aruba"
+                  - option "Australia"
+                  - option "Austria"
+                  - option "Azerbaijan"
+                  - option "Bahamas"
+                  - option "Bahrain"
+                  - option "Bangladesh"
+                  - option "Barbados"
+                  - option "Belarus"
+                  - option "Belgium"
+                  - option "Belize"
+                  - option "Benin"
+                  - option "Bermuda"
+                  - option "Bhutan"
+                  - option "Bolivia"
+                  - option "Bonaire, Sint Eustatius and Saba"
+                  - option "Bosnia and Herzegovina"
+                  - option "Botswana"
+                  - option "Bouvet Island"
+                  - option "Brazil"
+                  - option "British Indian Ocean Territory"
+                  - option "Brunei"
+                  - option "Bulgaria"
+                  - option "Burkina Faso"
+                  - option "Burundi"
+                  - option "Cambodia"
+                  - option "Cameroon"
+                  - option "Canada"
+                  - option "Cape Verde"
+                  - option "Cayman Islands"
+                  - option "Central African Republic"
+                  - option "Chad"
+                  - option "Chile"
+                  - option "China"
+                  - option "Christmas Island"
+                  - option "Cocos (Keeling) Islands"
+                  - option "Colombia"
+                  - option "Comoros"
+                  - option "Congo"
+                  - option "Cook Islands"
+                  - option "Costa Rica"
+                  - option "Cote d'ivoire (Ivory Coast)"
+                  - option "Croatia"
+                  - option "Cuba"
+                  - option "Curacao"
+                  - option "Cyprus"
+                  - option "Czech Republic"
+                  - option "Democratic Republic of the Congo"
+                  - option "Denmark"
+                  - option "Djibouti"
+                  - option "Dominica"
+                  - option "Dominican Republic"
+                  - option "Ecuador"
+                  - option "Egypt"
+                  - option "El Salvador"
+                  - option "Equatorial Guinea"
+                  - option "Eritrea"
+                  - option "Estonia"
+                  - option "Ethiopia"
+                  - option "Falkland Islands (Malvinas)"
+                  - option "Faroe Islands"
+                  - option "Fiji"
+                  - option "Finland"
+                  - option "France"
+                  - option "French Guiana"
+                  - option "French Polynesia"
+                  - option "French Southern Territories"
+                  - option "Gabon"
+                  - option "Gambia"
+                  - option "Georgia"
+                  - option "Germany"
+                  - option "Ghana"
+                  - option "Gibraltar"
+                  - option "Greece"
+                  - option "Greenland"
+                  - option "Grenada"
+                  - option "Guadaloupe"
+                  - option "Guam"
+                  - option "Guatemala"
+                  - option "Guernsey"
+                  - option "Guinea"
+                  - option "Guinea-Bissau"
+                  - option "Guyana"
+                  - option "Haiti"
+                  - option "Heard Island and McDonald Islands"
+                  - option "Honduras"
+                  - option "Hong Kong"
+                  - option "Hungary"
+                  - option "Iceland"
+                  - option "India"
+                  - option "Indonesia"
+                  - option "Iran"
+                  - option "Iraq"
+                  - option "Ireland"
+                  - option "Isle of Man"
+                  - option "Israel"
+                  - option "Italy"
+                  - option "Jamaica"
+                  - option "Japan"
+                  - option "Jersey"
+                  - option "Jordan"
+                  - option "Kazakhstan"
+                  - option "Kenya"
+                  - option "Kiribati"
+                  - option "Kosovo"
+                  - option "Kuwait"
+                  - option "Kyrgyzstan"
+                  - option "Laos"
+                  - option "Latvia"
+                  - option "Lebanon"
+                  - option "Lesotho"
+                  - option "Liberia"
+                  - option "Libya"
+                  - option "Liechtenstein"
+                  - option "Lithuania"
+                  - option "Luxembourg"
+                  - option "Macao"
+                  - option "Madagascar"
+                  - option "Malawi"
+                  - option "Malaysia"
+                  - option "Maldives"
+                  - option "Mali"
+                  - option "Malta"
+                  - option "Marshall Islands"
+                  - option "Martinique"
+                  - option "Mauritania"
+                  - option "Mauritius"
+                  - option "Mayotte"
+                  - option "Mexico"
+                  - option "Micronesia"
+                  - option "Moldava"
+                  - option "Monaco"
+                  - option "Mongolia"
+                  - option "Montenegro"
+                  - option "Montserrat"
+                  - option "Morocco"
+                  - option "Mozambique"
+                  - option "Myanmar (Burma)"
+                  - option "Namibia"
+                  - option "Nauru"
+                  - option "Nepal"
+                  - option "Netherlands"
+                  - option "New Caledonia"
+                  - option "New Zealand"
+                  - option "Nicaragua"
+                  - option "Niger"
+                  - option "Nigeria"
+                  - option "Niue"
+                  - option "Norfolk Island"
+                  - option "North Korea"
+                  - option "North Macedonia"
+                  - option "Northern Mariana Islands"
+                  - option "Norway"
+                  - option "Oman"
+                  - option "Pakistan"
+                  - option "Palau"
+                  - option "Palestine"
+                  - option "Panama"
+                  - option "Papua New Guinea"
+                  - option "Paraguay"
+                  - option "Peru"
+                  - option "Philippines"
+                  - option "Pitcairn"
+                  - option "Poland"
+                  - option "Portugal"
+                  - option "Puerto Rico"
+                  - option "Qatar"
+                  - option "Reunion"
+                  - option "Romania"
+                  - option "Russia"
+                  - option "Rwanda"
+                  - option "Saint Barthelemy"
+                  - option "Saint Helena"
+                  - option "Saint Kitts and Nevis"
+                  - option "Saint Lucia"
+                  - option "Saint Martin"
+                  - option "Saint Pierre and Miquelon"
+                  - option "Saint Vincent and the Grenadines"
+                  - option "Samoa"
+                  - option "San Marino"
+                  - option "Sao Tome and Principe"
+                  - option "Saudi Arabia"
+                  - option "Senegal"
+                  - option "Serbia"
+                  - option "Seychelles"
+                  - option "Sierra Leone"
+                  - option "Singapore"
+                  - option "Sint Maarten"
+                  - option "Slovakia"
+                  - option "Slovenia"
+                  - option "Solomon Islands"
+                  - option "Somalia"
+                  - option "South Africa"
+                  - option "South Georgia and the South Sandwich Islands"
+                  - option "South Korea"
+                  - option "South Sudan"
+                  - option "Spain"
+                  - option "Sri Lanka"
+                  - option "Sudan"
+                  - option "Suriname"
+                  - option "Svalbard and Jan Mayen"
+                  - option "Swaziland"
+                  - option "Sweden"
+                  - option "Switzerland"
+                  - option "Syria"
+                  - option "Taiwan"
+                  - option "Tajikistan"
+                  - option "Tanzania"
+                  - option "Thailand"
+                  - option "Timor-Leste (East Timor)"
+                  - option "Togo"
+                  - option "Tokelau"
+                  - option "Tonga"
+                  - option "Trinidad and Tobago"
+                  - option "Tunisia"
+                  - option "Turkey"
+                  - option "Turkmenistan"
+                  - option "Turks and Caicos Islands"
+                  - option "Tuvalu"
+                  - option "Uganda"
+                  - option "Ukraine"
+                  - option "United Arab Emirates"
+                  - option "United Kingdom"
+                  - option "United States"
+                  - option "United States Minor Outlying Islands"
+                  - option "Uruguay"
+                  - option "Uzbekistan"
+                  - option "Vanuatu"
+                  - option "Vatican City"
+                  - option "Venezuela"
+                  - option "Vietnam"
+                  - option "Virgin Islands, British"
+                  - option "Virgin Islands, US"
+                  - option "Wallis and Futuna"
+                  - option "Western Sahara"
+                  - option "Yemen"
+                  - option "Zambia"
+                  - option "Zimbabwe"
+                - combobox "Nothing selected" [ref=e940] [cursor=pointer]:
+                  - generic [ref=e943]: Nothing selected
+        - text: 
+    - generic [ref=e945]:
+      - button "Save and create contact" [ref=e946] [cursor=pointer]
+      - button "Save" [ref=e947] [cursor=pointer]
+```

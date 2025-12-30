@@ -1,0 +1,868 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4] [cursor=pointer]: 
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - searchbox "Search..." [active] [ref=e9]: Nashtech Company
+            - button "" [ref=e11] [cursor=pointer]:
+              - generic [ref=e12]: 
+          - 'tooltip "Use # + tagname to search by tags" [ref=e13]':
+            - generic [ref=e15]: "Use # + tagname to search by tags"
+          - list [ref=e16]:
+            - listitem "Quick Create" [ref=e17]:
+              - link "+" [ref=e18] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e20]: +
+              - text:             
+        - text: 
+        - list [ref=e21]:
+          - listitem [ref=e22]:
+            - link "Share documents, ideas.." [ref=e23] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e24]
+          - listitem [ref=e26]:
+            - link "Todo items" [ref=e27] [cursor=pointer]:
+              - /url: https://crm.anhtester.com/admin/todo
+              - img [ref=e28]
+          - listitem "Admin Example" [ref=e30]:
+            - link [ref=e31] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e32]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e36]
+            - text: 
+          - listitem "Notifications" [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e41]
+            - text:        
+  - text: 
+  - complementary [ref=e43]:
+    - list [ref=e44]:
+      - listitem [ref=e45]:
+        - link "Perfex CRM | Anh Tester Demo" [ref=e47] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/
+          - img "Perfex CRM | Anh Tester Demo" [ref=e48]
+      - listitem [ref=e49]:
+        - link " Dashboard" [ref=e50] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/
+          - generic [ref=e51]: 
+          - text: Dashboard
+      - listitem [ref=e52]:
+        - link " Customers" [ref=e53] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/clients
+          - generic [ref=e54]: 
+          - text: Customers
+      - listitem [ref=e55]:
+        - link " Projects" [ref=e56] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/projects
+          - generic [ref=e57]: 
+          - text: Projects
+      - listitem [ref=e58]:
+        - link " Tasks" [ref=e59] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tasks
+          - generic [ref=e60]: 
+          - text: Tasks
+      - listitem [ref=e61]:
+        - link " Contracts" [ref=e62] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/contracts
+          - generic [ref=e63]: 
+          - text: Contracts
+      - listitem [ref=e64]:
+        - link " Sales " [ref=e65] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e66]: 
+          - text: Sales
+          - generic [ref=e67]: 
+      - listitem [ref=e68]:
+        - link " Subscriptions" [ref=e69] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/subscriptions
+          - generic [ref=e70]: 
+          - text: Subscriptions
+      - listitem [ref=e71]:
+        - link " Expenses" [ref=e72] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/expenses
+          - generic [ref=e73]: 
+          - text: Expenses
+      - listitem [ref=e74]:
+        - link " Support" [ref=e75] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tickets
+          - generic [ref=e76]: 
+          - text: Support
+      - listitem [ref=e77]:
+        - link " Leads" [ref=e78] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/leads
+          - generic [ref=e79]: 
+          - text: Leads
+      - listitem [ref=e80]:
+        - link " Estimate Request" [ref=e81] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/estimate_request
+          - generic [ref=e82]: 
+          - text: Estimate Request
+      - listitem [ref=e83]:
+        - link " Knowledge Base" [ref=e84] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/knowledge_base
+          - generic [ref=e85]: 
+          - text: Knowledge Base
+      - listitem [ref=e86]:
+        - link " Utilities " [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e88]: 
+          - text: Utilities
+          - generic [ref=e89]: 
+      - listitem [ref=e90]:
+        - link " Reports " [ref=e91] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e92]: 
+          - text: Reports
+          - generic [ref=e93]: 
+  - generic [ref=e97]:
+    - generic:
+      - link "+ New Customer" [ref=e98] [cursor=pointer]:
+        - /url: https://crm.anhtester.com/admin/clients/client
+        - generic [ref=e99]: +
+        - text: New Customer
+      - link " Import Customers" [ref=e100] [cursor=pointer]:
+        - /url: https://crm.anhtester.com/admin/clients/import
+        - generic [ref=e101]: 
+        - text: Import Customers
+      - link " Contacts" [ref=e102] [cursor=pointer]:
+        - /url: https://crm.anhtester.com/admin/clients/all_contacts
+        - generic [ref=e103]: 
+        - text: Contacts
+      - button [ref=e106] [cursor=pointer]:
+        - generic [ref=e107]: 
+    - generic [ref=e110]:
+      - generic [ref=e111]:
+        - heading "Customers Summary" [level=4] [ref=e112]:
+          - img [ref=e113]
+          - generic [ref=e115]: Customers Summary
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - generic [ref=e118]: "291"
+            - generic [ref=e119]: Total Customers
+          - generic [ref=e120]:
+            - generic [ref=e121]: "289"
+            - generic [ref=e122]: Active Customers
+          - generic [ref=e123]:
+            - generic [ref=e124]: "2"
+            - generic [ref=e125]: Inactive Customers
+          - generic [ref=e126]:
+            - generic [ref=e127]: "289"
+            - generic [ref=e128]: Active Contacts
+          - generic [ref=e129]:
+            - generic [ref=e130]: "0"
+            - generic [ref=e131]: Inactive Contacts
+          - generic [ref=e132]:
+            - generic [ref=e133]: "0"
+            - generic [ref=e134]: Contacts Logged In Today
+      - separator [ref=e135]
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]:
+            - combobox [ref=e143]:
+              - option "10"
+              - option "25" [selected]
+              - option "50"
+              - option "100"
+              - option "All"
+            - generic [ref=e144]:
+              - button "Export" [ref=e145] [cursor=pointer]
+              - button "Bulk Actions" [ref=e146] [cursor=pointer]
+              - button "" [ref=e147] [cursor=pointer]:
+                - generic [ref=e149]: 
+          - generic [ref=e153]:
+            - generic [ref=e155]: 
+            - searchbox "" [ref=e156]
+        - text: x200B x200B
+        - grid [ref=e158]:
+          - rowgroup [ref=e159]:
+            - 'row "- # activate to sort column ascending Company activate to sort column descending Primary Contact activate to sort column ascending Primary Email activate to sort column ascending Phone activate to sort column ascending Active activate to sort column ascending Groups activate to sort column ascending Date Created activate to sort column ascending" [ref=e160]':
+              - columnheader "-" [ref=e161]:
+                - checkbox [ref=e163]
+              - columnheader "# activate to sort column ascending" [ref=e164] [cursor=pointer]: "#"
+              - columnheader "Company activate to sort column descending" [ref=e165] [cursor=pointer]: Company
+              - columnheader "Primary Contact activate to sort column ascending" [ref=e166] [cursor=pointer]: Primary Contact
+              - columnheader "Primary Email activate to sort column ascending" [ref=e167] [cursor=pointer]: Primary Email
+              - columnheader "Phone activate to sort column ascending" [ref=e168] [cursor=pointer]: Phone
+              - columnheader "Active activate to sort column ascending" [ref=e169] [cursor=pointer]: Active
+              - columnheader "Groups activate to sort column ascending" [ref=e170] [cursor=pointer]: Groups
+              - columnheader "Date Created activate to sort column ascending" [ref=e171] [cursor=pointer]: Date Created
+          - rowgroup [ref=e172]:
+            - row "4136 ABC Technology Company View | Contacts | Delete Group B16 a 25-12-2025 23:09:40" [ref=e173]:
+              - gridcell [ref=e174]:
+                - checkbox [ref=e176]
+              - gridcell "4136" [ref=e177]
+              - gridcell "ABC Technology Company View | Contacts | Delete" [ref=e178]:
+                - link "ABC Technology Company" [ref=e179] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/4136
+                - generic [ref=e180]:
+                  - link "View" [ref=e181] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/4136
+                  - text: "|"
+                  - link "Contacts" [ref=e182] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/4136?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e183] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/4136
+              - gridcell [ref=e184]
+              - gridcell [ref=e185]
+              - gridcell "Group B16" [ref=e186]:
+                - link "Group B16" [ref=e187] [cursor=pointer]:
+                  - /url: tel:Group B16
+              - gridcell [ref=e188]
+              - gridcell "a" [ref=e191]:
+                - generic [ref=e192] [cursor=pointer]: a
+              - gridcell "25-12-2025 23:09:40" [ref=e193]
+            - row "4137 ABC Technology Company View | Contacts | Delete Group B16 a 25-12-2025 23:31:24" [ref=e194]:
+              - gridcell [ref=e195]:
+                - checkbox [ref=e197]
+              - gridcell "4137" [ref=e198]
+              - gridcell "ABC Technology Company View | Contacts | Delete" [ref=e199]:
+                - link "ABC Technology Company" [ref=e200] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/4137
+                - generic [ref=e201]:
+                  - link "View" [ref=e202] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/4137
+                  - text: "|"
+                  - link "Contacts" [ref=e203] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/4137?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e204] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/4137
+              - gridcell [ref=e205]
+              - gridcell [ref=e206]
+              - gridcell "Group B16" [ref=e207]:
+                - link "Group B16" [ref=e208] [cursor=pointer]:
+                  - /url: tel:Group B16
+              - gridcell [ref=e209]
+              - gridcell "a" [ref=e212]:
+                - generic [ref=e213] [cursor=pointer]: a
+              - gridcell "25-12-2025 23:31:24" [ref=e214]
+            - row "3925 ABC Technology Company View | Contacts | Delete 0939200600 VIP 13-12-2025 22:44:12" [ref=e215]:
+              - gridcell [ref=e216]:
+                - checkbox [ref=e218]
+              - gridcell "3925" [ref=e219]
+              - gridcell "ABC Technology Company View | Contacts | Delete" [ref=e220]:
+                - link "ABC Technology Company" [ref=e221] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/3925
+                - generic [ref=e222]:
+                  - link "View" [ref=e223] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/3925
+                  - text: "|"
+                  - link "Contacts" [ref=e224] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/3925?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e225] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/3925
+              - gridcell [ref=e226]
+              - gridcell [ref=e227]
+              - gridcell "0939200600" [ref=e228]:
+                - link "0939200600" [ref=e229] [cursor=pointer]:
+                  - /url: tel:0939200600
+              - gridcell [ref=e230]
+              - gridcell "VIP" [ref=e233]:
+                - generic [ref=e234] [cursor=pointer]: VIP
+              - gridcell "13-12-2025 22:44:12" [ref=e235]
+            - row "4000 ABC Technology Company View | Contacts | Delete 0939200600 VIP 17-12-2025 16:43:21" [ref=e236]:
+              - gridcell [ref=e237]:
+                - checkbox [ref=e239]
+              - gridcell "4000" [ref=e240]
+              - gridcell "ABC Technology Company View | Contacts | Delete" [ref=e241]:
+                - link "ABC Technology Company" [ref=e242] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/4000
+                - generic [ref=e243]:
+                  - link "View" [ref=e244] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/4000
+                  - text: "|"
+                  - link "Contacts" [ref=e245] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/4000?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e246] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/4000
+              - gridcell [ref=e247]
+              - gridcell [ref=e248]
+              - gridcell "0939200600" [ref=e249]:
+                - link "0939200600" [ref=e250] [cursor=pointer]:
+                  - /url: tel:0939200600
+              - gridcell [ref=e251]
+              - gridcell "VIP" [ref=e254]:
+                - generic [ref=e255] [cursor=pointer]: VIP
+              - gridcell "17-12-2025 16:43:21" [ref=e256]
+            - row "404 Anh Tester 09122024AN2 View | Contacts | Delete 0123456789 VIP 09-12-2024 21:15:02" [ref=e257]:
+              - gridcell [ref=e258]:
+                - checkbox [ref=e260]
+              - gridcell "404" [ref=e261]
+              - gridcell "Anh Tester 09122024AN2 View | Contacts | Delete" [ref=e262]:
+                - link "Anh Tester 09122024AN2" [ref=e263] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/404
+                - generic [ref=e264]:
+                  - link "View" [ref=e265] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/404
+                  - text: "|"
+                  - link "Contacts" [ref=e266] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/404?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e267] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/404
+              - gridcell [ref=e268]
+              - gridcell [ref=e269]
+              - gridcell "0123456789" [ref=e270]:
+                - link "0123456789" [ref=e271] [cursor=pointer]:
+                  - /url: tel:0123456789
+              - gridcell [ref=e272]
+              - gridcell "VIP" [ref=e275]:
+                - generic [ref=e276] [cursor=pointer]: VIP
+              - gridcell "09-12-2024 21:15:02" [ref=e277]
+            - row "406 Anh Tester 09122024AN4 View | Contacts | Delete 0123456789 VIP 09-12-2024 21:19:58" [ref=e278]:
+              - gridcell [ref=e279]:
+                - checkbox [ref=e281]
+              - gridcell "406" [ref=e282]
+              - gridcell "Anh Tester 09122024AN4 View | Contacts | Delete" [ref=e283]:
+                - link "Anh Tester 09122024AN4" [ref=e284] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/406
+                - generic [ref=e285]:
+                  - link "View" [ref=e286] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/406
+                  - text: "|"
+                  - link "Contacts" [ref=e287] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/406?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e288] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/406
+              - gridcell [ref=e289]
+              - gridcell [ref=e290]
+              - gridcell "0123456789" [ref=e291]:
+                - link "0123456789" [ref=e292] [cursor=pointer]:
+                  - /url: tel:0123456789
+              - gridcell [ref=e293]
+              - gridcell "VIP" [ref=e296]:
+                - generic [ref=e297] [cursor=pointer]: VIP
+              - gridcell "09-12-2024 21:19:58" [ref=e298]
+            - row "424 Anh Tester 09122024AN5 View | Contacts | Delete 0123456789 VIP 04-01-2025 14:40:30" [ref=e299]:
+              - gridcell [ref=e300]:
+                - checkbox [ref=e302]
+              - gridcell "424" [ref=e303]
+              - gridcell "Anh Tester 09122024AN5 View | Contacts | Delete" [ref=e304]:
+                - link "Anh Tester 09122024AN5" [ref=e305] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/424
+                - generic [ref=e306]:
+                  - link "View" [ref=e307] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/424
+                  - text: "|"
+                  - link "Contacts" [ref=e308] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/424?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e309] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/424
+              - gridcell [ref=e310]
+              - gridcell [ref=e311]
+              - gridcell "0123456789" [ref=e312]:
+                - link "0123456789" [ref=e313] [cursor=pointer]:
+                  - /url: tel:0123456789
+              - gridcell [ref=e314]
+              - gridcell "VIP" [ref=e317]:
+                - generic [ref=e318] [cursor=pointer]: VIP
+              - gridcell "04-01-2025 14:40:30" [ref=e319]
+            - row "1217 Anh Tester 10062024A7 View | Contacts | Delete 123456 VIP 14-05-2025 17:39:05" [ref=e320]:
+              - gridcell [ref=e321]:
+                - checkbox [ref=e323]
+              - gridcell "1217" [ref=e324]
+              - gridcell "Anh Tester 10062024A7 View | Contacts | Delete" [ref=e325]:
+                - link "Anh Tester 10062024A7" [ref=e326] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1217
+                - generic [ref=e327]:
+                  - link "View" [ref=e328] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1217
+                  - text: "|"
+                  - link "Contacts" [ref=e329] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1217?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e330] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1217
+              - gridcell [ref=e331]
+              - gridcell [ref=e332]
+              - gridcell "123456" [ref=e333]:
+                - link "123456" [ref=e334] [cursor=pointer]:
+                  - /url: tel:123456
+              - gridcell [ref=e335]
+              - gridcell "VIP" [ref=e338]:
+                - generic [ref=e339] [cursor=pointer]: VIP
+              - gridcell "14-05-2025 17:39:05" [ref=e340]
+            - row "1295 Anh Tester 123 View | Contacts | Delete 0123456789 VIP 23-05-2025 12:34:26" [ref=e341]:
+              - gridcell [ref=e342]:
+                - checkbox [ref=e344]
+              - gridcell "1295" [ref=e345]
+              - gridcell "Anh Tester 123 View | Contacts | Delete" [ref=e346]:
+                - link "Anh Tester 123" [ref=e347] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1295
+                - generic [ref=e348]:
+                  - link "View" [ref=e349] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1295
+                  - text: "|"
+                  - link "Contacts" [ref=e350] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1295?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e351] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1295
+              - gridcell [ref=e352]
+              - gridcell [ref=e353]
+              - gridcell "0123456789" [ref=e354]:
+                - link "0123456789" [ref=e355] [cursor=pointer]:
+                  - /url: tel:0123456789
+              - gridcell [ref=e356]
+              - gridcell "VIP" [ref=e359]:
+                - generic [ref=e360] [cursor=pointer]: VIP
+              - gridcell "23-05-2025 12:34:26" [ref=e361]
+            - row "1300 Anh Tester 1234 View | Contacts | Delete 0123456789 VIP 24-05-2025 13:11:40" [ref=e362]:
+              - gridcell [ref=e363]:
+                - checkbox [ref=e365]
+              - gridcell "1300" [ref=e366]
+              - gridcell "Anh Tester 1234 View | Contacts | Delete" [ref=e367]:
+                - link "Anh Tester 1234" [ref=e368] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1300
+                - generic [ref=e369]:
+                  - link "View" [ref=e370] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1300
+                  - text: "|"
+                  - link "Contacts" [ref=e371] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1300?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e372] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1300
+              - gridcell [ref=e373]
+              - gridcell [ref=e374]
+              - gridcell "0123456789" [ref=e375]:
+                - link "0123456789" [ref=e376] [cursor=pointer]:
+                  - /url: tel:0123456789
+              - gridcell [ref=e377]
+              - gridcell "VIP" [ref=e380]:
+                - generic [ref=e381] [cursor=pointer]: VIP
+              - gridcell "24-05-2025 13:11:40" [ref=e382]
+            - row "447 Anh Tester 13012025AN1 View | Contacts | Delete 0123456789 VIP 17-01-2025 21:49:07" [ref=e383]:
+              - gridcell [ref=e384]:
+                - checkbox [ref=e386]
+              - gridcell "447" [ref=e387]
+              - gridcell "Anh Tester 13012025AN1 View | Contacts | Delete" [ref=e388]:
+                - link "Anh Tester 13012025AN1" [ref=e389] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/447
+                - generic [ref=e390]:
+                  - link "View" [ref=e391] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/447
+                  - text: "|"
+                  - link "Contacts" [ref=e392] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/447?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e393] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/447
+              - gridcell [ref=e394]
+              - gridcell [ref=e395]
+              - gridcell "0123456789" [ref=e396]:
+                - link "0123456789" [ref=e397] [cursor=pointer]:
+                  - /url: tel:0123456789
+              - gridcell [ref=e398]
+              - gridcell "VIP" [ref=e401]:
+                - generic [ref=e402] [cursor=pointer]: VIP
+              - gridcell "17-01-2025 21:49:07" [ref=e403]
+            - row "1780 Anh Tester 1751464442117 View | Contacts | Delete 0912345678 GroupVIP 02-07-2025 20:54:19" [ref=e404]:
+              - gridcell [ref=e405]:
+                - checkbox [ref=e407]
+              - gridcell "1780" [ref=e408]
+              - gridcell "Anh Tester 1751464442117 View | Contacts | Delete" [ref=e409]:
+                - link "Anh Tester 1751464442117" [ref=e410] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1780
+                - generic [ref=e411]:
+                  - link "View" [ref=e412] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1780
+                  - text: "|"
+                  - link "Contacts" [ref=e413] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1780?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e414] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1780
+              - gridcell [ref=e415]
+              - gridcell [ref=e416]
+              - gridcell "0912345678" [ref=e417]:
+                - link "0912345678" [ref=e418] [cursor=pointer]:
+                  - /url: tel:0912345678
+              - gridcell [ref=e419]
+              - gridcell "GroupVIP" [ref=e422]:
+                - generic [ref=e423] [cursor=pointer]: GroupVIP
+              - gridcell "02-07-2025 20:54:19" [ref=e424]
+            - row "1781 Anh Tester 1751464942958 View | Contacts | Delete 0912345678 GroupVIP 02-07-2025 21:02:34" [ref=e425]:
+              - gridcell [ref=e426]:
+                - checkbox [ref=e428]
+              - gridcell "1781" [ref=e429]
+              - gridcell "Anh Tester 1751464942958 View | Contacts | Delete" [ref=e430]:
+                - link "Anh Tester 1751464942958" [ref=e431] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1781
+                - generic [ref=e432]:
+                  - link "View" [ref=e433] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1781
+                  - text: "|"
+                  - link "Contacts" [ref=e434] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1781?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e435] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1781
+              - gridcell [ref=e436]
+              - gridcell [ref=e437]
+              - gridcell "0912345678" [ref=e438]:
+                - link "0912345678" [ref=e439] [cursor=pointer]:
+                  - /url: tel:0912345678
+              - gridcell [ref=e440]
+              - gridcell "GroupVIP" [ref=e443]:
+                - generic [ref=e444] [cursor=pointer]: GroupVIP
+              - gridcell "02-07-2025 21:02:34" [ref=e445]
+            - row "1783 Anh Tester 1751465733971 View | Contacts | Delete 0912345678 GroupVIP 02-07-2025 21:15:51" [ref=e446]:
+              - gridcell [ref=e447]:
+                - checkbox [ref=e449]
+              - gridcell "1783" [ref=e450]
+              - gridcell "Anh Tester 1751465733971 View | Contacts | Delete" [ref=e451]:
+                - link "Anh Tester 1751465733971" [ref=e452] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1783
+                - generic [ref=e453]:
+                  - link "View" [ref=e454] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1783
+                  - text: "|"
+                  - link "Contacts" [ref=e455] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1783?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e456] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1783
+              - gridcell [ref=e457]
+              - gridcell [ref=e458]
+              - gridcell "0912345678" [ref=e459]:
+                - link "0912345678" [ref=e460] [cursor=pointer]:
+                  - /url: tel:0912345678
+              - gridcell [ref=e461]
+              - gridcell "GroupVIP" [ref=e464]:
+                - generic [ref=e465] [cursor=pointer]: GroupVIP
+              - gridcell "02-07-2025 21:15:51" [ref=e466]
+            - row "1787 Anh Tester 1751634275021 View | Contacts | Delete 0912345678 GroupVIP 04-07-2025 20:04:55" [ref=e467]:
+              - gridcell [ref=e468]:
+                - checkbox [ref=e470]
+              - gridcell "1787" [ref=e471]
+              - gridcell "Anh Tester 1751634275021 View | Contacts | Delete" [ref=e472]:
+                - link "Anh Tester 1751634275021" [ref=e473] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1787
+                - generic [ref=e474]:
+                  - link "View" [ref=e475] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1787
+                  - text: "|"
+                  - link "Contacts" [ref=e476] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1787?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e477] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1787
+              - gridcell [ref=e478]
+              - gridcell [ref=e479]
+              - gridcell "0912345678" [ref=e480]:
+                - link "0912345678" [ref=e481] [cursor=pointer]:
+                  - /url: tel:0912345678
+              - gridcell [ref=e482]
+              - gridcell "GroupVIP" [ref=e485]:
+                - generic [ref=e486] [cursor=pointer]: GroupVIP
+              - gridcell "04-07-2025 20:04:55" [ref=e487]
+            - row "1788 Anh Tester 1751638803852 View | Contacts | Delete 0912345678 GroupVIP 04-07-2025 21:20:25" [ref=e488]:
+              - gridcell [ref=e489]:
+                - checkbox [ref=e491]
+              - gridcell "1788" [ref=e492]
+              - gridcell "Anh Tester 1751638803852 View | Contacts | Delete" [ref=e493]:
+                - link "Anh Tester 1751638803852" [ref=e494] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1788
+                - generic [ref=e495]:
+                  - link "View" [ref=e496] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1788
+                  - text: "|"
+                  - link "Contacts" [ref=e497] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1788?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e498] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1788
+              - gridcell [ref=e499]
+              - gridcell [ref=e500]
+              - gridcell "0912345678" [ref=e501]:
+                - link "0912345678" [ref=e502] [cursor=pointer]:
+                  - /url: tel:0912345678
+              - gridcell [ref=e503]
+              - gridcell "GroupVIP" [ref=e506]:
+                - generic [ref=e507] [cursor=pointer]: GroupVIP
+              - gridcell "04-07-2025 21:20:25" [ref=e508]
+            - row "1794 Anh Tester 1752068803109 View | Contacts | Delete 0912345678 GroupVIP 09-07-2025 20:47:02" [ref=e509]:
+              - gridcell [ref=e510]:
+                - checkbox [ref=e512]
+              - gridcell "1794" [ref=e513]
+              - gridcell "Anh Tester 1752068803109 View | Contacts | Delete" [ref=e514]:
+                - link "Anh Tester 1752068803109" [ref=e515] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1794
+                - generic [ref=e516]:
+                  - link "View" [ref=e517] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1794
+                  - text: "|"
+                  - link "Contacts" [ref=e518] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1794?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e519] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1794
+              - gridcell [ref=e520]
+              - gridcell [ref=e521]
+              - gridcell "0912345678" [ref=e522]:
+                - link "0912345678" [ref=e523] [cursor=pointer]:
+                  - /url: tel:0912345678
+              - gridcell [ref=e524]
+              - gridcell "GroupVIP" [ref=e527]:
+                - generic [ref=e528] [cursor=pointer]: GroupVIP
+              - gridcell "09-07-2025 20:47:02" [ref=e529]
+            - row "1818 Anh Tester 1752419618379 View | Contacts | Delete 0339676987 GroupVIP 13-07-2025 22:14:07" [ref=e530]:
+              - gridcell [ref=e531]:
+                - checkbox [ref=e533]
+              - gridcell "1818" [ref=e534]
+              - gridcell "Anh Tester 1752419618379 View | Contacts | Delete" [ref=e535]:
+                - link "Anh Tester 1752419618379" [ref=e536] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1818
+                - generic [ref=e537]:
+                  - link "View" [ref=e538] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1818
+                  - text: "|"
+                  - link "Contacts" [ref=e539] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1818?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e540] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1818
+              - gridcell [ref=e541]
+              - gridcell [ref=e542]
+              - gridcell "0339676987" [ref=e543]:
+                - link "0339676987" [ref=e544] [cursor=pointer]:
+                  - /url: tel:0339676987
+              - gridcell [ref=e545]
+              - gridcell "GroupVIP" [ref=e548]:
+                - generic [ref=e549] [cursor=pointer]: GroupVIP
+              - gridcell "13-07-2025 22:14:07" [ref=e550]
+            - row "1819 Anh Tester 1752420188217 View | Contacts | Delete 0339676987 GroupVIP 13-07-2025 22:23:27" [ref=e551]:
+              - gridcell [ref=e552]:
+                - checkbox [ref=e554]
+              - gridcell "1819" [ref=e555]
+              - gridcell "Anh Tester 1752420188217 View | Contacts | Delete" [ref=e556]:
+                - link "Anh Tester 1752420188217" [ref=e557] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1819
+                - generic [ref=e558]:
+                  - link "View" [ref=e559] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1819
+                  - text: "|"
+                  - link "Contacts" [ref=e560] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1819?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e561] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1819
+              - gridcell [ref=e562]
+              - gridcell [ref=e563]
+              - gridcell "0339676987" [ref=e564]:
+                - link "0339676987" [ref=e565] [cursor=pointer]:
+                  - /url: tel:0339676987
+              - gridcell [ref=e566]
+              - gridcell "GroupVIP" [ref=e569]:
+                - generic [ref=e570] [cursor=pointer]: GroupVIP
+              - gridcell "13-07-2025 22:23:27" [ref=e571]
+            - row "1867 Anh Tester 1752589916291 View | Contacts | Delete 0339676987 GroupVIP 15-07-2025 21:32:12" [ref=e572]:
+              - gridcell [ref=e573]:
+                - checkbox [ref=e575]
+              - gridcell "1867" [ref=e576]
+              - gridcell "Anh Tester 1752589916291 View | Contacts | Delete" [ref=e577]:
+                - link "Anh Tester 1752589916291" [ref=e578] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1867
+                - generic [ref=e579]:
+                  - link "View" [ref=e580] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1867
+                  - text: "|"
+                  - link "Contacts" [ref=e581] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1867?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e582] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1867
+              - gridcell [ref=e583]
+              - gridcell [ref=e584]
+              - gridcell "0339676987" [ref=e585]:
+                - link "0339676987" [ref=e586] [cursor=pointer]:
+                  - /url: tel:0339676987
+              - gridcell [ref=e587]
+              - gridcell "GroupVIP" [ref=e590]:
+                - generic [ref=e591] [cursor=pointer]: GroupVIP
+              - gridcell "15-07-2025 21:32:12" [ref=e592]
+            - row "1984 Anh Tester 1754549647947 View | Contacts | Delete 0912345678 GroupVIP 07-08-2025 13:54:44" [ref=e593]:
+              - gridcell [ref=e594]:
+                - checkbox [ref=e596]
+              - gridcell "1984" [ref=e597]
+              - gridcell "Anh Tester 1754549647947 View | Contacts | Delete" [ref=e598]:
+                - link "Anh Tester 1754549647947" [ref=e599] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1984
+                - generic [ref=e600]:
+                  - link "View" [ref=e601] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1984
+                  - text: "|"
+                  - link "Contacts" [ref=e602] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1984?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e603] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1984
+              - gridcell [ref=e604]
+              - gridcell [ref=e605]
+              - gridcell "0912345678" [ref=e606]:
+                - link "0912345678" [ref=e607] [cursor=pointer]:
+                  - /url: tel:0912345678
+              - gridcell [ref=e608]
+              - gridcell "GroupVIP" [ref=e611]:
+                - generic [ref=e612] [cursor=pointer]: GroupVIP
+              - gridcell "07-08-2025 13:54:44" [ref=e613]
+            - row "1986 Anh Tester 1754549986163 View | Contacts | Delete 0912345678 GroupVIP 07-08-2025 14:00:23" [ref=e614]:
+              - gridcell [ref=e615]:
+                - checkbox [ref=e617]
+              - gridcell "1986" [ref=e618]
+              - gridcell "Anh Tester 1754549986163 View | Contacts | Delete" [ref=e619]:
+                - link "Anh Tester 1754549986163" [ref=e620] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/1986
+                - generic [ref=e621]:
+                  - link "View" [ref=e622] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1986
+                  - text: "|"
+                  - link "Contacts" [ref=e623] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/1986?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e624] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/1986
+              - gridcell [ref=e625]
+              - gridcell [ref=e626]
+              - gridcell "0912345678" [ref=e627]:
+                - link "0912345678" [ref=e628] [cursor=pointer]:
+                  - /url: tel:0912345678
+              - gridcell [ref=e629]
+              - gridcell "GroupVIP" [ref=e632]:
+                - generic [ref=e633] [cursor=pointer]: GroupVIP
+              - gridcell "07-08-2025 14:00:23" [ref=e634]
+            - row "2496 Anh Tester 1759994285673 View | Contacts | Delete 0912345678 GroupVIP 09-10-2025 14:18:26" [ref=e635]:
+              - gridcell [ref=e636]:
+                - checkbox [ref=e638]
+              - gridcell "2496" [ref=e639]
+              - gridcell "Anh Tester 1759994285673 View | Contacts | Delete" [ref=e640]:
+                - link "Anh Tester 1759994285673" [ref=e641] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/2496
+                - generic [ref=e642]:
+                  - link "View" [ref=e643] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/2496
+                  - text: "|"
+                  - link "Contacts" [ref=e644] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/2496?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e645] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/2496
+              - gridcell [ref=e646]
+              - gridcell [ref=e647]
+              - gridcell "0912345678" [ref=e648]:
+                - link "0912345678" [ref=e649] [cursor=pointer]:
+                  - /url: tel:0912345678
+              - gridcell [ref=e650]
+              - gridcell "GroupVIP" [ref=e653]:
+                - generic [ref=e654] [cursor=pointer]: GroupVIP
+              - gridcell "09-10-2025 14:18:26" [ref=e655]
+            - row "2497 Anh Tester 1759994573499 View | Contacts | Delete 0912345678 GroupVIP 09-10-2025 14:23:14" [ref=e656]:
+              - gridcell [ref=e657]:
+                - checkbox [ref=e659]
+              - gridcell "2497" [ref=e660]
+              - gridcell "Anh Tester 1759994573499 View | Contacts | Delete" [ref=e661]:
+                - link "Anh Tester 1759994573499" [ref=e662] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/2497
+                - generic [ref=e663]:
+                  - link "View" [ref=e664] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/2497
+                  - text: "|"
+                  - link "Contacts" [ref=e665] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/2497?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e666] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/2497
+              - gridcell [ref=e667]
+              - gridcell [ref=e668]
+              - gridcell "0912345678" [ref=e669]:
+                - link "0912345678" [ref=e670] [cursor=pointer]:
+                  - /url: tel:0912345678
+              - gridcell [ref=e671]
+              - gridcell "GroupVIP" [ref=e674]:
+                - generic [ref=e675] [cursor=pointer]: GroupVIP
+              - gridcell "09-10-2025 14:23:14" [ref=e676]
+            - row "3768 Anh Tester 1764580838536 View | Contacts | Delete 0912345678 GroupVIP 01-12-2025 16:21:01" [ref=e677]:
+              - gridcell [ref=e678]:
+                - checkbox [ref=e680]
+              - gridcell "3768" [ref=e681]
+              - gridcell "Anh Tester 1764580838536 View | Contacts | Delete" [ref=e682]:
+                - link "Anh Tester 1764580838536" [ref=e683] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/3768
+                - generic [ref=e684]:
+                  - link "View" [ref=e685] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/3768
+                  - text: "|"
+                  - link "Contacts" [ref=e686] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/3768?group=contacts
+                  - text: "|"
+                  - link "Delete" [ref=e687] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/3768
+              - gridcell [ref=e688]
+              - gridcell [ref=e689]
+              - gridcell "0912345678" [ref=e690]:
+                - link "0912345678" [ref=e691] [cursor=pointer]:
+                  - /url: tel:0912345678
+              - gridcell [ref=e692]
+              - gridcell "GroupVIP" [ref=e695]:
+                - generic [ref=e696] [cursor=pointer]: GroupVIP
+              - gridcell "01-12-2025 16:21:01" [ref=e697]
+        - generic [ref=e698]:
+          - status [ref=e700]: Showing 1 to 25 of 291 entries
+          - generic [ref=e701]:
+            - combobox [ref=e702]:
+              - option "1" [selected]
+              - option "2"
+              - option "3"
+              - option "4"
+              - option "5"
+              - option "6"
+              - option "7"
+              - option "8"
+              - option "9"
+              - option "10"
+              - option "11"
+              - option "12"
+            - list [ref=e704]:
+              - listitem:
+                - link "Previous" [ref=e705]:
+                  - /url: "#"
+              - listitem:
+                - link "1" [ref=e706]:
+                  - /url: "#"
+              - listitem:
+                - link "2" [ref=e707] [cursor=pointer]:
+                  - /url: "#"
+              - listitem:
+                - link "3" [ref=e708] [cursor=pointer]:
+                  - /url: "#"
+              - listitem:
+                - link "4" [ref=e709] [cursor=pointer]:
+                  - /url: "#"
+              - listitem:
+                - link "5" [ref=e710] [cursor=pointer]:
+                  - /url: "#"
+              - listitem:
+                - link "…" [ref=e711]:
+                  - /url: "#"
+              - listitem:
+                - link "12" [ref=e712] [cursor=pointer]:
+                  - /url: "#"
+              - listitem:
+                - link "Next" [ref=e713] [cursor=pointer]:
+                  - /url: "#"
+```

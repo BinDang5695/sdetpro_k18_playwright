@@ -1,0 +1,3 @@
+beforeAddCustomer = 290
+afterAddedCustomer = 290 + 1
+afterDeletedCustomer = 290

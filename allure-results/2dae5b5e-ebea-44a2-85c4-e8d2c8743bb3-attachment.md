@@ -1,0 +1,727 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4] [cursor=pointer]: 
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - searchbox "Search..." [ref=e9]
+            - button "" [ref=e11] [cursor=pointer]:
+              - generic [ref=e12]: 
+          - list [ref=e13]:
+            - listitem "Quick Create" [ref=e14]:
+              - link "+" [ref=e15] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e17]: +
+              - text:             
+        - text: 
+        - list [ref=e18]:
+          - listitem [ref=e19]:
+            - link "Share documents, ideas.." [ref=e20] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e21]
+          - listitem [ref=e23]:
+            - link "Todo items" [ref=e24] [cursor=pointer]:
+              - /url: https://crm.anhtester.com/admin/todo
+              - img [ref=e25]
+          - listitem "Admin Example" [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e29]
+          - listitem [ref=e30]:
+            - link [ref=e31] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e33]
+            - text: 
+          - listitem [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e38]
+            - text:        
+  - text: 
+  - complementary [ref=e40]:
+    - list [ref=e41]:
+      - listitem [ref=e42]:
+        - link "Perfex CRM | Anh Tester Demo" [ref=e44] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/
+          - img "Perfex CRM | Anh Tester Demo" [ref=e45]
+      - listitem [ref=e46]:
+        - link " Dashboard" [ref=e47] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/
+          - generic [ref=e48]: 
+          - text: Dashboard
+      - listitem [ref=e49]:
+        - link " Customers" [ref=e50] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/clients
+          - generic [ref=e51]: 
+          - text: Customers
+      - listitem [ref=e52]:
+        - link " Projects" [ref=e53] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/projects
+          - generic [ref=e54]: 
+          - text: Projects
+      - listitem [ref=e55]:
+        - link " Tasks" [ref=e56] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tasks
+          - generic [ref=e57]: 
+          - text: Tasks
+      - listitem [ref=e58]:
+        - link " Contracts" [ref=e59] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/contracts
+          - generic [ref=e60]: 
+          - text: Contracts
+      - listitem [ref=e61]:
+        - link " Sales " [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e63]: 
+          - text: Sales
+          - generic [ref=e64]: 
+      - listitem [ref=e65]:
+        - link " Subscriptions" [ref=e66] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/subscriptions
+          - generic [ref=e67]: 
+          - text: Subscriptions
+      - listitem [ref=e68]:
+        - link " Expenses" [ref=e69] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/expenses
+          - generic [ref=e70]: 
+          - text: Expenses
+      - listitem [ref=e71]:
+        - link " Support" [ref=e72] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tickets
+          - generic [ref=e73]: 
+          - text: Support
+      - listitem [ref=e74]:
+        - link " Leads" [ref=e75] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/leads
+          - generic [ref=e76]: 
+          - text: Leads
+      - listitem [ref=e77]:
+        - link " Estimate Request" [ref=e78] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/estimate_request
+          - generic [ref=e79]: 
+          - text: Estimate Request
+      - listitem [ref=e80]:
+        - link " Knowledge Base" [ref=e81] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/knowledge_base
+          - generic [ref=e82]: 
+          - text: Knowledge Base
+      - listitem [ref=e83]:
+        - link " Utilities " [ref=e84] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e85]: 
+          - text: Utilities
+          - generic [ref=e86]: 
+      - listitem [ref=e87]:
+        - link " Reports " [ref=e88] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e89]: 
+          - text: Reports
+          - generic [ref=e90]: 
+  - generic [ref=e97]:
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - text:  
+        - tablist [ref=e105]:
+          - tab "Customer Details" [ref=e106]
+          - tab "Billing & Shipping" [ref=e107] [cursor=pointer]
+      - generic [ref=e108]:
+        - tabpanel [ref=e109]:
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - generic [ref=e113]: "* Company"
+              - textbox "* Company" [ref=e114]: Nashtech Company
+            - generic [ref=e115]:
+              - generic [ref=e116]: VAT Number
+              - textbox "VAT Number" [ref=e117]: "123456789"
+            - generic [ref=e118]:
+              - generic [ref=e119]: Phone
+              - textbox "Phone" [ref=e120]: "0123456789"
+            - generic [ref=e121]:
+              - generic [ref=e122]: Website
+              - textbox "Website" [active] [ref=e123]: https://nashtech.com.vn
+            - generic [ref=e124]:
+              - generic [ref=e125]: Groups
+              - generic [ref=e126]:
+                - generic [ref=e127]:
+                  - listbox "Groups" [ref=e128]:
+                    - option "a" [ref=e129]
+                    - option "A1" [ref=e130]
+                    - option "aaa" [ref=e131]
+                    - option "aaa" [ref=e132]
+                    - option "aaaa" [ref=e133]
+                    - option "aaaa" [ref=e134]
+                    - option "aaaa" [ref=e135]
+                    - option "abb" [ref=e136]
+                    - option "abb" [ref=e137]
+                    - option "abbb" [ref=e138]
+                    - option "abbbb" [ref=e139]
+                    - option "afk" [ref=e140]
+                    - option "afk" [ref=e141]
+                    - option "afk" [ref=e142]
+                    - option "afk" [ref=e143]
+                    - option "afk" [ref=e144]
+                    - option "afk" [ref=e145]
+                    - option "afk" [ref=e146]
+                    - option "afk" [ref=e147]
+                    - option "afk" [ref=e148]
+                    - option "afk" [ref=e149]
+                    - option "afk" [ref=e150]
+                    - option "afk" [ref=e151]
+                    - option "asdasd" [ref=e152]
+                    - option "at" [ref=e153]
+                    - option "cậu ấm" [ref=e154]
+                    - option "công chúa ngủ trên giường" [ref=e155]
+                    - option "ctp group" [ref=e156]
+                    - option "ctp group" [ref=e157]
+                    - option "ctp group" [ref=e158]
+                    - option "ctp group" [ref=e159]
+                    - option "ctp group" [ref=e160]
+                    - option "ctp group" [ref=e161]
+                    - option "ctp group" [ref=e162]
+                    - option "ctp group" [ref=e163]
+                    - option "ctp group" [ref=e164]
+                    - option "ctp group" [ref=e165]
+                    - option "ctp group" [ref=e166]
+                    - option "ctp group" [ref=e167]
+                    - option "customer group A" [ref=e168]
+                    - option "customer group b" [ref=e169]
+                    - option "Gold" [ref=e170]
+                    - option "Group A" [ref=e171]
+                    - option "Group A" [ref=e172]
+                    - option "Group A" [ref=e173]
+                    - option "Group A" [ref=e174]
+                    - option "Group A" [ref=e175]
+                    - option "Group A" [ref=e176]
+                    - option "Group A" [ref=e177]
+                    - option "Group Maison" [ref=e178]
+                    - option "GroupVIP" [ref=e179]
+                    - option "hah1" [ref=e180]
+                    - option "hah1" [ref=e181]
+                    - option "hah1" [ref=e182]
+                    - option "hah1" [ref=e183]
+                    - option "hah1" [ref=e184]
+                    - option "hah1" [ref=e185]
+                    - option "hah1" [ref=e186]
+                    - option "hah2" [ref=e187]
+                    - option "hah2" [ref=e188]
+                    - option "hatran" [ref=e189]
+                    - option "hoàng tử xứ Thủ Đức" [ref=e190]
+                    - option "Huong Auto Test" [ref=e191]
+                    - option "Huong Auto Test" [ref=e192]
+                    - option "Huong Auto Test" [ref=e193]
+                    - option "Huyền huyền" [ref=e194]
+                    - option "Information Technology" [ref=e195]
+                    - option "Information Technology" [ref=e196]
+                    - option "Information Technology" [ref=e197]
+                    - option "Information Technology" [ref=e198]
+                    - option "Information Technology" [ref=e199]
+                    - option "Information Technology" [ref=e200]
+                    - option "Information Technology" [ref=e201]
+                    - option "Information Technology" [ref=e202]
+                    - option "Information Technology" [ref=e203]
+                    - option "Information Technology" [ref=e204]
+                    - option "Information Technology" [ref=e205]
+                    - option "Information Technology" [ref=e206]
+                    - option "Information Technology" [ref=e207]
+                    - option "Information Technology" [ref=e208]
+                    - option "Information Technology" [ref=e209]
+                    - option "Information Technology" [ref=e210]
+                    - option "Information Technology" [ref=e211]
+                    - option "Information Technology" [ref=e212]
+                    - option "Information Technology" [ref=e213]
+                    - option "Information Technology" [ref=e214]
+                    - option "Information Technology" [ref=e215]
+                    - option "Information Technology" [ref=e216]
+                    - option "Information Technology" [ref=e217]
+                    - option "Information Technology" [ref=e218]
+                    - option "Information Technology" [ref=e219]
+                    - option "Information Technology" [ref=e220]
+                    - option "Information Technology" [ref=e221]
+                    - option "Information Technology" [ref=e222]
+                    - option "Information Technology" [ref=e223]
+                    - option "Information Technology" [ref=e224]
+                    - option "Information Technology" [ref=e225]
+                    - option "Information Technology" [ref=e226]
+                    - option "Information Technology" [ref=e227]
+                    - option "Information Technology" [ref=e228]
+                    - option "Information Technology" [ref=e229]
+                    - option "Information Technology" [ref=e230]
+                    - option "Information Technology" [ref=e231]
+                    - option "Information Technology" [ref=e232]
+                    - option "Information Technology" [ref=e233]
+                    - option "Information Technology" [ref=e234]
+                    - option "Information Technology" [ref=e235]
+                    - option "Information Technology" [ref=e236]
+                    - option "Information Technology" [ref=e237]
+                    - option "Information Technology" [ref=e238]
+                    - option "Information Technology" [ref=e239]
+                    - option "Information Technology" [ref=e240]
+                    - option "Information Technology" [ref=e241]
+                    - option "Information Technology" [ref=e242]
+                    - option "Information Technology" [ref=e243]
+                    - option "Information Technology" [ref=e244]
+                    - option "Information Technology" [ref=e245]
+                    - option "Information Technology" [ref=e246]
+                    - option "Information Technology" [ref=e247]
+                    - option "Information Technology" [ref=e248]
+                    - option "java" [ref=e249]
+                    - option "koko" [ref=e250]
+                    - option "Leon Scott Kenedy Group" [ref=e251]
+                    - option "Leon Scott Kenedy Group" [ref=e252]
+                    - option "Leon Scott Kenedy Group" [ref=e253]
+                    - option "minh1" [ref=e254]
+                    - option "minh1" [ref=e255]
+                    - option "My Group Testing" [ref=e256]
+                    - option "NAB" [ref=e257]
+                    - option "NAB" [ref=e258]
+                    - option "NAB" [ref=e259]
+                    - option "NAB" [ref=e260]
+                    - option "NAB" [ref=e261]
+                    - option "NAB" [ref=e262]
+                    - option "NAB" [ref=e263]
+                    - option "NAB" [ref=e264]
+                    - option "NAB" [ref=e265]
+                    - option "NAB" [ref=e266]
+                    - option "NAB" [ref=e267]
+                    - option "NAB" [ref=e268]
+                    - option "NAB" [ref=e269]
+                    - option "NAB" [ref=e270]
+                    - option "NAB" [ref=e271]
+                    - option "NAB" [ref=e272]
+                    - option "NAB" [ref=e273]
+                    - option "NAB" [ref=e274]
+                    - option "NAB" [ref=e275]
+                    - option "NAB" [ref=e276]
+                    - option "NAB" [ref=e277]
+                    - option "NAB" [ref=e278]
+                    - option "NAB" [ref=e279]
+                    - option "NAB" [ref=e280]
+                    - option "NAB" [ref=e281]
+                    - option "NAB" [ref=e282]
+                    - option "NAB" [ref=e283]
+                    - option "NAB" [ref=e284]
+                    - option "NAB" [ref=e285]
+                    - option "NAB" [ref=e286]
+                    - option "NAB" [ref=e287]
+                    - option "NAB" [ref=e288]
+                    - option "NAB" [ref=e289]
+                    - option "NAB" [ref=e290]
+                    - option "NAB" [ref=e291]
+                    - option "NAB123" [ref=e292]
+                    - option "nem" [ref=e293]
+                    - option "NTT test" [ref=e294]
+                    - option "Platinum" [ref=e295]
+                    - option "Platinum" [ref=e296]
+                    - option "Platinum" [ref=e297]
+                    - option "Platinum" [ref=e298]
+                    - option "Platinum" [ref=e299]
+                    - option "Platinum" [ref=e300]
+                    - option "Platinum" [ref=e301]
+                    - option "Platinum" [ref=e302]
+                    - option "Platinum" [ref=e303]
+                    - option "Platinum" [ref=e304]
+                    - option "Platinum" [ref=e305]
+                    - option "Platinum" [ref=e306]
+                    - option "Platinum" [ref=e307]
+                    - option "Platinum" [ref=e308]
+                    - option "Platinum" [ref=e309]
+                    - option "Platinum" [ref=e310]
+                    - option "Platinum" [ref=e311]
+                    - option "Platinum" [ref=e312]
+                    - option "Platinum" [ref=e313]
+                    - option "Platinum" [ref=e314]
+                    - option "Platinum" [ref=e315]
+                    - option "Platinum" [ref=e316]
+                    - option "Platinum" [ref=e317]
+                    - option "s" [ref=e318]
+                    - option "Silver" [ref=e319]
+                    - option "TEAM_TEST" [ref=e320]
+                    - option "TEAM_TEST" [ref=e321]
+                    - option "TEAM_TEST" [ref=e322]
+                    - option "TEAM_TEST" [ref=e323]
+                    - option "TEAM_TEST" [ref=e324]
+                    - option "TEAM_TEST" [ref=e325]
+                    - option "TEAM_TEST" [ref=e326]
+                    - option "TEAM_TEST" [ref=e327]
+                    - option "TEAM_TEST" [ref=e328]
+                    - option "TEAM_TEST" [ref=e329]
+                    - option "TEAM_TEST" [ref=e330]
+                    - option "TEAM_TEST" [ref=e331]
+                    - option "TEAM_TEST" [ref=e332]
+                    - option "TEAM_TEST" [ref=e333]
+                    - option "TEAM_TEST" [ref=e334]
+                    - option "TEAM_TEST" [ref=e335]
+                    - option "TEAM_TEST" [ref=e336]
+                    - option "TEAM_TEST" [ref=e337]
+                    - option "TEAM_TEST" [ref=e338]
+                    - option "TEAM_TEST" [ref=e339]
+                    - option "TEAM_TEST" [ref=e340]
+                    - option "TEAM_TEST" [ref=e341]
+                    - option "TEAM_TEST" [ref=e342]
+                    - option "TEAM_TEST" [ref=e343]
+                    - option "TEAM_TEST" [ref=e344]
+                    - option "TEAM_TEST" [ref=e345]
+                    - option "TEAM_TEST" [ref=e346]
+                    - option "tessss" [ref=e347]
+                    - option "Testing" [ref=e348]
+                    - option "TesutaGroup" [ref=e349]
+                    - option "thu" [ref=e350]
+                    - option "thuthuy" [ref=e351]
+                    - option "thuthuy123" [ref=e352]
+                    - option "thuthuy123" [ref=e353]
+                    - option "thuthuy123" [ref=e354]
+                    - option "thuthuy123" [ref=e355]
+                    - option "thuthuy123" [ref=e356]
+                    - option "thuthuy123" [ref=e357]
+                    - option "thuthuy123" [ref=e358]
+                    - option "thuthuy123" [ref=e359]
+                    - option "thuthuy123" [ref=e360]
+                    - option "thuthuy123" [ref=e361]
+                    - option "thuthuy123" [ref=e362]
+                    - option "thuthuy123" [ref=e363]
+                    - option "thuthuy123" [ref=e364]
+                    - option "thuthuy123" [ref=e365]
+                    - option "thuthuy123" [ref=e366]
+                    - option "thuthuy123" [ref=e367]
+                    - option "thuthuy123" [ref=e368]
+                    - option "thuthuy123" [ref=e369]
+                    - option "thuthuy123" [ref=e370]
+                    - option "thuthuy123" [ref=e371]
+                    - option "thuthuy123" [ref=e372]
+                    - option "thuthuy123" [ref=e373]
+                    - option "thuthuy123" [ref=e374]
+                    - option "tien1706" [ref=e375]
+                    - option "VIP" [ref=e376]
+                    - option "vn" [ref=e377]
+                    - option "vn" [ref=e378]
+                    - option "vn" [ref=e379]
+                    - option "vn" [ref=e380]
+                  - combobox "Nothing selected" [ref=e381] [cursor=pointer]:
+                    - generic [ref=e384]: Nothing selected
+                - link "+" [ref=e387] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e388]: +
+            - generic [ref=e389]:
+              - generic [ref=e390]:
+                - generic [ref=e391]: 
+                - generic [ref=e392]:
+                  - generic [ref=e393]: Currency
+                  - generic [ref=e394]:
+                    - combobox "Currency" [ref=e395]:
+                      - option [selected]
+                      - option "USD"
+                      - option "EUR"
+                    - combobox "System Default" [ref=e396] [cursor=pointer]:
+                      - generic [ref=e399]: System Default
+              - generic [ref=e402]:
+                - generic [ref=e403]: Default Language
+                - generic [ref=e404]:
+                  - combobox "Default Language" [ref=e405]:
+                    - option "System Default" [selected]
+                    - option "Persian"
+                    - option "English"
+                    - option "Turkish"
+                    - option "German"
+                    - option "Russian"
+                    - option "Ukrainian"
+                    - option "Romanian"
+                    - option "Japanese"
+                    - option "Bulgarian"
+                    - option "Italian"
+                    - option "Portuguese"
+                    - option "Czech"
+                    - option "Dutch"
+                    - option "Swedish"
+                    - option "Catalan"
+                    - option "Slovak"
+                    - option "Vietnamese"
+                    - option "Chinese"
+                    - option "Portuguese_br"
+                    - option "Finnish"
+                    - option "Spanish"
+                    - option "Greek"
+                    - option "Norwegian"
+                    - option "Indonesia"
+                    - option "Polish"
+                    - option "French"
+                  - combobox "System Default" [ref=e406] [cursor=pointer]:
+                    - generic [ref=e409]: System Default
+            - separator [ref=e411]
+            - generic [ref=e412]:
+              - generic [ref=e413]: Address
+              - textbox "Address" [ref=e414]
+            - generic [ref=e415]:
+              - generic [ref=e416]: City
+              - textbox "City" [ref=e417]
+            - generic [ref=e418]:
+              - generic [ref=e419]: State
+              - textbox "State" [ref=e420]
+            - generic [ref=e421]:
+              - generic [ref=e422]: Zip Code
+              - textbox "Zip Code" [ref=e423]
+            - generic [ref=e424]:
+              - generic [ref=e425]: Country
+              - generic [ref=e426]:
+                - combobox "Country" [ref=e427]:
+                  - option [selected]
+                  - option "Afghanistan"
+                  - option "Aland Islands"
+                  - option "Albania"
+                  - option "Algeria"
+                  - option "American Samoa"
+                  - option "Andorra"
+                  - option "Angola"
+                  - option "Anguilla"
+                  - option "Antarctica"
+                  - option "Antigua and Barbuda"
+                  - option "Argentina"
+                  - option "Armenia"
+                  - option "Aruba"
+                  - option "Australia"
+                  - option "Austria"
+                  - option "Azerbaijan"
+                  - option "Bahamas"
+                  - option "Bahrain"
+                  - option "Bangladesh"
+                  - option "Barbados"
+                  - option "Belarus"
+                  - option "Belgium"
+                  - option "Belize"
+                  - option "Benin"
+                  - option "Bermuda"
+                  - option "Bhutan"
+                  - option "Bolivia"
+                  - option "Bonaire, Sint Eustatius and Saba"
+                  - option "Bosnia and Herzegovina"
+                  - option "Botswana"
+                  - option "Bouvet Island"
+                  - option "Brazil"
+                  - option "British Indian Ocean Territory"
+                  - option "Brunei"
+                  - option "Bulgaria"
+                  - option "Burkina Faso"
+                  - option "Burundi"
+                  - option "Cambodia"
+                  - option "Cameroon"
+                  - option "Canada"
+                  - option "Cape Verde"
+                  - option "Cayman Islands"
+                  - option "Central African Republic"
+                  - option "Chad"
+                  - option "Chile"
+                  - option "China"
+                  - option "Christmas Island"
+                  - option "Cocos (Keeling) Islands"
+                  - option "Colombia"
+                  - option "Comoros"
+                  - option "Congo"
+                  - option "Cook Islands"
+                  - option "Costa Rica"
+                  - option "Cote d'ivoire (Ivory Coast)"
+                  - option "Croatia"
+                  - option "Cuba"
+                  - option "Curacao"
+                  - option "Cyprus"
+                  - option "Czech Republic"
+                  - option "Democratic Republic of the Congo"
+                  - option "Denmark"
+                  - option "Djibouti"
+                  - option "Dominica"
+                  - option "Dominican Republic"
+                  - option "Ecuador"
+                  - option "Egypt"
+                  - option "El Salvador"
+                  - option "Equatorial Guinea"
+                  - option "Eritrea"
+                  - option "Estonia"
+                  - option "Ethiopia"
+                  - option "Falkland Islands (Malvinas)"
+                  - option "Faroe Islands"
+                  - option "Fiji"
+                  - option "Finland"
+                  - option "France"
+                  - option "French Guiana"
+                  - option "French Polynesia"
+                  - option "French Southern Territories"
+                  - option "Gabon"
+                  - option "Gambia"
+                  - option "Georgia"
+                  - option "Germany"
+                  - option "Ghana"
+                  - option "Gibraltar"
+                  - option "Greece"
+                  - option "Greenland"
+                  - option "Grenada"
+                  - option "Guadaloupe"
+                  - option "Guam"
+                  - option "Guatemala"
+                  - option "Guernsey"
+                  - option "Guinea"
+                  - option "Guinea-Bissau"
+                  - option "Guyana"
+                  - option "Haiti"
+                  - option "Heard Island and McDonald Islands"
+                  - option "Honduras"
+                  - option "Hong Kong"
+                  - option "Hungary"
+                  - option "Iceland"
+                  - option "India"
+                  - option "Indonesia"
+                  - option "Iran"
+                  - option "Iraq"
+                  - option "Ireland"
+                  - option "Isle of Man"
+                  - option "Israel"
+                  - option "Italy"
+                  - option "Jamaica"
+                  - option "Japan"
+                  - option "Jersey"
+                  - option "Jordan"
+                  - option "Kazakhstan"
+                  - option "Kenya"
+                  - option "Kiribati"
+                  - option "Kosovo"
+                  - option "Kuwait"
+                  - option "Kyrgyzstan"
+                  - option "Laos"
+                  - option "Latvia"
+                  - option "Lebanon"
+                  - option "Lesotho"
+                  - option "Liberia"
+                  - option "Libya"
+                  - option "Liechtenstein"
+                  - option "Lithuania"
+                  - option "Luxembourg"
+                  - option "Macao"
+                  - option "Madagascar"
+                  - option "Malawi"
+                  - option "Malaysia"
+                  - option "Maldives"
+                  - option "Mali"
+                  - option "Malta"
+                  - option "Marshall Islands"
+                  - option "Martinique"
+                  - option "Mauritania"
+                  - option "Mauritius"
+                  - option "Mayotte"
+                  - option "Mexico"
+                  - option "Micronesia"
+                  - option "Moldava"
+                  - option "Monaco"
+                  - option "Mongolia"
+                  - option "Montenegro"
+                  - option "Montserrat"
+                  - option "Morocco"
+                  - option "Mozambique"
+                  - option "Myanmar (Burma)"
+                  - option "Namibia"
+                  - option "Nauru"
+                  - option "Nepal"
+                  - option "Netherlands"
+                  - option "New Caledonia"
+                  - option "New Zealand"
+                  - option "Nicaragua"
+                  - option "Niger"
+                  - option "Nigeria"
+                  - option "Niue"
+                  - option "Norfolk Island"
+                  - option "North Korea"
+                  - option "North Macedonia"
+                  - option "Northern Mariana Islands"
+                  - option "Norway"
+                  - option "Oman"
+                  - option "Pakistan"
+                  - option "Palau"
+                  - option "Palestine"
+                  - option "Panama"
+                  - option "Papua New Guinea"
+                  - option "Paraguay"
+                  - option "Peru"
+                  - option "Philippines"
+                  - option "Pitcairn"
+                  - option "Poland"
+                  - option "Portugal"
+                  - option "Puerto Rico"
+                  - option "Qatar"
+                  - option "Reunion"
+                  - option "Romania"
+                  - option "Russia"
+                  - option "Rwanda"
+                  - option "Saint Barthelemy"
+                  - option "Saint Helena"
+                  - option "Saint Kitts and Nevis"
+                  - option "Saint Lucia"
+                  - option "Saint Martin"
+                  - option "Saint Pierre and Miquelon"
+                  - option "Saint Vincent and the Grenadines"
+                  - option "Samoa"
+                  - option "San Marino"
+                  - option "Sao Tome and Principe"
+                  - option "Saudi Arabia"
+                  - option "Senegal"
+                  - option "Serbia"
+                  - option "Seychelles"
+                  - option "Sierra Leone"
+                  - option "Singapore"
+                  - option "Sint Maarten"
+                  - option "Slovakia"
+                  - option "Slovenia"
+                  - option "Solomon Islands"
+                  - option "Somalia"
+                  - option "South Africa"
+                  - option "South Georgia and the South Sandwich Islands"
+                  - option "South Korea"
+                  - option "South Sudan"
+                  - option "Spain"
+                  - option "Sri Lanka"
+                  - option "Sudan"
+                  - option "Suriname"
+                  - option "Svalbard and Jan Mayen"
+                  - option "Swaziland"
+                  - option "Sweden"
+                  - option "Switzerland"
+                  - option "Syria"
+                  - option "Taiwan"
+                  - option "Tajikistan"
+                  - option "Tanzania"
+                  - option "Thailand"
+                  - option "Timor-Leste (East Timor)"
+                  - option "Togo"
+                  - option "Tokelau"
+                  - option "Tonga"
+                  - option "Trinidad and Tobago"
+                  - option "Tunisia"
+                  - option "Turkey"
+                  - option "Turkmenistan"
+                  - option "Turks and Caicos Islands"
+                  - option "Tuvalu"
+                  - option "Uganda"
+                  - option "Ukraine"
+                  - option "United Arab Emirates"
+                  - option "United Kingdom"
+                  - option "United States"
+                  - option "United States Minor Outlying Islands"
+                  - option "Uruguay"
+                  - option "Uzbekistan"
+                  - option "Vanuatu"
+                  - option "Vatican City"
+                  - option "Venezuela"
+                  - option "Vietnam"
+                  - option "Virgin Islands, British"
+                  - option "Virgin Islands, US"
+                  - option "Wallis and Futuna"
+                  - option "Western Sahara"
+                  - option "Yemen"
+                  - option "Zambia"
+                  - option "Zimbabwe"
+                - combobox "Nothing selected" [ref=e428] [cursor=pointer]:
+                  - generic [ref=e431]: Nothing selected
+        - text: 
+    - generic [ref=e433]:
+      - button "Save and create contact" [ref=e434] [cursor=pointer]
+      - button "Save" [ref=e435] [cursor=pointer]
+```

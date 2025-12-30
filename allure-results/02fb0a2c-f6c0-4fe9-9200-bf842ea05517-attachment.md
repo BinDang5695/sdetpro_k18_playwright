@@ -1,0 +1,238 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4] [cursor=pointer]: 
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - searchbox "Search..." [ref=e9]
+            - button "" [ref=e11] [cursor=pointer]:
+              - generic [ref=e12]: 
+          - list [ref=e13]:
+            - listitem "Quick Create" [ref=e14]:
+              - link "+" [ref=e15] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e17]: +
+              - text:             
+        - text: 
+        - list [ref=e18]:
+          - listitem [ref=e19]:
+            - link "Share documents, ideas.." [ref=e20] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e21]
+          - listitem [ref=e23]:
+            - link "Todo items" [ref=e24] [cursor=pointer]:
+              - /url: https://crm.anhtester.com/admin/todo
+              - img [ref=e25]
+          - listitem "Admin Example" [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e29]
+          - listitem [ref=e30]:
+            - link [ref=e31] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e33]
+            - text: 
+          - listitem "Notifications" [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e38]
+            - text:        
+  - text: 
+  - complementary [ref=e40]:
+    - list [ref=e41]:
+      - listitem [ref=e42]:
+        - link "Perfex CRM | Anh Tester Demo" [ref=e44] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/
+          - img "Perfex CRM | Anh Tester Demo" [ref=e45]
+      - listitem [ref=e46]:
+        - link " Dashboard" [ref=e47] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/
+          - generic [ref=e48]: 
+          - text: Dashboard
+      - listitem [ref=e49]:
+        - link " Customers" [ref=e50] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/clients
+          - generic [ref=e51]: 
+          - text: Customers
+      - listitem [ref=e52]:
+        - link " Projects" [ref=e53] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/projects
+          - generic [ref=e54]: 
+          - text: Projects
+      - listitem [ref=e55]:
+        - link " Tasks" [ref=e56] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tasks
+          - generic [ref=e57]: 
+          - text: Tasks
+      - listitem [ref=e58]:
+        - link " Contracts" [ref=e59] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/contracts
+          - generic [ref=e60]: 
+          - text: Contracts
+      - listitem [ref=e61]:
+        - link " Sales " [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e63]: 
+          - text: Sales
+          - generic [ref=e64]: 
+      - listitem [ref=e65]:
+        - link " Subscriptions" [ref=e66] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/subscriptions
+          - generic [ref=e67]: 
+          - text: Subscriptions
+      - listitem [ref=e68]:
+        - link " Expenses" [ref=e69] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/expenses
+          - generic [ref=e70]: 
+          - text: Expenses
+      - listitem [ref=e71]:
+        - link " Support" [ref=e72] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/tickets
+          - generic [ref=e73]: 
+          - text: Support
+      - listitem [ref=e74]:
+        - link " Leads" [ref=e75] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/leads
+          - generic [ref=e76]: 
+          - text: Leads
+      - listitem [ref=e77]:
+        - link " Estimate Request" [ref=e78] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/estimate_request
+          - generic [ref=e79]: 
+          - text: Estimate Request
+      - listitem [ref=e80]:
+        - link " Knowledge Base" [ref=e81] [cursor=pointer]:
+          - /url: https://crm.anhtester.com/admin/knowledge_base
+          - generic [ref=e82]: 
+          - text: Knowledge Base
+      - listitem [ref=e83]:
+        - link " Utilities " [ref=e84] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e85]: 
+          - text: Utilities
+          - generic [ref=e86]: 
+      - listitem [ref=e87]:
+        - link " Reports " [ref=e88] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e89]: 
+          - text: Reports
+          - generic [ref=e90]: 
+  - generic [ref=e94]:
+    - generic:
+      - link "+ New Customer" [ref=e95] [cursor=pointer]:
+        - /url: https://crm.anhtester.com/admin/clients/client
+        - generic [ref=e96]: +
+        - text: New Customer
+      - link " Import Customers" [ref=e97] [cursor=pointer]:
+        - /url: https://crm.anhtester.com/admin/clients/import
+        - generic [ref=e98]: 
+        - text: Import Customers
+      - link " Contacts" [ref=e99] [cursor=pointer]:
+        - /url: https://crm.anhtester.com/admin/clients/all_contacts
+        - generic [ref=e100]: 
+        - text: Contacts
+      - button [ref=e103] [cursor=pointer]:
+        - generic [ref=e104]: 
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - heading "Customers Summary" [level=4] [ref=e109]:
+          - img [ref=e110]
+          - generic [ref=e112]: Customers Summary
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - generic [ref=e115]: "291"
+            - generic [ref=e116]: Total Customers
+          - generic [ref=e117]:
+            - generic [ref=e118]: "289"
+            - generic [ref=e119]: Active Customers
+          - generic [ref=e120]:
+            - generic [ref=e121]: "2"
+            - generic [ref=e122]: Inactive Customers
+          - generic [ref=e123]:
+            - generic [ref=e124]: "289"
+            - generic [ref=e125]: Active Contacts
+          - generic [ref=e126]:
+            - generic [ref=e127]: "0"
+            - generic [ref=e128]: Inactive Contacts
+          - generic [ref=e129]:
+            - generic [ref=e130]: "0"
+            - generic [ref=e131]: Contacts Logged In Today
+      - separator [ref=e132]
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - combobox [ref=e140]:
+              - option "10"
+              - option "25" [selected]
+              - option "50"
+              - option "100"
+              - option "All"
+            - generic [ref=e141]:
+              - button "Export" [ref=e142] [cursor=pointer]
+              - button "Bulk Actions" [ref=e143] [cursor=pointer]
+              - button "" [ref=e144] [cursor=pointer]:
+                - generic [ref=e146]: 
+          - generic [ref=e150]:
+            - generic [ref=e152]: 
+            - searchbox "" [ref=e153]: Nashtech Company
+        - text: x200B x200B
+        - grid [ref=e155]:
+          - rowgroup [ref=e156]:
+            - 'row "- # activate to sort column ascending Company activate to sort column descending Primary Contact activate to sort column ascending Primary Email activate to sort column ascending Phone activate to sort column ascending Active activate to sort column ascending Groups activate to sort column ascending Date Created activate to sort column ascending" [ref=e157]':
+              - columnheader "-" [ref=e158]:
+                - checkbox [ref=e160]
+              - columnheader "# activate to sort column ascending" [ref=e161] [cursor=pointer]: "#"
+              - columnheader "Company activate to sort column descending" [ref=e162] [cursor=pointer]: Company
+              - columnheader "Primary Contact activate to sort column ascending" [ref=e163] [cursor=pointer]: Primary Contact
+              - columnheader "Primary Email activate to sort column ascending" [ref=e164] [cursor=pointer]: Primary Email
+              - columnheader "Phone activate to sort column ascending" [ref=e165] [cursor=pointer]: Phone
+              - columnheader "Active activate to sort column ascending" [ref=e166] [cursor=pointer]: Active
+              - columnheader "Groups activate to sort column ascending" [ref=e167] [cursor=pointer]: Groups
+              - columnheader "Date Created activate to sort column ascending" [ref=e168] [cursor=pointer]: Date Created
+          - rowgroup [ref=e169]:
+            - row "4162 Nashtech Company View | Contacts | Delete Bin Dang vbin561995@gmail.com 0123456789 VIP 30-12-2025 16:27:09" [ref=e170]:
+              - gridcell [ref=e171]:
+                - checkbox [ref=e173]
+              - gridcell "4162" [ref=e174]
+              - gridcell "Nashtech Company View | Contacts | Delete" [ref=e175]:
+                - link "Nashtech Company" [ref=e176] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/4162
+                - generic [ref=e177]:
+                  - link "View" [ref=e178] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/4162
+                  - text: "|"
+                  - link "Contacts" [ref=e179] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/client/4162?group=contacts
+                  - text: "|"
+                  - link "Delete" [active] [ref=e180] [cursor=pointer]:
+                    - /url: https://crm.anhtester.com/admin/clients/delete/4162
+              - gridcell "Bin Dang" [ref=e181]:
+                - link "Bin Dang" [ref=e182] [cursor=pointer]:
+                  - /url: https://crm.anhtester.com/admin/clients/client/4162?contactid=782
+              - gridcell "vbin561995@gmail.com" [ref=e183]:
+                - link "vbin561995@gmail.com" [ref=e184] [cursor=pointer]:
+                  - /url: mailto:vbin561995@gmail.com
+              - gridcell "0123456789" [ref=e185]:
+                - link "0123456789" [ref=e186] [cursor=pointer]:
+                  - /url: tel:0123456789
+              - gridcell [ref=e187]
+              - gridcell "VIP" [ref=e190]:
+                - generic [ref=e191] [cursor=pointer]: VIP
+              - gridcell "30-12-2025 16:27:09" [ref=e192]
+        - generic [ref=e193]:
+          - status [ref=e195]: Showing 1 to 1 of 1 entries (filtered from 291 total entries)
+          - list [ref=e198]:
+            - listitem:
+              - link "Previous" [ref=e199]:
+                - /url: "#"
+            - listitem:
+              - link "1" [ref=e200]:
+                - /url: "#"
+            - listitem:
+              - link "Next" [ref=e201]:
+                - /url: "#"
+```

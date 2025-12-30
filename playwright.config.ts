@@ -14,18 +14,24 @@ export default defineConfig({
       {
         name: "chrome",
         use: {
-              ...devices['Desktop Chrome'],
               browserName: 'chromium',
-              channel: 'chrome'
+              channel: 'chrome',
+              viewport: null,
+              launchOptions: {
+              args: ['--start-maximized'],
+        },
             }
       },
 
       {
         name: "edge",
         use: {
-              ...devices['Desktop Edge'],
               browserName: 'chromium',
-              channel: 'msedge'
+              channel: 'msedge',
+              viewport: null,
+              launchOptions: {
+              args: ['--start-maximized'],
+        },
             }
       },
 
