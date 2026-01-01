@@ -1,3 +1,0 @@
-beforeAddCustomer = 290
-afterAdded = 291 + 1
-afterDeletedCustomer = 290

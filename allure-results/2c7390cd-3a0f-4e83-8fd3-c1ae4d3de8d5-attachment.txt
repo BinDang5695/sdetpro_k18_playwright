@@ -1,2 +1,0 @@
-getCustomerTotal: 
-                                        291                                    

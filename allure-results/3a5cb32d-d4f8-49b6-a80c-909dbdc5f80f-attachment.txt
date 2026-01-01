@@ -1,3 +1,0 @@
-beforeTotal = 290
-afterTotal = 290 + 1
-afterDeleted = 290

@@ -5,10 +5,13 @@
     "test:computer": "playwright test tests/computer"
   },
   "dependencies": {
-    "@playwright/test": "^1.57.0"
+    "@playwright/test": "^1.57.0",
+    "pdf-parse": "^2.4.5",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^25.0.3",
+    "@types/pdf-parse": "^1.1.5",
     "allure-playwright": "^3.4.3"
   }
 }

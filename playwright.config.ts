@@ -4,7 +4,7 @@ export default defineConfig({
 
     fullyParallel: true,
     testDir: './tests',
-    workers: 4,
+    workers: 2,
     projects:[
       // {
       //   name: 'iPhone 14',
