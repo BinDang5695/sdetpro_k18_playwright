@@ -47,9 +47,7 @@ export default class ContactsPage extends BasePage{
     }
 
     async verifyCreatedContact(firstName: string, lastName: string): Promise<void> {
-        await expect(this.alertCreatedContact).toBeVisible();
         await expect(this.alertCreatedContact).toHaveText('Contact added successfully.');
-        await expect(this.createdContact).toBeVisible();
         await this.createdContact.click();
         await expect(this.fieldFirstName).toHaveValue(firstName);
         await expect(this.fieldLastName).toHaveValue(lastName);

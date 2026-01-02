@@ -16,56 +16,69 @@ import ProposalsPage from "./ProposalsPage";
 export default class PageFactory {
     constructor(private page: Page) {}
 
-    loginPage(): LoginPage {
-        return new LoginPage(this.page);
+    private _loginPage?: LoginPage;
+    private _customersPage?: CustomersPage;
+    private _basePage?: BasePage;
+    private _contactsPage?: ContactsPage;
+    private _headerPage?: HeaderPage;
+    private _projectsPage?: ProjectsPage;
+    private _tasksPage?: TasksPage;
+    private _expensesPage?: ExpensesPage;
+    private _contractsPage?: ContractsPage;
+    private _knowledgeBasePage?: KnowledgeBasePage;
+    private _leadsPage?: LeadsPage;
+    private _itemsPage?: ItemsPage;
+    private _proposalsPage?: ProposalsPage;
+
+    loginPage() {
+        return this._loginPage ??= new LoginPage(this.page);
     }
 
-    customersPage(): CustomersPage {
-        return new CustomersPage(this.page);
+    customersPage() {
+        return this._customersPage ??= new CustomersPage(this.page);
     }
 
-    basePage(): BasePage {
-        return new BasePage(this.page);
+    basePage() {
+        return this._basePage ??= new BasePage(this.page);
     }
 
-    contactsPage(): ContactsPage {
-        return new ContactsPage(this.page);
+    contactsPage() {
+        return this._contactsPage ??= new ContactsPage(this.page);
     }
 
-    headerPage(): HeaderPage {
-        return new HeaderPage(this.page);
+    headerPage() {
+        return this._headerPage ??= new HeaderPage(this.page);
     }
 
-    projectsPage(): ProjectsPage {
-        return new ProjectsPage(this.page);
+    projectsPage() {
+        return this._projectsPage ??= new ProjectsPage(this.page);
     }
 
-    tasksPage(): TasksPage {
-        return new TasksPage(this.page);
+    tasksPage() {
+        return this._tasksPage ??= new TasksPage(this.page);
     }
 
-    expensesPage(): ExpensesPage {
-        return new ExpensesPage(this.page);
+    expensesPage() {
+        return this._expensesPage ??= new ExpensesPage(this.page);
     }
 
-    contractsPage(): ContractsPage {
-        return new ContractsPage(this.page);
+    contractsPage() {
+        return this._contractsPage ??= new ContractsPage(this.page);
     }
 
-    knowledgeBasePage(): KnowledgeBasePage {
-        return new KnowledgeBasePage(this.page);
+    knowledgeBasePage() {
+        return this._knowledgeBasePage ??= new KnowledgeBasePage(this.page);
     }
 
-    leadsPage(): LeadsPage {
-        return new LeadsPage(this.page);
+    leadsPage() {
+        return this._leadsPage ??= new LeadsPage(this.page);
     }
 
-    itemsPage(): ItemsPage {
-        return new ItemsPage(this.page);
+    itemsPage() {
+        return this._itemsPage ??= new ItemsPage(this.page);
     }
 
-    proposalsPage(): ProposalsPage {
-        return new ProposalsPage(this.page);
+    proposalsPage() {
+        return this._proposalsPage ??= new ProposalsPage(this.page);
     }
-    
 }

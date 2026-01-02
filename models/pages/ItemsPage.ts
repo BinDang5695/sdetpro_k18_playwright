@@ -1,8 +1,8 @@
-import { Page, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
 import BasePage from './BasePage';
 import SystemHelper from '../helpers/SystemHelper';
 
-export default class LoginPage extends BasePage{
+export default class ItemsPage extends BasePage{
 
     private buttonImportItems = () => this.page.locator("//a[normalize-space()='Import Items']");
     private buttonChooseFile = () => this.page.locator("//input[@id='file_csv']");

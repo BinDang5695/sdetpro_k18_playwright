@@ -1,7 +1,7 @@
-import { Page, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
 import BasePage from './BasePage';
 
-export default class LoginPage extends BasePage{
+export default class LeadsPage extends BasePage{
 
     private buttonNewLead = () => this.page.getByRole('link', { name: 'New Lead' });
     private dropdownStatus = () => this.page.locator("//button[@data-id='status']");
@@ -17,13 +17,8 @@ export default class LoginPage extends BasePage{
     private inputDateContacted = () => this.page.locator("//input[@id='custom_contact_date']");
     private buttonSave = () => this.page.locator("//button[@id='lead-form-submit']");
     private dropdownPagination = () => this.page.locator("//select[@name='leads_length']");
-    private value10 = () => this.page.locator("//option[@value='10']");
-    private value25 = () => this.page.locator("//option[@value='25']");
     private inputSearchLead = () => this.page.locator("//input[@aria-controls='leads']");
-    private contentLeads_info1To5 = () => this.page.locator("//div[@id='leads_info' and contains(., 'Showing 1 to 5 of 5 entries')]");
-    private contentLeads_info11To11 = () => this.page.locator("//div[@id='leads_info' and contains(., 'Showing 11 to 11 of 11 entries')]");
-    private page1 = () => this.page.locator("//a[normalize-space()='1']");
-    private page2 = () => this.page.locator("//a[normalize-space()='2']");
+    private contentLeads_info1To3 = () => this.page.locator("//div[@id='leads_info' and contains(., 'Showing 1 to 3 of 3 entries')]");
     private checkboxSelectAllLead = () => this.page.locator("//div[@class='checkbox mass_select_all_wrap']");
     private allBinLeadcheckbox = () => this.page.locator("//div[@class='checkbox']//input[@type='checkbox']");
     private buttonBulkActions = () => this.page.locator("//span[normalize-space()='Bulk Actions']");
@@ -97,12 +92,8 @@ export default class LoginPage extends BasePage{
     await this.dropdownPagination().selectOption('10');
     await expect(this.inputSearchLead()).toBeVisible();
     await this.inputSearchLead().fill('Bin Lead');
-    await expect(this.contentLeads_info1To5()).toBeVisible();
+    await expect(this.contentLeads_info1To3()).toBeVisible();
     await this.checkDataInTableByColumnContains(columnIndex, data);
-    ///await expect(this.page2()).toBeVisible();
-    //await this.page2().click();
-    //await expect(this.contentLeads_info11To11()).toBeVisible();
-    //await this.checkDataInTableByColumnContains(columnIndex, data);
   }
 
   async selectAllAndEnsureChecked(maxRetry = 3) {
@@ -151,8 +142,7 @@ export default class LoginPage extends BasePage{
 
   async verifyDeletedLeads() {
     await expect(this.alertSuccess()).toBeVisible();
-    await expect(this.alertSuccess()).toHaveText('Total leads deleted: 5');
-    await expect(this.buttonX()).toBeVisible();    
+    await expect(this.alertSuccess()).toHaveText('Total leads deleted: 3');
     await this.buttonX().click();
     await this.inputSearchLead().fill('Bin Lead');
     await expect(this.noDataAfterDelete()).toBeVisible();

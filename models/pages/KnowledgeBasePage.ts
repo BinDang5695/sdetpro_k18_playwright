@@ -1,7 +1,7 @@
-import { Page, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
 import BasePage from './BasePage';
 
-export default class LoginPage extends BasePage{
+export default class KnowledgeBasePage extends BasePage{
 
     private buttonNewArticle = () => this.page.locator("//a[normalize-space()='New Article']");
     private inputSubject = () => this.page.locator("//input[@id='subject']");

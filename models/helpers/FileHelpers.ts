@@ -1,21 +1,25 @@
 import fs from 'fs';
 import * as XLSX from 'xlsx';
 
-export async function extractTextFromPDF(filePathOrBuffer: string | Buffer): Promise<string> {
-    // 1️⃣ Import dynamic để gọi pdf-parse (CommonJS) trong ESM
-    const pdfParsePkg = await import('pdf-parse'); 
-    // @ts-ignore
-    const pdfParse = pdfParsePkg.default ?? pdfParsePkg; // lấy function thật
+import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf.js';
 
-    let buffer: Buffer;
-    if (typeof filePathOrBuffer === 'string') {
-        buffer = await fs.promises.readFile(filePathOrBuffer);
-    } else {
-        buffer = filePathOrBuffer;
+
+export async function extractTextFromPDF(filePath: string): Promise<string> {
+    const data = new Uint8Array(fs.readFileSync(filePath));
+
+    const pdf = await pdfjsLib.getDocument({ data }).promise;
+
+    let text = '';
+    for (let i = 1; i <= pdf.numPages; i++) {
+        const page = await pdf.getPage(i);
+        const content = await page.getTextContent();
+        const pageText = content.items
+            .map((item: any) => item.str)
+            .join(' ');
+        text += pageText + '\n';
     }
 
-    const data = await pdfParse(buffer); // ✅ chạy được
-    return data.text;
+    return text;
 }
 
 export async function readExcelAsText(filePath: string): Promise<string> {
