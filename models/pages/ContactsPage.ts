@@ -38,15 +38,17 @@ export default class ContactsPage extends BasePage{
     }
 
     async addNewContact(firstName: string, lastName: string): Promise<void> {
+        await expect(this.fieldFirstName).toBeVisible({ timeout: 10000 });
+        await this.fieldFirstName.pressSequentially(firstName, { delay: 100 });
+        await this.fieldLastName.pressSequentially(lastName, { delay: 100 });
+        await this.fieldEmail.pressSequentially('vbin561995@gmail.com', { delay: 100 });
+        await this.fieldPassword.pressSequentially('123456'), { delay: 100 };
         await this.buttonChooseFile.setInputFiles(this.filePath);
-        await this.fieldFirstName.fill(firstName);
-        await this.fieldLastName.fill(lastName);
-        await this.fieldEmail.fill('vbin561995@gmail.com');
-        await this.fieldPassword.fill('123456');
         await this.buttonSave.click();
     }
 
     async verifyCreatedContact(firstName: string, lastName: string): Promise<void> {
+        await expect(this.alertCreatedContact).toBeVisible({ timeout: 10000 });
         await expect(this.alertCreatedContact).toHaveText('Contact added successfully.');
         await this.createdContact.click();
         await expect(this.fieldFirstName).toHaveValue(firstName);

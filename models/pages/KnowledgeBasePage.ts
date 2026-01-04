@@ -45,7 +45,8 @@ export default class KnowledgeBasePage extends BasePage{
         const tab1 = this.page;
 
         await this.createdArticle().hover();
-
+        await expect(this.buttonView()).toBeVisible({ timeout: 5000 });
+        
         const [tab2] = await Promise.all([
         this.page.context().waitForEvent('page'),
         this.buttonView().click()

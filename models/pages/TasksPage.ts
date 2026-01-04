@@ -37,7 +37,6 @@ export default class TasksPage extends BasePage{
     private dismissAlert = () => this.page.locator("//button[@data-dismiss='alert']");
 
     async verifyNavigateToTasksPage() {
-        await expect(this.titleTaskPage()).toBeVisible();
         await expect(this.titleTaskPage()).toHaveText('Tasks Summary');
         await expect(this.switchToKanBan()).toBeVisible();
     }
@@ -47,7 +46,7 @@ export default class TasksPage extends BasePage{
     }
 
     async scrollHorizontal() {
-        await this.page.mouse.wheel(1000, 0);
+        await this.page.mouse.wheel(500, 0);
     }
 
     async verifyNavigateToKanbanPage() {
@@ -59,6 +58,7 @@ export default class TasksPage extends BasePage{
     }
 
     async verifyAddNewTaskPopUp() {
+        await expect(this.titleAddNewTaskPopUp()).toBeAttached({ timeout: 10000 });
         await expect(this.titleAddNewTaskPopUp()).toBeVisible();
         await expect(this.titleAddNewTaskPopUp()).toHaveText('Add new task');
 
@@ -114,12 +114,10 @@ export default class TasksPage extends BasePage{
 
     async searchAndVerifyAfterSearch() {
         await this.searchOnKanBan().fill('NashTech');
-
         await expect(this.nodataNotStarted()).toHaveText('No Tasks Found');
         await expect(this.nodataInprogress()).toHaveText('No Tasks Found');
         await expect(this.nodataTesting()).toHaveText('No Tasks Found');
         await expect(this.nodataAwaitingFeedback()).toHaveText('No Tasks Found');
-
         await this.scrollHorizontal();
     }
 
@@ -150,6 +148,7 @@ export default class TasksPage extends BasePage{
     }
 
     async clickDismissAlert() {
+        await expect(this.dismissAlert()).toBeVisible();
         await this.dismissAlert().click();
     }
 

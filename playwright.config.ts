@@ -37,7 +37,10 @@ export default defineConfig({
 
     ],
     use: {
-        baseURL: "https://demowebshop.tricentis.com",
+        baseURL: "https://crm.anhtester.com/admin/authentication",
+    //         extraHTTPHeaders: {
+    //   'Content-Type': 'application/json',
+    // },
         headless: false,
         // Implicit wait | Global wait all elements
         actionTimeout: 5 * 1000,

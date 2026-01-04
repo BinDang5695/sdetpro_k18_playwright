@@ -3,6 +3,7 @@ import BasePage from './BasePage';
 import fs from 'fs';
 import { extractTextFromPDF, readExcelAsText } from '../helpers/FileHelpers';
 import path from 'path';
+export type ExportFileType = 'pdf' | 'excel' | 'csv';
 
 export default class ProposalsPage extends BasePage{
 
@@ -25,7 +26,7 @@ export default class ProposalsPage extends BasePage{
     private buttonSelect = () => this.page.locator("//button[@class='btn pull-right btn-primary']");
     private buttonSaveAddNewProposal = () => this.page.locator("//button[@type='button'][normalize-space()='Save']");
     private iconToggleFullView = () => this.page.locator("//li[@data-title='Toggle full view']");
-    private tooltipContent = () => this.page.locator(".tooltip-inner");
+    private tooltipContent = () => this.page.locator('.tooltip-inner', { hasText: 'Toggle full view' });
     private buttonToogleTableRight = () => this.page.locator("//i[@class='fa fa-angle-double-right']");
     private inputSearchProposals = () => this.page.locator("//input[@aria-controls='proposals']");
     private contentProposals_info = () => this.page.locator("//div[@id='proposals_info' and contains(., 'Showing 1 to 1 of 1 entries')]");
@@ -61,26 +62,26 @@ export default class ProposalsPage extends BasePage{
 
     async captureUITableData() {
         await this.tableProposal().waitFor({ state: 'visible', timeout: 10000 });
-    this.uiProposalNumber = (await this.tableProposal().textContent())?.trim() ?? '';
-    this.uiSubject        = (await this.tableSubject().textContent())?.trim() ?? '';
-    this.uiTo             = (await this.tableTo().first().textContent())?.trim() ?? '';
-    this.uiTotal          = (await this.tableTotal().textContent())?.trim() ?? '';
-    this.uiDate           = (await this.tableDate().textContent())?.trim() ?? '';
-    this.uiOpenTill       = (await this.tableOpenTill().textContent())?.trim() ?? '';
+        this.uiProposalNumber = (await this.tableProposal().textContent())?.trim() ?? '';
+        this.uiSubject = (await this.tableSubject().textContent())?.trim() ?? '';
+        this.uiTo = (await this.tableTo().first().textContent())?.trim() ?? '';
+        this.uiTotal = (await this.tableTotal().textContent())?.trim() ?? '';
+        this.uiDate = (await this.tableDate().textContent())?.trim() ?? '';
+        this.uiOpenTill = (await this.tableOpenTill().textContent())?.trim() ?? '';
         this.uiProject = '';
         this.uiTags = '';
-    this.uiCreated        = (await this.tableCreated().textContent())?.trim() ?? '';
-    this.uiStatus         = (await this.tableStatus().textContent())?.trim() ?? '';
-        console.log('📋 Raw UI data:', {
-        proposal: this.uiProposalNumber,
-        subject: this.uiSubject,
-        to: this.uiTo,
-        total: this.uiTotal,
-        date: this.uiDate,
-        openTill: this.uiOpenTill,
-        created: this.uiCreated,
-        status: this.uiStatus
-    });
+        this.uiCreated = (await this.tableCreated().textContent())?.trim() ?? '';
+        this.uiStatus = (await this.tableStatus().textContent())?.trim() ?? '';
+        console.log('📋 UI data:', {
+            proposal: this.uiProposalNumber,
+            subject: this.uiSubject,
+            to: this.uiTo,
+            total: this.uiTotal,
+            date: this.uiDate,
+            openTill: this.uiOpenTill,
+            created: this.uiCreated,
+            status: this.uiStatus
+        });
     }
 
     async clickButtonNewProposal() {
@@ -105,68 +106,26 @@ export default class ProposalsPage extends BasePage{
         await this.buttonSaveAddNewItem().click();
         await this.radioHours().click();
         await this.buttonSelect().scrollIntoViewIfNeeded();
+        await this.buttonSelect().hover();
         await this.buttonSelect().click();
+        await this.buttonSaveAddNewProposal().scrollIntoViewIfNeeded();
+        await this.buttonSaveAddNewProposal().hover();
         await this.buttonSaveAddNewProposal().click();
         await this.buttonX().click();
     }
 
     async verifyTooltip() {
-        await this.iconToggleFullView().hover();
-        await expect(this.page.locator('.tooltip-inner', { hasText: 'Toggle full view' })).toBeVisible();
+        await expect(this.iconToggleFullView()).toBeAttached({ timeout: 10000 });
+        await this.iconToggleFullView().scrollIntoViewIfNeeded();
+        await this.iconToggleFullView().hover({ force: true, timeout: 10000 });
+        await expect(this.tooltipContent()).toBeVisible({ timeout: 10000 });
+        await expect(this.tooltipContent()).toHaveText('Toggle full view');
     }
 
     async searchCreatedProposal() {
         await this.buttonToogleTableRight().click();
         await this.inputSearchProposals().fill("Bin Subject");
         await expect(this.contentProposals_info()).toBeVisible();
-    }
-
-    async verifyDownloadPDFFile() {
-
-        const pdfPath = await this.exportPDFFile();
-
-        try {
-            const pdfText = await extractTextFromPDF(pdfPath);
-
-            const pdfNorm = this.normalizeText(pdfText);
-            const uiProposalNorm = this.normalizeText(this.uiProposalNumber);
-            const uiSubjectNorm = this.normalizeText(this.uiSubject);
-            const uiToNorm = this.normalizeText(this.uiTo);
-            const uiTotalNorm = this.normalizeText(this.uiTotal);
-            const uiDateNorm = this.normalizeText(this.uiDate);
-            const uiOpenTillNorm = this.normalizeText(this.uiOpenTill);
-            const uiProjectNorm = this.normalizeText(this.uiProject);
-            const uiTagsNorm = this.normalizeText(this.uiTags);
-            const uiCreatedNorm = this.normalizeText(this.uiCreated);
-            const uiStatusNorm = this.normalizeText(this.uiStatus);
-
-            console.log(
-  `🔢 UI Data to verify:
-  Proposal#: ${uiProposalNorm},
-  Subject: ${uiSubjectNorm},
-  To: ${uiToNorm},
-  Total: ${uiTotalNorm},
-  Date: ${uiDateNorm},
-  Open Till: ${uiOpenTillNorm},
-  Project: ${uiProjectNorm},
-  Tags: ${uiTagsNorm},
-  Date Created: ${uiCreatedNorm},
-  Status: ${uiStatusNorm}`
-);            
-            expect(pdfNorm).toContain(uiProposalNorm);
-            expect(pdfNorm).toContain(uiSubjectNorm);
-            expect(pdfNorm).toContain(uiToNorm);
-            expect(pdfNorm).toContain(uiTotalNorm);
-            expect(pdfNorm).toContain(uiDateNorm);
-            expect(pdfNorm).toContain(uiOpenTillNorm);
-            expect(pdfNorm).toContain(this.normalizeText('Project'));
-            expect(pdfNorm).toContain(this.normalizeText('Tags'));
-            expect(pdfNorm).toContain(uiCreatedNorm);
-            expect(pdfNorm).toContain(uiStatusNorm);
-
-        } finally {
-            await this.deleteFile(pdfPath);
-        }
     }
 
     private async deleteFile(filePath: string) {
@@ -191,7 +150,8 @@ export default class ProposalsPage extends BasePage{
         await this.buttonX().click();
     }
 
-    async exportPDFFile(): Promise<string> {
+    async exportFile(type: ExportFileType): Promise<string> {
+    
         const downloadsDir = path.resolve('downloads');
         if (!fs.existsSync(downloadsDir)) {
             fs.mkdirSync(downloadsDir, { recursive: true });
@@ -199,9 +159,15 @@ export default class ProposalsPage extends BasePage{
 
         await this.buttonExport().click({ force: true });
 
+        const optionMap = {
+            pdf: this.optionPDF(),
+            excel: this.optionExcel(),
+            csv: this.optionCSV(),
+        };
+
         const [download] = await Promise.all([
             this.page.waitForEvent('download'),
-            this.optionPDF().click({ force: true }),
+            optionMap[type].click({ force: true }),
         ]);
 
         const fileName = download.suggestedFilename();
@@ -212,34 +178,69 @@ export default class ProposalsPage extends BasePage{
         return savePath;
     }
 
-async exportExcelFile() {
-await this.buttonExport().click();
-await this.optionExcel().click();
-}
+    async exportAndVerifyContentFile(type: ExportFileType) {
+        const filePath = await this.exportFile(type);
 
+        try {
+            let fileText = '';
 
-async exportCSVFile() {
-await this.buttonExport().click();
-await this.optionCSV().click();
-}
+            switch (type) {
+                case 'pdf':
+                    fileText = await extractTextFromPDF(filePath);
+                    break;
 
+                case 'excel':
+                    fileText = await readExcelAsText(filePath);
+                    break;
 
-async verifyDownloadExcelFile(path: string) {
-const excelText = await readExcelAsText(path); // custom function
-const excelNorm = this.normalizeText(excelText);
-expect(excelNorm).toContain(this.normalizeText(this.uiProposalNumber));
-expect(excelNorm).toContain(this.normalizeText(this.uiSubject));
-expect(excelNorm).toContain(this.normalizeText(this.uiTo));
-}
+                case 'csv':
+                    fileText = await fs.promises.readFile(filePath, 'utf-8');
+                    break;
+            }
 
+            const fileNorm = this.normalizeText(fileText);
 
-async verifyDownloadCSVFile(path: string) {
-const csvText = await fs.promises.readFile(path, 'utf-8');
-const csvNorm = this.normalizeText(csvText);
-expect(csvNorm).toContain(this.normalizeText(this.uiProposalNumber));
-expect(csvNorm).toContain(this.normalizeText(this.uiSubject));
-expect(csvNorm).toContain(this.normalizeText(this.uiTo));
-}
+            const uiData = {
+                proposal: this.normalizeText(this.uiProposalNumber),
+                subject: this.normalizeText(this.uiSubject),
+                to: this.normalizeText(this.uiTo),
+                total: this.normalizeText(this.uiTotal),
+                date: this.normalizeText(this.uiDate),
+                openTill: this.normalizeText(this.uiOpenTill),
+                project: this.normalizeText(this.uiProject),
+                tags: this.normalizeText(this.uiTags),
+                created: this.normalizeText(this.uiCreated),
+                status: this.normalizeText(this.uiStatus),
+            };
 
+        console.log(
+`🔢 ${type.toUpperCase()} Data to verify:
+Proposal#: ${uiData.proposal}
+Subject: ${uiData.subject}
+To: ${uiData.to}
+Total: ${uiData.total}
+Date: ${uiData.date}
+Open Till: ${uiData.openTill}
+Project: ${uiData.project}
+Tags: ${uiData.tags}
+Date Created: ${uiData.created}
+Status: ${uiData.status}`
+        );
 
+            // Common assertions
+            expect(fileNorm).toContain(uiData.proposal);
+            expect(fileNorm).toContain(uiData.subject);
+            expect(fileNorm).toContain(uiData.to);
+            expect(fileNorm).toContain(uiData.total);
+            expect(fileNorm).toContain(uiData.date);
+            expect(fileNorm).toContain(uiData.openTill);
+            expect(fileNorm).toContain(this.normalizeText('Project'));
+            expect(fileNorm).toContain(this.normalizeText('Tags'));
+            expect(fileNorm).toContain(uiData.created);
+            expect(fileNorm).toContain(uiData.status);
+
+        } finally {
+            await this.deleteFile(filePath);
+        }
+    }
 }
