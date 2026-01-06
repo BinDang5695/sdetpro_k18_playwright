@@ -10,9 +10,6 @@
     "response": {
       "type": "object",
       "properties": {
-        "id": {
-          "type": "number"
-        },
         "name": {
           "type": "string",
           "minLength": 1
@@ -28,6 +25,9 @@
           "minLength": 1
         },
         "status": {
+          "type": "boolean"
+        },
+        "id": {
           "type": "number"
         },
         "image": {
@@ -52,12 +52,12 @@
         }
       },
       "required": [
-        "id",
         "name",
         "category_id",
         "price",
         "release_date",
         "status",
+        "id",
         "image"
       ]
     }

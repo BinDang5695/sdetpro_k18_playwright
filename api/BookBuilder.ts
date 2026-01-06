@@ -1,31 +1,35 @@
 import { faker } from '@faker-js/faker';
-import { Book } from './Book';
-//import { fakerEN as faker } from '@faker-js/faker';
+import { BookCreateRequest } from './BookCreateRequest';
 
 export class BookBuilder {
-  static getDataToCreateBook(): Book {
+
+  static getDataToCreateBook(): BookCreateRequest {
     return {
-      name: faker.book.title(),
-      category_id: 139,
-      price: faker.number.int({ min: 1, max: 9999 }),
+      name: `Bin Tester dz ${faker.number.int({ min: 1, max: 9999 })}`,
+      category_id: 594,
+      price: faker.number.int({ min: 1000, max: 100000 }),
       release_date: faker.date
-        .birthdate({ min: 18, max: 80, mode: 'age' })
+        .future()
         .toISOString()
-        .split('T')[0], // yyyy-MM-dd
-      status: true,
-      image_ids: [76]
+        .split('T')[0]
+        .replace(/-/g, '/'),
+      image_ids: [76],
+      status: true
     };
   }
 
-  static createUpdatedBook(request: Book): Book {
-    return {
-      id: request.id,
-      name: faker.book.title(),
-      category_id: request.category_id,
-      price: request.price,
-      release_date: request.release_date,
-      status: false,
-      image_ids: [61]
-    };
-  }
+static getDataToUpdateBook() {
+  return {
+    name: `Bin Updated Book ${faker.number.int({ min: 1, max: 9999 })}`,
+    category_id: 594,
+    release_date: faker.date
+        .future()
+        .toISOString()
+        .split('T')[0]
+        .replace(/-/g, '/'),
+    price: faker.number.int({ min: 1000, max: 99999 }),
+    image_ids: [76],
+    status: true
+  };
+}
 }

@@ -1,53 +1,65 @@
-// api/BaseTestApi.ts
-import { test as base, expect, APIRequestContext } from '@playwright/test';
-import { LoginBuilder } from './LoginBuilder';
+import { test as base, expect } from '@playwright/test';
 import { EndPointGlobal } from './EndPointGlobal';
+import { LoginBuilder } from './LoginBuilder';
 import { ConfigsGlobal } from './ConfigsGlobal';
-import { TokenGlobal } from './TokenGlobal';
-import { SpecBuilder } from './SpecBuilder';
+import loginSchema from '../test_data/LoginSchema.json';
+import { ApiLogger } from './ApiLogger';
+import { VerifyBookHeaders } from './VerifyBookHeaders';
+import Ajv from 'ajv';
+import addFormats from 'ajv-formats';
 
-type MyFixtures = {
-    token: string;
-    requestSpec: APIRequestContext;
+const ajv = new Ajv({ allErrors: true });
+addFormats(ajv);
+const validateLoginSchema = ajv.compile(loginSchema);
+
+let cachedToken: string | undefined;
+
+type ApiFixtures = {
+  token: string;
 };
 
-export const test = base.extend<MyFixtures>({
-    // fixture token
-    token: async ({}, use: (token: string) => Promise<void>) => {
-        // tạo context **không auth**
-        const request = await SpecBuilder.getRequestNotAuthSpec();
-        const loginData = LoginBuilder.getDataLogin();
+export const test = base.extend<ApiFixtures>({
+  token: async ({ request }, use) => {
 
-        console.log('Token fixture login URL:', `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_LOGIN}`);
-        console.log('Payload:', loginData);
+    if (!cachedToken) {
 
-        const response = await request.post(EndPointGlobal.EP_LOGIN, {
-            data: JSON.stringify(loginData),
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        });
+    const loginData = LoginBuilder.getDataLogin();
+    const url = `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_LOGIN}`;
 
-        console.log('Login status:', response.status());
-        console.log('Login body:', await response.text());
+    ApiLogger.logRequest('POST', url, {
+      body: loginData
+    });
 
-        if (response.status() !== 200) {
-            throw new Error('Login failed, check URL / payload / server endpoint');
-        }
+    const start = Date.now();
+    const response = await request.post(url, { data: loginData });
+    const duration = Date.now() - start;
 
-        const body = await response.json();
-        TokenGlobal.TOKEN = body.token;
-        console.log('Token Global:', TokenGlobal.TOKEN);
+    expect(response.status()).toBe(200);
+    expect(duration).toBeLessThan(2000);
 
-        await use(TokenGlobal.TOKEN);
-    },
+    VerifyBookHeaders.verify(response);
 
-    // fixture requestSpec có auth token
-    requestSpec: async ({ token }, use: (requestSpec: APIRequestContext) => Promise<void>) => {
-        const requestWithAuth = await SpecBuilder.getRequestSpec();
-        await use(requestWithAuth);
+    const body = await response.json();
+
+    expect(body.token).toBeTruthy();
+
+    const valid = validateLoginSchema(body);
+    expect(valid).toBe(true);
+    if (!valid) {
+      console.error(validateLoginSchema.errors);
     }
+
+    await ApiLogger.logResponse(response, duration);
+
+    cachedToken = body.token;
+  }
+  
+    if (!cachedToken) {
+      throw new Error('Token is undefined after login');
+    }
+
+    await use(cachedToken);
+}
 });
 
 export { expect };

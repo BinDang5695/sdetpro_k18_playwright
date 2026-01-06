@@ -1,6 +1,6 @@
 {
   "AUTHOR": "Bin Dang",
-  "BASE_URL": "https://book.anhtester.com/api",
-  "email": "bintestperformance@gmail.com",
-  "password": "Bindz@123456"
+  "BASE_URL": "https://api.anhtester.com/api",
+  "USERNAME": "BinUser",
+  "PASSWORD": "Demo@123"
 }

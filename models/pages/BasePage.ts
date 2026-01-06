@@ -1,4 +1,4 @@
-import { Page, Locator } from '@playwright/test';
+import { Page, Locator, expect } from '@playwright/test';
 
 export default class BasePage {
   protected readonly page: Page;
@@ -64,19 +64,17 @@ protected normalizeText(text: string | null | undefined): string {
   }
 
 async clickMenuSales(): Promise<this> {
-    // Chờ menuSales hiển thị
     await this.menuSales.waitFor({ state: 'visible', timeout: 5000 });
 
     const maxRetries = 5;
 
     for (let i = 0; i < maxRetries; i++) {
         try {
-            // Hover + click Sales
+            await expect(this.menuSales).toBeVisible();
             await this.menuSales.hover();
             await this.menuSales.click();
-            await this.page.waitForTimeout(200); // chờ animation submenu
+            await this.page.waitForTimeout(200);
 
-            // Kiểm tra menuItems
             if (await this.menuItems.isVisible()) {
                 console.log(`Menu Items xuất hiện sau click Sales (attempt ${i + 1})`);
                 return this;
@@ -88,7 +86,6 @@ async clickMenuSales(): Promise<this> {
         }
     }
 
-    // Nếu sau maxRetries vẫn không thấy menuItems → throw error
     throw new Error("Menu Items không xuất hiện sau khi click Sales menu nhiều lần");
 }
 

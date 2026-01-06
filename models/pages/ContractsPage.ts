@@ -11,14 +11,13 @@ export default class ContractsPage extends BasePage{
     private inputContractValue = () => this.page.locator("//input[@name='contract_value']");
     private inputContractType = () => this.page.locator("//button[@data-id='contract_type']");
     private inputValueForContractType = () => this.page.locator("//input[@aria-controls='bs-select-1']");
-    private selectContractType = () => this.page.locator("//span[normalize-space()='1']");
+    private selectContractType = () => this.page.locator("//span[@class='text'][normalize-space()='1']");
     private inputStartDate = () => this.page.locator("//input[@id='datestart']");
     private inputEndDate = () => this.page.locator("//input[@id='dateend']");
     private inputDescription = () => this.page.getByRole('textbox', { name: 'Description' });
     private buttonSave = () => this.page.locator("//div[contains(@class,'btn')]//button[@type='submit']");
     private selectedCustomer = () => this.page.locator("//div[contains(text(),'Bin Customer')]");
     private selectedContractType = () => this.page.locator("//div[contains(text(),'1')]");
-    private inputedDescription = () => this.page.locator("//form[@id='contract-form']//textarea[@id='description']");
     private alertSuccess = () => this.page.locator("//span[@class='alert-title']");
     private dropdownMore = () => this.page.locator("//button[normalize-space()='More']");
     private buttonDelete = () => this.page.locator("//a[normalize-space()='Delete']");
@@ -38,6 +37,7 @@ export default class ContractsPage extends BasePage{
         await this.inputContractValue().fill('1000');
         await this.inputContractType().click();
         await this.inputValueForContractType().fill('1');
+        await expect(this.selectContractType()).toBeVisible();
         await this.selectContractType().click();
         await this.inputStartDate().fill('18-11-2026');
         await this.inputEndDate().fill('18-11-2026');

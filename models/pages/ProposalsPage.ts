@@ -115,7 +115,7 @@ export default class ProposalsPage extends BasePage{
     }
 
     async verifyTooltip() {
-        await expect(this.iconToggleFullView()).toBeAttached({ timeout: 10000 });
+        await expect(this.iconToggleFullView()).toBeVisible({ timeout: 10000 });
         await this.iconToggleFullView().scrollIntoViewIfNeeded();
         await this.iconToggleFullView().hover({ force: true, timeout: 10000 });
         await expect(this.tooltipContent()).toBeVisible({ timeout: 10000 });

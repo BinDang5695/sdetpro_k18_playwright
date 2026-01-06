@@ -12,8 +12,8 @@ console.log('Exists?', fs.existsSync(configPath));
 export const ConfigsGlobal = {
   AUTHOR: config.AUTHOR,
   BASE_URL: config.BASE_URL,
-  USERNAME: config.email,
-  PASSWORD: config.password,
+  USERNAME: config.USERNAME,
+  PASSWORD: config.PASSWORD,
   TCS_TOTAL: 0,
   PASSED_TOTAL: 0,
   FAILED_TOTAL: 0,

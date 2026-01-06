@@ -28,7 +28,10 @@
           "minLength": 1
         },
         "status": {
-          "type": "number"
+            "oneOf": [
+                { "type": "boolean" },
+                { "type": "number", "enum": [0, 1]}
+            ]
         },
         "image": {
           "type": "array",

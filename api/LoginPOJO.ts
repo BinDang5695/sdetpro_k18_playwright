@@ -1,5 +1,5 @@
 // api/LoginPOJO.ts
 export interface LoginPOJO {
-  email: string;
+  username: string;
   password: string;
 }

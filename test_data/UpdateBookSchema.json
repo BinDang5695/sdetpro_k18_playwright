@@ -28,7 +28,7 @@
           "minLength": 1
         },
         "status": {
-          "type": "number"
+          "type": "boolean"
         },
         "image": {
           "type": "array",
