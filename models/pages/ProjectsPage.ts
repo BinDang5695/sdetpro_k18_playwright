@@ -5,7 +5,7 @@ export default class ProjectsPage extends BasePage{
 
     private titleProjectPage = () => this.page.locator("//span[normalize-space()='Projects Summary']");
     private inputSearchProject = () => this.page.locator("//input[@aria-controls='projects']");
-    private itemCustomerFirst = () => this.page.locator("//a[normalize-space()='Bin Project']");
+    private itemCustomerFirst = () => this.page.locator("//a[normalize-space()='Bin Project']").first();
     private buttonNewProject = () => this.page.locator("//a[normalize-space()='New Project']");
     private inputProjectName = () => this.page.locator("//input[@id='name']");
     private inputCustomer = () => this.page.locator("//button[@data-id='clientid']");
