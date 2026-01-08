@@ -26,7 +26,8 @@ export default defineConfig({
               browserName: 'chromium',
               channel: 'chrome',
               headless: false,
-              viewport: { width: 1920, height: 1080 },
+              //viewport: { width: 1920, height: 1080 },
+              viewport: null,
               launchOptions: {
               args: ['--start-maximized'],
         },
@@ -40,7 +41,8 @@ export default defineConfig({
               browserName: 'chromium',
               channel: 'msedge',
               headless: false,
-              viewport: { width: 1920, height: 1080 },
+              //viewport: { width: 1920, height: 1080 },
+              viewport: null,
               launchOptions: {
               args: ['--start-maximized'],
         },

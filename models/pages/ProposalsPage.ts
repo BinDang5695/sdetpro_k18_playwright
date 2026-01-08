@@ -115,15 +115,12 @@ export default class ProposalsPage extends BasePage{
     }
 
     async verifyTooltip() {
-        const icon = this.iconToggleFullView();
-
-        await icon.scrollIntoViewIfNeeded();
-        await icon.dispatchEvent('mouseover');
-
+        await expect(this.iconToggleFullView()).toBeVisible({ timeout: 10000 });
+        await this.iconToggleFullView().scrollIntoViewIfNeeded();
+        await this.iconToggleFullView().hover({ force: true, timeout: 10000 });
         await expect(this.tooltipContent()).toBeVisible({ timeout: 10000 });
         await expect(this.tooltipContent()).toHaveText('Toggle full view');
     }
-
 
     async searchCreatedProposal() {
         await this.buttonToogleTableRight().click();

@@ -5,7 +5,7 @@ export default class ProjectsPage extends BasePage{
 
     private titleProjectPage = () => this.page.locator("//span[normalize-space()='Projects Summary']");
     private inputSearchProject = () => this.page.locator("//input[@aria-controls='projects']");
-    private itemCustomerFirst = () => this.page.locator("//a[normalize-space()='Bin Project']").first();
+    private itemCustomerFirst = () => this.page.locator("//a[normalize-space()='Bin Project']");
     private buttonNewProject = () => this.page.locator("//a[normalize-space()='New Project']");
     private inputProjectName = () => this.page.locator("//input[@id='name']");
     private inputCustomer = () => this.page.locator("//button[@data-id='clientid']");
@@ -65,11 +65,7 @@ export default class ProjectsPage extends BasePage{
         await expect(this.alertSuccess()).toBeVisible();
         await expect(this.alertSuccess()).toHaveText('Project added successfully.');
         await expect(this.projectNameCustomer()).toHaveText('Bin Project - Bin Customer');
-          const progressText = await this.projectProgress().textContent();
-  const progress = Number(progressText?.match(/\d+/)?.[0]);
-
-  expect(progress).toBeGreaterThanOrEqual(50);
-  expect(progress).toBeLessThanOrEqual(51);
+        await expect(this.projectProgress()).toHaveText('Project Progress 50%');
         await expect(this.customer()).toBeVisible();
         await expect(this.projectNameCreated()).toHaveText('Bin Customer');
         await expect(this.status()).toBeVisible();
