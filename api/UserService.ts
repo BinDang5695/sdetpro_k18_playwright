@@ -2,34 +2,34 @@
 import type { APIRequestContext } from '@playwright/test';
 import { ConfigsGlobal } from './ConfigsGlobal';
 import { EndPointGlobal } from './EndPointGlobal';
-import { BookBuilder } from './BookBuilder';
+import { UserBuilder } from './UserBuilder';
 import { measureRequest } from './ApiTestHelper';
 import { ApiLogger } from './ApiLogger';
 import { expect } from '../api/BaseTestApi';
 
-export class BookService {
+export class UserService {
   static async post(request: APIRequestContext, token: string) {
-    const bookData = BookBuilder.getDataToCreateBook();
-    const url = `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_BOOK}`;
+    const userData = UserBuilder.getDataToCreateUser();
+    const url = `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_USER}`;
     const headers = {
         Authorization: `Bearer ${token}`,
         Accept: 'application/json',
     };
-    ApiLogger.logRequest('POST', url, { headers: headers, body: bookData });
+    ApiLogger.logRequest('POST', url, { headers: headers, body: userData });
 
     const { response, duration } = await measureRequest(() =>
-      request.post(url, { headers: headers, data: bookData })
+      request.post(url,{ headers, data: userData })
     );
 
     const body = await response.json();
     expect(response.status()).toBe(200);
 
     await ApiLogger.logResponse(response, duration);
-    return { response, body, requestData: bookData };
+    return { response, body, requestData: userData };
   }
 
-  static async get(request: APIRequestContext, token: string, bookId: number) {
-    const url = `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_BOOK}/${bookId}`;
+  static async get(request: APIRequestContext, token: string, username: string) {
+    const url = `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_USER}/?username=${username}`;
     const headers = {
         Authorization: `Bearer ${token}`,
         Accept: 'application/json',
@@ -37,7 +37,7 @@ export class BookService {
     ApiLogger.logRequest('GET', url, { headers: headers });
     
     const { response, duration } = await measureRequest(() =>
-      request.get(url, { headers: headers })
+      request.get(url, { headers })
     );
 
     const body = await response.json();
@@ -47,22 +47,17 @@ export class BookService {
     return { response, body };
   }
 
-  static async put( request: APIRequestContext, token: string, bookId: number) {
-    const updateData = BookBuilder.getDataToUpdateBook();
-    const url = `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_BOOK}/${bookId}`;
+  static async put( request: APIRequestContext, token: string, userId: number) {
+    const updateData = UserBuilder.getDataToUpdateUser();
+    const url = `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_USER}/${userId}`;
     const headers = {
         Authorization: `Bearer ${token}`,
         Accept: 'application/json',
     };
-    ApiLogger.logRequest('PUT', url, { headers: headers,
-      body: updateData,
-    });
+    ApiLogger.logRequest('PUT', url, { headers: headers, body: updateData,});
 
     const { response, duration } = await measureRequest(() =>
-      request.put(url, {
-        headers: headers,
-        data: updateData,
-      })
+      request.put(url, { headers, data: updateData,})
     );
 
     const body = await response.json();
@@ -72,20 +67,16 @@ export class BookService {
     return { response, body, requestData: updateData };
   }
 
-static async delete( request: APIRequestContext, token: string, bookId: number ) {
-  const url = `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_BOOK}/${bookId}`;
-  const headers = {
+  static async delete( request: APIRequestContext, token: string, username: string ) {
+    const url = `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_USER}/?username=${username}`;
+    const headers = {
         Authorization: `Bearer ${token}`,
         Accept: 'application/json',
     };
-  ApiLogger.logRequest('DELETE', url, {
-    headers: { headers },
-  });
+    ApiLogger.logRequest('DELETE', url, { headers: headers });
 
   const { response, duration } = await measureRequest(() =>
-    request.delete(url, {
-      headers: headers,
-    })
+    request.delete(url, { headers, })
   );
 
   const body = await response.json();
@@ -95,16 +86,16 @@ static async delete( request: APIRequestContext, token: string, bookId: number )
   return { response, body };
 }
 
-  static async getAfterDelete(request: APIRequestContext, token: string, bookId: number) {
-    const url = `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_BOOK}/${bookId}`;
+  static async getAfterDelete(request: APIRequestContext, token: string, username: string) {
+    const url = `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_USER}/?username=${username}`;
     const headers = {
         Authorization: `Bearer ${token}`,
         Accept: 'application/json',
-    };    
-    ApiLogger.logRequest('GET', url, { headers: { headers } });
+    };
+    ApiLogger.logRequest('GET', url, { headers: headers });
     
     const { response, duration } = await measureRequest(() =>
-      request.get(url, { headers: headers })
+      request.get(url, { headers })
     );
 
     const body = await response.json();
@@ -116,4 +107,3 @@ static async delete( request: APIRequestContext, token: string, bookId: number )
 
 
 }
-

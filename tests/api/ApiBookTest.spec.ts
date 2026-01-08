@@ -12,9 +12,9 @@ import { VerifyBookResponseBody } from '../../api/VerifyBookResponseBody';
 let createdBook: any;
 let createdBookId: number;
 let updatedBookData: any;
-test.describe.serial('API Tests', () => {
+test.describe.serial('API Book Tests', () => {
 
-  test('Create Book', async ({ request, token }) => {
+  test('Post Book', async ({ request, token }) => {
     const resultPost = await BookService.post(request, token);
     validateSchema(CreateBookSchema, resultPost.body);
     VerifyBookHeaders.verify(resultPost.response);
@@ -54,18 +54,14 @@ test.describe.serial('API Tests', () => {
     const result = await BookService.delete(request, token, createdBookId);
     validateSchema(DeleteBookSchema, result.body);
     VerifyBookHeaders.verify(result.response);
-    VerifyBookResponseBody.verifyDeleteBook(result.body);
+    VerifyBookResponseBody.verifyDeleteBook(result.body, updatedBookData);
   });  
 
   test('Get Book After Delete', async ({ request, token }) => {
     const result = await BookService.getAfterDelete(request, token, createdBookId);
     validateSchema(GetBookAfterDeleteSchema, result.body);
     VerifyBookHeaders.verify(result.response);
-    VerifyBookResponseBody.verifyGetAfterDeleteBook(result.body); 
+    VerifyBookResponseBody.verifyGetAfterDeleteBook(result.body);
   });
-
-
-
-
 
 });

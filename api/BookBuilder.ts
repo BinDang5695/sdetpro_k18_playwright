@@ -18,7 +18,7 @@ export class BookBuilder {
     };
   }
 
-static getDataToUpdateBook() {
+static getDataToUpdateBook(): Partial<BookCreateRequest> {
   return {
     name: `Bin Updated Book ${faker.number.int({ min: 1, max: 9999 })}`,
     category_id: 594,

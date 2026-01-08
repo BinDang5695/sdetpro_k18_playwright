@@ -64,16 +64,15 @@ protected normalizeText(text: string | null | undefined): string {
   }
 
 async clickMenuSales(): Promise<this> {
-    await this.menuSales.waitFor({ state: 'visible', timeout: 5000 });
 
     const maxRetries = 5;
 
     for (let i = 0; i < maxRetries; i++) {
         try {
             await expect(this.menuSales).toBeVisible();
+            await this.menuSales.scrollIntoViewIfNeeded();
             await this.menuSales.hover();
             await this.menuSales.click();
-            await this.page.waitForTimeout(200);
 
             if (await this.menuItems.isVisible()) {
                 console.log(`Menu Items xuất hiện sau click Sales (attempt ${i + 1})`);

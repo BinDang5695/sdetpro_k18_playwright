@@ -3,14 +3,12 @@ import { expect } from '@playwright/test';
 export class VerifyBookResponseBody {
 
   static verifyCreateBook(body: any, expected: any) {
-    // ===== Verify wrapper =====
     expect(body).toHaveProperty('message');
     expect(body.message).toBe('Success');
     
     expect(body).toHaveProperty('response');
     const response = body.response;
 
-    // ===== Verify required fields =====
     expect(response).toHaveProperty('id');
     expect(typeof response.id).toBe('number');
     expect(response.id).toBeGreaterThan(0);
@@ -27,7 +25,6 @@ export class VerifyBookResponseBody {
       );
     }
 
-    // ===== Verify image =====
     expect(response).toHaveProperty('image');
     expect(Array.isArray(response.image)).toBeTruthy();
     expect(response.image.length).toBeGreaterThan(0);
@@ -42,14 +39,12 @@ export class VerifyBookResponseBody {
   }
 
   static verifyGetBook(body: any, expected: any) {
-    // ===== Verify wrapper =====
     expect(body).toHaveProperty('message');
     expect(body.message).toBe('Success');
     
     expect(body).toHaveProperty('response');
     const response = body.response;
 
-    // ===== Verify required fields =====
     expect(response).toHaveProperty('id');
     expect(typeof response.id).toBe('number');
     expect(response.id).toBeGreaterThan(0);
@@ -66,7 +61,6 @@ export class VerifyBookResponseBody {
       );
     }
 
-    // ===== Verify image =====
     expect(response).toHaveProperty('image');
     expect(Array.isArray(response.image)).toBeTruthy();
     expect(response.image.length).toBeGreaterThan(0);
@@ -81,14 +75,12 @@ export class VerifyBookResponseBody {
   } 
   
   static verifyUpdateBook(body: any, expected: any) {
-    // ===== Verify wrapper =====
     expect(body).toHaveProperty('message');
     expect(body.message).toBe('Success');
     
     expect(body).toHaveProperty('response');
     const response = body.response;
 
-    // ===== Verify required fields =====
     expect(response).toHaveProperty('id');
     expect(typeof response.id).toBe('number');
     expect(response.id).toBeGreaterThan(0);
@@ -105,7 +97,6 @@ export class VerifyBookResponseBody {
       );
     }
 
-    // ===== Verify image =====
     expect(response).toHaveProperty('image');
     expect(Array.isArray(response.image)).toBeTruthy();
     expect(response.image.length).toBeGreaterThan(0);
@@ -120,25 +111,21 @@ export class VerifyBookResponseBody {
   }
 
   static verifyDeleteBook(body: any, expected?: any) {
-    // ===== Verify wrapper =====
     expect(body).toHaveProperty('message');
     expect(body.message).toBe('Success');
 
     expect(body).toHaveProperty('response');
     const response = body.response;
 
-    // ===== Verify required fields =====
     expect(response).toHaveProperty('id');
     expect(typeof response.id).toBe('number');
     expect(response.id).toBeGreaterThan(0);
 
-    // ===== Optional verify when expected provided =====
     if (expected) {
       expect(response.name).toBe(expected.name);
       expect(response.category_id).toBe(expected.category_id);
       expect(response.price).toBe(expected.price);
 
-      // API trả 1 / 0 → normalize
       expect(Boolean(response.status)).toBe(expected.status);
 
       if (expected.release_date) {
@@ -148,21 +135,17 @@ export class VerifyBookResponseBody {
       }
     }
 
-    // ===== Format check =====
     expect(typeof response.release_date).toBe('string');
     expect(response.release_date).toMatch(/^\d{4}\/\d{2}\/\d{2}$/);
   }
 
   static verifyGetAfterDeleteBook(body: any, expected?: any) {
-    // ===== Verify exact message =====
     expect(body).toHaveProperty('message');
     expect(body.message).toBe('Not found');
 
-    // ===== Verify exact error detail =====
     expect(body).toHaveProperty('errors');
     expect(body.errors).toBe('No book found with the submitted id');
 
-    // ===== Ensure no success payload =====
     expect(body).not.toHaveProperty('response');
   }  
   
