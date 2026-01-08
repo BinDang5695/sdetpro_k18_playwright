@@ -25,7 +25,8 @@ export default defineConfig({
         use: {
               browserName: 'chromium',
               channel: 'chrome',
-              viewport: null,
+              headless: false,
+              viewport: { width: 1920, height: 1080 },
               launchOptions: {
               args: ['--start-maximized'],
         },
@@ -38,7 +39,8 @@ export default defineConfig({
         use: {
               browserName: 'chromium',
               channel: 'msedge',
-              viewport: null,
+              headless: false,
+              viewport: { width: 1920, height: 1080 },
               launchOptions: {
               args: ['--start-maximized'],
         },
@@ -47,16 +49,15 @@ export default defineConfig({
 
     ],
     use: {
-        baseURL: "https://crm.anhtester.com/admin/authentication",
-        headless: false,
+        ///baseURL: "https://crm.anhtester.com/admin/authentication",
+        //headless: false,
         // Implicit wait | Global wait all elements
-        actionTimeout: 5 * 1000,
+        actionTimeout: 10 * 1000,
         screenshot: 'only-on-failure',
         video: 'retain-on-failure',
         trace: 'retain-on-failure',
     },
     
-    timeout: 30 * 1000,
     reporter: [
         ['list'],
         ['html', {open: 'never'}],

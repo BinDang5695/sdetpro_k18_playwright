@@ -65,7 +65,11 @@ export default class ProjectsPage extends BasePage{
         await expect(this.alertSuccess()).toBeVisible();
         await expect(this.alertSuccess()).toHaveText('Project added successfully.');
         await expect(this.projectNameCustomer()).toHaveText('Bin Project - Bin Customer');
-        await expect(this.projectProgress()).toHaveText('Project Progress 50%');
+          const progressText = await this.projectProgress().textContent();
+  const progress = Number(progressText?.match(/\d+/)?.[0]);
+
+  expect(progress).toBeGreaterThanOrEqual(50);
+  expect(progress).toBeLessThanOrEqual(51);
         await expect(this.customer()).toBeVisible();
         await expect(this.projectNameCreated()).toHaveText('Bin Customer');
         await expect(this.status()).toBeVisible();

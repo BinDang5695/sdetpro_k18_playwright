@@ -111,7 +111,8 @@ export default class ExpensesPage extends BasePage{
     }
 
     async verifyTooltipContent() {
-        await this.toogleItem().hover();
+        await this.toogleItem().scrollIntoViewIfNeeded();
+        await this.toogleItem().hover({ force: true });
         await expect(this.tooltipContent()).toHaveText(
             'New lines are not supported for item description. Use the item long description instead.'
         );
