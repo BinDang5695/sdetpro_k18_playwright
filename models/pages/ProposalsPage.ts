@@ -120,10 +120,8 @@ export default class ProposalsPage extends BasePage{
         await icon.scrollIntoViewIfNeeded();
         await icon.dispatchEvent('mouseover');
 
-        const tooltip = this.page.getByRole('tooltip');
-
-        await expect(tooltip).toBeVisible({ timeout: 10000 });
-        await expect(tooltip).toHaveText('Toggle full view');
+        await expect(this.tooltipContent()).toBeVisible({ timeout: 10000 });
+        await expect(this.tooltipContent()).toHaveText('Toggle full view');
     }
 
 
