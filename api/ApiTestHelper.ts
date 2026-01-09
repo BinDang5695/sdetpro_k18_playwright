@@ -22,7 +22,7 @@ export function validateSchema(schema: object, data: any) {
 
 export async function measureRequest(
   requestFn: () => Promise<APIResponse>,
-  maxTime = 3000
+  maxTime = 2000
 ) {
   const start = Date.now();
   const response = await requestFn();
