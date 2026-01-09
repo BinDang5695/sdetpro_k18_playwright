@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices, FullProject } from '@playwright/test';
 
 export default defineConfig({
 
@@ -63,7 +63,9 @@ export default defineConfig({
     reporter: [
         ['list'],
         ['html', {open: 'never'}],
-        ['allure-playwright'],
+        ['allure-playwright', {
+            outputFolder: ({ project }: { project: FullProject }) => 'allure-results/${project.name}'
+        }]
     ]
 
 });
