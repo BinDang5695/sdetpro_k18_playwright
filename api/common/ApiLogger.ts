@@ -44,7 +44,11 @@ export class ApiLogger {
     console.log('STATUS CODE:', response.status());
     console.log('RESPONSE TIME:', duration, 'ms');
     console.log('================ RESPONSE BODY ================:');
-    console.log(JSON.stringify(body, null, 2));
+    if (typeof body === 'string') {
+      console.log(body);
+    } else {
+      console.log(JSON.stringify(body, null, 2));
+    }
     console.log('==============================================');
 
     console.log('================ RESPONSE HEADERS ================:');

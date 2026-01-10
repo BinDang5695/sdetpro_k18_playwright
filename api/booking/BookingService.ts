@@ -54,7 +54,7 @@ export class BookingService {
         Accept: 'application/json',
         'Cookie': `token=${token}`
     };
-    ApiLogger.logRequest('PUT', url, { headers: headers,
+    ApiLogger.logRequest('PATCH', url, { headers: headers,
       body: updateData,
     });
 
@@ -79,7 +79,7 @@ static async delete( request: APIRequestContext, token: string, bookingId: numbe
         'Cookie': `token=${token}`
     };
   ApiLogger.logRequest('DELETE', url, {
-    headers: { headers },
+    headers: headers,
   });
 
   const { response, duration } = await measureRequest(() =>
@@ -100,7 +100,7 @@ static async delete( request: APIRequestContext, token: string, bookingId: numbe
     const headers = {
         Accept: 'application/json',
     };    
-    ApiLogger.logRequest('GET', url, { headers: { headers } });
+    ApiLogger.logRequest('GET', url, { headers: headers });
     
     const { response, duration } = await measureRequest(() =>
       request.get(url, { headers: headers })

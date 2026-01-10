@@ -58,7 +58,7 @@ test.describe.serial('API Booking Tests', () => {
     VerifyBookingResponseBody.verifyDeleteBooking(result.body, updatedBookingData);
   });  
 
-  test('Get Book After Delete', async ({ request, token }) => {
+  test('Get Booking After Delete', async ({ request, token }) => {
     const result = await BookingService.getAfterDelete(request, token, createdBookingId);
     VerifyBookingHeaders.verifyText(result.response);
     VerifyBookingResponseBody.verifyGetAfterDeleteBooking(result.body);

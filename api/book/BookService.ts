@@ -101,7 +101,7 @@ static async delete( request: APIRequestContext, token: string, bookId: number )
         Authorization: `Bearer ${token}`,
         Accept: 'application/json',
     };    
-    ApiLogger.logRequest('GET', url, { headers: { headers } });
+    ApiLogger.logRequest('GET', url, { headers: headers });
     
     const { response, duration } = await measureRequest(() =>
       request.get(url, { headers: headers })
