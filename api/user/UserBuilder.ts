@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { UserCreateRequest } from '../api/UserCreateRequest';
+import { UserCreateRequest } from './UserCreateRequest';
 
 export class UserBuilder {
 

@@ -1,16 +1,16 @@
 import { test as base, expect } from '@playwright/test';
-import { EndPointGlobal } from './EndPointGlobal';
-import { LoginBuilder } from './LoginBuilder';
-import { ConfigsGlobal } from './ConfigsGlobal';
-import loginSchema from '../test_data/LoginSchema.json';
+import { EndPointGlobal } from './EndpointGlobal';
+import { CreateToken } from '../booking/CreateToken';
+import { ConfigsBooking } from './ConfigsBooking';
+import CreateTokenSchema from '../../test_data/CreateTokenSchema.json';
 import { ApiLogger } from './ApiLogger';
-import { VerifyBookHeaders } from './VerifyBookHeaders';
+import { VerifyBookingHeaders } from '../booking/VerifyBookingHeaders';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 
 const ajv = new Ajv({ allErrors: true });
 addFormats(ajv);
-const validateLoginSchema = ajv.compile(loginSchema);
+const validateCreateTokenSchema = ajv.compile(CreateTokenSchema);
 
 let cachedToken: string | undefined;
 
@@ -23,8 +23,8 @@ export const test = base.extend<ApiFixtures>({
 
     if (!cachedToken) {
 
-    const loginData = LoginBuilder.getDataLogin();
-    const url = `${ConfigsGlobal.BASE_URL}${EndPointGlobal.EP_LOGIN}`;
+    const loginData = CreateToken.getDataCreateToken();
+    const url = `${ConfigsBooking.BASE_URL}${EndPointGlobal.EP_AUTH}`;
 
     ApiLogger.logRequest('POST', url, {
       body: loginData
@@ -37,16 +37,16 @@ export const test = base.extend<ApiFixtures>({
     expect(response.status()).toBe(200);
     expect(duration).toBeLessThan(2000);
 
-    VerifyBookHeaders.verify(response);
+    VerifyBookingHeaders.verify(response);
 
     const body = await response.json();
 
     expect(body.token).toBeTruthy();
 
-    const valid = validateLoginSchema(body);
+    const valid = validateCreateTokenSchema(body);
     expect(valid).toBe(true);
     if (!valid) {
-      console.error(validateLoginSchema.errors);
+      console.error(validateCreateTokenSchema.errors);
     }
 
     await ApiLogger.logResponse(response, duration);

@@ -1,6 +1,6 @@
 // api/LoginBuilder.ts
 import { LoginPOJO } from './LoginPOJO';
-import { ConfigsGlobal } from '../api/ConfigsGlobal';
+import { ConfigsGlobal } from './ConfigsGlobal';
 
 export class LoginBuilder {
   static getDataLogin(): LoginPOJO {

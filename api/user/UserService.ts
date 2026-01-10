@@ -1,11 +1,11 @@
 // api/BookService.ts
 import type { APIRequestContext } from '@playwright/test';
-import { ConfigsGlobal } from './ConfigsGlobal';
-import { EndPointGlobal } from './EndPointGlobal';
+import { ConfigsGlobal } from '../common/ConfigsGlobal';
+import { EndPointGlobal } from '../common/EndpointGlobal';
 import { UserBuilder } from './UserBuilder';
-import { measureRequest } from './ApiTestHelper';
-import { ApiLogger } from './ApiLogger';
-import { expect } from '../api/BaseTestApi';
+import { measureRequest } from '../common/ApiTestHelper';
+import { ApiLogger } from '../common/ApiLogger';
+import { expect } from '../common/BaseTestApi';
 
 export class UserService {
   static async post(request: APIRequestContext, token: string) {

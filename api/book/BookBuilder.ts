@@ -11,7 +11,7 @@ export class BookBuilder {
       release_date: faker.date
         .future()
         .toISOString()
-        .split('T')[0]
+        .split('T')[0]!
         .replace(/-/g, '/'),
       image_ids: [76],
       status: true
@@ -25,7 +25,7 @@ static getDataToUpdateBook(): Partial<BookCreateRequest> {
     release_date: faker.date
         .future()
         .toISOString()
-        .split('T')[0]
+        .split('T')[0]!
         .replace(/-/g, '/'),
     price: faker.number.int({ min: 1000, max: 99999 }),
     image_ids: [76],
