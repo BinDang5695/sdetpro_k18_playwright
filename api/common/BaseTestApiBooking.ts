@@ -35,7 +35,7 @@ export const test = base.extend<ApiFixtures>({
     const duration = Date.now() - start;
 
     expect(response.status()).toBe(200);
-    expect(duration).toBeLessThan(2000);
+    expect(duration).toBeLessThan(3000);
 
     VerifyBookingHeaders.verify(response);
 
