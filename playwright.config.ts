@@ -8,7 +8,6 @@ export default defineConfig({
     projects:[
       {
         name: 'api',
-        //testDir: './tests/api',
         use: {
             baseURL: process.env.API_BASE_URL,
             headless: true
@@ -21,7 +20,6 @@ export default defineConfig({
 
       {
         name: "chrome",
-        //testDir: './tests/ui',
         use: {
               browserName: 'chromium',
               channel: 'chrome',
@@ -36,7 +34,6 @@ export default defineConfig({
 
       {
         name: "edge",
-        //testDir: './tests/ui',
         use: {
               browserName: 'chromium',
               channel: 'msedge',
