@@ -1,4 +1,5 @@
 import { test } from '../BaseTest';
+import PageFactory from '../../models/pages/PageFactory';
 
 test.describe('CRM Test Suite', () => {
 

@@ -8,7 +8,7 @@ export default defineConfig({
     projects:[
       {
         name: 'api',
-        testDir: './tests/api',
+        //testDir: './tests/api',
         use: {
             baseURL: process.env.API_BASE_URL,
             headless: true
@@ -21,7 +21,7 @@ export default defineConfig({
 
       {
         name: "chrome",
-        testDir: './tests/ui',
+        //testDir: './tests/ui',
         use: {
               browserName: 'chromium',
               channel: 'chrome',
@@ -36,7 +36,7 @@ export default defineConfig({
 
       {
         name: "edge",
-        testDir: './tests/ui',
+        //testDir: './tests/ui',
         use: {
               browserName: 'chromium',
               channel: 'msedge',
@@ -64,7 +64,7 @@ export default defineConfig({
         ['list'],
         ['html', {open: 'never'}],
         ['allure-playwright', {
-            outputFolder: ({ project }: { project: FullProject }) => 'allure-results/${project.name}'
+            outputFolder: ({ project }: { project: FullProject }) => `allure-results/${project.name}`
         }]
     ]
 
